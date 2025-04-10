@@ -1,7 +1,5 @@
 # 📅 Full 4-Week DSA + Coding Interview Preparation Plan
 
----
----
 
 # 🧠 Week 1: Foundations – Big-O, Arrays, Strings, Hashing, Lists, Stacks & Queues
 
