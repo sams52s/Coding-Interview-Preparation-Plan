@@ -21,7 +21,7 @@
 ### O(n!) - Factorial Time
 > Real world examples of O(n!) operations are anything that requires analysing a list of permutations
 
-![common Data Structure Operations]( commonDataStructureOperations.png )
+![common Data Structure Operations](commonDataStructureOperations.png)
 
-![array Sorting Algorithms]( arraySortingAlgorithms.png )
+![array Sorting Algorithms](arraySortingAlgorithms.png)
 
