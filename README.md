@@ -24,7 +24,6 @@
 ## ✅ Day 2: Array Patterns & Strings
 ### 🔗 Resources & Practice Links:
 - [Two Pointer & Sliding Window - NeetCode](https://youtu.be/8DEfhBOg4R4)
-- [JavaScript Strings - FreeCodeCamp](https://www.freecodecamp.org/news/learn-javascript-strings/)
 - [LeetCode - Reverse String](https://leetcode.com/problems/reverse-string/)
 - [LeetCode - Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 - [LeetCode - Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
