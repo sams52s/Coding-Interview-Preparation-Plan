@@ -16,15 +16,14 @@
 - [Big-O Notation - FreeCodeCamp](https://www.freecodecamp.org/news/big-o-notation/)
 - [Big-O Cheat Sheet](https://www.bigocheatsheet.com/)
 - [Arrays in Java - GeeksforGeeks](https://www.geeksforgeeks.org/arrays-in-java/)
-- [Arrays in Python - Tech with Tim](https://youtu.be/ZRa1YVRzIhI)
 - [LeetCode - Two Sum](https://leetcode.com/problems/two-sum/)
 - [LeetCode - Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 - [LeetCode - Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
+### ✍️ [My Practices and Notes]( https://github.com/sams52s/Coding-Interview-Preparation-Plan/tree/main/week_1/day_1)
 
 ## ✅ Day 2: Array Patterns & Strings
 ### 🔗 Resources & Practice Links:
 - [Two Pointer & Sliding Window - NeetCode](https://youtu.be/8DEfhBOg4R4)
-- [JavaScript Strings - FreeCodeCamp](https://www.freecodecamp.org/news/learn-javascript-strings/)
 - [LeetCode - Reverse String](https://leetcode.com/problems/reverse-string/)
 - [LeetCode - Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 - [LeetCode - Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
