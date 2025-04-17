@@ -1,7 +1,6 @@
 
 # 🚩 Java & Spring Interview Preparation Checklist
 
-> ## 🗂️ [My Notes for Java & Spring Interview Preparation]()
 
 ## 🚀 Introduction to Java
 - History, Features, Evolution (Java 8 - 17+)

@@ -1,0 +1,9 @@
+- Checked vs Unchecked Exceptions
+- try-catch-finally
+- Multi-catch blocks
+- throw vs throws
+- Custom Exceptions
+- Best Practices
+- Exception Hierarchy
+- Common Exceptions
+- Exception Handling in Java

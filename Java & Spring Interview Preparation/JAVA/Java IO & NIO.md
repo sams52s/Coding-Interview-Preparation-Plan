@@ -1,0 +1,3 @@
+- File Handling (File, FileReader, BufferedReader)
+- Serialization & Deserialization
+- Java NIO (Buffers, Channels, Selectors)

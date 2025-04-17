@@ -12,7 +12,7 @@
 - Stacks & Queues
 
 ### 🔗 Resources & Practice Links:
-> ## 🗂️ [My Solution of this problems]()
+> ## 🗂️ [My Solution of this problems](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/week_1/LeetCode%20problem%20solution/problem%20List.md)
 
 - [LeetCode - Two Sum](https://leetcode.com/problems/two-sum/)
 - [LeetCode - Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
@@ -75,7 +75,7 @@
 - Mock Interviews & Mixed Practice
 
 ### 🔗 Resources & Practice Links:
-> ## 🗂️ [My Solution of this problems]()
+> ## 🗂️ [My Solution of this problems](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/week_2/LeetCode%20problem%20solution/problem%20List.md)
 
 - [LeetCode - Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 - [LeetCode - Insert Interval](https://leetcode.com/problems/insert-interval/)
@@ -123,7 +123,7 @@
 - Contest Strategy & Mixed Practice
 
 ### 🔗 Resources & Practice Links:
-> ## 🗂️ [My Solution of this problems]()
+> ## 🗂️ [My Solution of this problems](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/week_3/LeetCode%20problem%20solution/problem%20List.md)
    
 - [LeetCode - Number of Islands](https://leetcode.com/problems/number-of-islands/)
 - [LeetCode - Flood Fill](https://leetcode.com/problems/flood-fill/)
@@ -184,14 +184,8 @@
 - Behavioral Interview Preparation
 - Mock Interviews (Coding + Design)
 - Final Review & Preparation
-- LeetCode [Blind 75](https://leetcode.com/studyplan/leetcode-75/) 
-- [NeetCode 150]() || [My Solution]()
-- [LeetCode 150]() || [My Solution]()
-- Top 100 LeetCode Questions
-- Top 100 Interview Questions
 
 ### 🔗 Resources & Practice Links:
-> ## 🗂️ [My Solution of this problems]()
 
 - [System Design Basics – Gaurav Sen](https://www.youtube.com/watch?v=UzLMhqg3_Wc)
 - [System Design Primer (GitHub)](https://github.com/donnemartin/system-design-primer)
@@ -208,10 +202,10 @@
 - [LeetCode Interview Sim](https://leetcode.com/interview/)
 - [LeetCode Mock Practice](https://leetcode.com/explore/)
 - [Tech Interview Handbook](https://www.techinterviewhandbook.org/)
-- [Blind 75 List](https://leetcode.com/list/xi4ci4ig/) || [My Solution]()
-- [LeetCode 75](https://leetcode.com/studyplan/leetcode-75/) || [My Solution]()
-- [NeetCode 150](https://neetcode.io/practice) || [My Solution]()
-- [LeetCode 150](https://leetcode.com/studyplan/top-interview-150/) || [My Solution]()
+- [Blind 75 List](https://leetcode.com/list/xi4ci4ig/) || [My Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Blind%2075/problem%20List.md)
+- [LeetCode 75](https://leetcode.com/studyplan/leetcode-75/) || [My Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%2075/problem%20List.md)
+- [NeetCode 150](https://neetcode.io/practice) || [My Solution](https://github.com/sams52s/problem_solving/blob/main/NeetCode%20150/problem%20List.md)
+- [LeetCode 150](https://leetcode.com/studyplan/top-interview-150/) || [My Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20150/problem%20List.md)
 - [Top Interview 100 Problems - LeetCode](https://leetcode.com/problemset/top-interview-questions/)
 - [Interview Prep Reflection Guide](https://www.linkedin.com/pulse/day-before-your-big-interview-how-prepare-reflect-julie-cogin/)
 
@@ -219,7 +213,7 @@
 
 # 🚩 Java & Spring Interview Preparation Checklist
 
-> ## 🗂️ [My Notes for Java & Spring Interview Preparation]()
+> ## 🗂️ [My Notes for Java & Spring Interview Preparation](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/README.md)
 
 ## 🚀 Introduction to Java
 - History, Features, Evolution (Java 8 - 17+)
