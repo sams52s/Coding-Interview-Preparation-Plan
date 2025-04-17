@@ -184,6 +184,11 @@
 - Behavioral Interview Preparation
 - Mock Interviews (Coding + Design)
 - Final Review & Preparation
+- LeetCode [Blind 75](https://leetcode.com/studyplan/leetcode-75/) 
+- [NeetCode 150]() || [My Solution]()
+- [LeetCode 150]() || [My Solution]()
+- Top 100 LeetCode Questions
+- Top 100 Interview Questions
 
 ### 🔗 Resources & Practice Links:
 > ## 🗂️ [My Solution of this problems]()
@@ -203,8 +208,10 @@
 - [LeetCode Interview Sim](https://leetcode.com/interview/)
 - [LeetCode Mock Practice](https://leetcode.com/explore/)
 - [Tech Interview Handbook](https://www.techinterviewhandbook.org/)
-- [Blind 75 List](https://leetcode.com/list/xi4ci4ig/)
-- [NeetCode 150](https://neetcode.io/practice)
+- [Blind 75 List](https://leetcode.com/list/xi4ci4ig/) || [My Solution]()
+- [LeetCode 75](https://leetcode.com/studyplan/leetcode-75/) || [My Solution]()
+- [NeetCode 150](https://neetcode.io/practice) || [My Solution]()
+- [LeetCode 150](https://leetcode.com/studyplan/top-interview-150/) || [My Solution]()
 - [Top Interview 100 Problems - LeetCode](https://leetcode.com/problemset/top-interview-questions/)
 - [Interview Prep Reflection Guide](https://www.linkedin.com/pulse/day-before-your-big-interview-how-prepare-reflect-julie-cogin/)
 
