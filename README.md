@@ -12,6 +12,8 @@
 - Stacks & Queues
 
 ### 🔗 Resources & Practice Links:
+> ## 🗂️ [My Solution of this problems]()
+
 - [LeetCode - Two Sum](https://leetcode.com/problems/two-sum/)
 - [LeetCode - Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 - [LeetCode - Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
@@ -73,6 +75,12 @@
 - Mock Interviews & Mixed Practice
 
 ### 🔗 Resources & Practice Links:
+> ## 🗂️ [My Solution of this problems]()
+
+- [LeetCode - Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+- [LeetCode - Insert Interval](https://leetcode.com/problems/insert-interval/)
+- [LeetCode - Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)
+- [LeetCode - Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)
 - [LeetCode - Binary Search](https://leetcode.com/problems/binary-search/)
 - [LeetCode - Search Insert Position](https://leetcode.com/problems/search-insert-position/)
 - [LeetCode - Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
@@ -115,13 +123,23 @@
 - Contest Strategy & Mixed Practice
 
 ### 🔗 Resources & Practice Links:
+> ## 🗂️ [My Solution of this problems]()
+   
 - [LeetCode - Number of Islands](https://leetcode.com/problems/number-of-islands/)
 - [LeetCode - Flood Fill](https://leetcode.com/problems/flood-fill/)
 - [LeetCode - Clone Graph](https://leetcode.com/problems/clone-graph/)
 - [LeetCode - Course Schedule](https://leetcode.com/problems/course-schedule/)
 - [LeetCode - Network Delay Time](https://leetcode.com/problems/network-delay-time/)
 - [LeetCode - Redundant Connection](https://leetcode.com/problems/redundant-connection/)
+- [LeetCode - Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii/)
+- [LeetCode - Course Schedule I](https://leetcode.com/problems/course-schedule/)
 - [LeetCode - Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
+- [LeetCode - Course Schedule III](https://leetcode.com/problems/course-schedule-iii/)
+- [LeetCode - Course Schedule IV](https://leetcode.com/problems/course-schedule-iv/)
+- [LeetCode - Course Schedule V](https://leetcode.com/problems/course-schedule-v/)
+- [LeetCode - Course Schedule VI](https://leetcode.com/problems/course-schedule-vi/)
+- [LeetCode - Course Schedule VII](https://leetcode.com/problems/course-schedule-vii/)
+- [LeetCode - Course Schedule VIII](https://leetcode.com/problems/course-schedule-viii/) 
 - [LeetCode - Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
 - [LeetCode - Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
 - [LeetCode - Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/)
@@ -168,6 +186,8 @@
 - Final Review & Preparation
 
 ### 🔗 Resources & Practice Links:
+> ## 🗂️ [My Solution of this problems]()
+
 - [System Design Basics – Gaurav Sen](https://www.youtube.com/watch?v=UzLMhqg3_Wc)
 - [System Design Primer (GitHub)](https://github.com/donnemartin/system-design-primer)
 - [System Design Primer GitHub](https://github.com/donnemartin/system-design-primer)
@@ -191,6 +211,8 @@
 
 
 # 🚩 Java & Spring Interview Preparation Checklist
+
+> ## 🗂️ [My Notes for Java & Spring Interview Preparation]()
 
 ## 🚀 Introduction to Java
 - History, Features, Evolution (Java 8 - 17+)
