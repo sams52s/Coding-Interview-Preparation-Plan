@@ -3,10 +3,10 @@
 
 
 ## 🚀 Introduction to Java
-- History, Features, Evolution (Java 8 - 17+)
-- JVM, JRE, JDK – Differences & Roles
-- Java Program Execution Flow
-- Bytecode and `.class` Files
+ - (Java Basics)[#Java-Basics]
+ - (History, Features, Evolution (Java 8 → Java 24+))[#History-Features-Evolution]
+ - (JVM, JRE, JDK – Differences & Roles)[#JVM-JRE-JDK]
+ - (Java IDEs (Eclipse, IntelliJ IDEA, NetBeans))[#Java-IDEs]
 
 ## 🔍 OOP Concepts
 - Classes & Objects
