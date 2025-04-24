@@ -1,5 +1,11 @@
 ## 📘 Comprehensive Software Engineering Interview Question Bank
 
+🎯 Use this interactive checklist to track your interview prep. Tick off each question as you go!
+🧠 Difficulty levels: 🔰 Beginner | ⚙️ Intermediate | 🧠 Advanced
+
+Want to contribute new questions or improved answers? [Open an issue or PR](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank.md) 🙌
+
+
 ### 📑 Table of Contents
 
 - [🧠 Programming Fundamentals](#🧠-programming-fundamentals)
@@ -19,8 +25,11 @@
 - [📚 Resources & Recommended Reading](#📚-resources--recommended-reading)
 
 ### 🧠 Programming Fundamentals
+<details><summary>Click to expand Q&A</summary>
 
-#### Beginner
+
+
+#### Beginner 🔰
 
 1. **What are the primitive and non-primitive data types in Java? How are they different?**
 
@@ -90,7 +99,7 @@
 
 > **Answer:** They allow controlled access to private fields. Getters retrieve field values; setters modify them, enabling encapsulation and validation logic.
 
-#### Intermediate
+#### Intermediate ⚙️
 
 1. **What happens when you declare a variable or class with the final keyword?**
 
@@ -150,7 +159,7 @@
 
 > **Answer:** Java avoids ambiguity of multiple class inheritance by allowing it only through interfaces. A class can implement multiple interfaces but extend only one class. If two interfaces have the same default method, the implementing class must override it to resolve conflict.
 
-#### Advanced
+#### Advanced 🔰🔰🔰 🧠
 
 1. **Implement the Singleton design pattern in Java.**
 
@@ -256,7 +265,13 @@ public class SharedObject {
 
 
 
+
+</details>
+
 ### ☕ Core Java & Exception Handling
+<details><summary>Click to expand Q&A</summary>
+
+
 
 1. **Explain Java ClassLoader and its types.**
 
@@ -310,7 +325,13 @@ public class MyException extends Exception {
 
 
 
+
+</details>
+
 ### 📚 Collections Framework
+<details><summary>Click to expand Q&A</summary>
+
+
 
 1. **What is the difference between List, Set, and Map?**
 
@@ -336,7 +357,13 @@ public class MyException extends Exception {
 
 
 
+
+</details>
+
 ### 🧵 Multithreading
+<details><summary>Click to expand Q&A</summary>
+
+
 
 1. **Explain thread lifecycle in Java.**
 
@@ -358,7 +385,13 @@ public class MyException extends Exception {
 
 
 
+
+</details>
+
 ### ☕ Spring Boot & Core
+<details><summary>Click to expand Q&A</summary>
+
+
 
 1. **Explain Spring IOC container.**
 
@@ -380,7 +413,13 @@ public class MyException extends Exception {
 
 
 
+
+</details>
+
 ### 📖 Spring Data JPA & Hibernate
+<details><summary>Click to expand Q&A</summary>
+
+
 
 1. **What is Hibernate, and how does it integrate with Spring Data JPA?**
 
@@ -402,7 +441,30 @@ public class MyException extends Exception {
 
 
 
+
+</details>
+
 ### 🧩 Microservices
+<details><summary>Click to expand Q&A</summary>
+
+
+1. **What are microservices, and why use them?**
+
+> **Answer:** Microservices are small, independent services that communicate via APIs. They promote modularity, scalability, and ease of deployment.
+
+2. **Explain service discovery and registry (e.g., Eureka).**
+
+> **Answer:** Services register themselves with a registry (e.g., Eureka Server). Clients query the registry to discover available service instances dynamically.
+
+3. **How do microservices handle failures and recovery?**
+
+> **Answer:** Techniques include retries, circuit breakers (e.g., Resilience4j), failover mechanisms, and fallback methods.
+
+4. **Describe communication methods between microservices.**
+
+> **Answer:** Synchronous (REST, gRPC) and asynchronous (Kafka, RabbitMQ). Choice depends on latency, reliability, and coupling requirements.
+
+
 
 5. **What is distributed tracing and why is it important?**
 
@@ -446,27 +508,17 @@ public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
 }
 ```
 
-1. **What are microservices, and why use them?**
-
-> **Answer:** Microservices are small, independent services that communicate via APIs. They promote modularity, scalability, and ease of deployment.
-
-2. **Explain service discovery and registry (e.g., Eureka).**
-
-> **Answer:** Services register themselves with a registry (e.g., Eureka Server). Clients query the registry to discover available service instances dynamically.
-
-3. **How do microservices handle failures and recovery?**
-
-> **Answer:** Techniques include retries, circuit breakers (e.g., Resilience4j), failover mechanisms, and fallback methods.
-
-4. **Describe communication methods between microservices.**
-
-> **Answer:** Synchronous (REST, gRPC) and asynchronous (Kafka, RabbitMQ). Choice depends on latency, reliability, and coupling requirements.
 
 
 
 
+
+</details>
 
 ### 🌐 REST API in Java Spring
+<details><summary>Click to expand Q&A</summary>
+
+
 
 1. **What are RESTful web services, and how do you design them?**
 
@@ -501,7 +553,13 @@ public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
 
 
 
+
+</details>
+
 ### 🚀 Advanced & Additional Questions
+<details><summary>Click to expand Q&A</summary>
+
+
 
 6. **What are best practices for writing secure Java code?**
 
@@ -608,7 +666,13 @@ public void shouldReturnUser() throws Exception {
 
 
 
+
+</details>
+
 ### 🧩 Data Structures and Algorithms
+<details><summary>Click to expand Q&A</summary>
+
+
 
 #### Beginner
 
@@ -672,7 +736,7 @@ while (index < nums.length) {
 
 > **Answer:** Binary search repeatedly divides a sorted array in half, checking the middle element. Limitations: it requires the array to be sorted and doesn't work efficiently on linked lists due to lack of random access.
 
-#### Advanced
+#### Advanced 🔰🔰🔰
 
 1. **Implement Dijkstra's algorithm.**
 
@@ -749,7 +813,13 @@ class LRUCache {
 
 
 
+
+</details>
+
 ### 🧱 System Design
+<details><summary>Click to expand Q&A</summary>
+
+
 
 1. **Design a URL shortener ensuring uniqueness.**
 
@@ -807,7 +877,13 @@ class LRUCache {
 
 > **Answer:** Use Redis or Memcached in a cluster. Partition keys using consistent hashing. Use replication and backup nodes for high availability. Implement cache invalidation strategies (LRU, TTL). Consider eventual consistency for distributed nodes.
 
+
+</details>
+
 ### 💾 Database & SQL
+<details><summary>Click to expand Q&A</summary>
+
+
 
 3. **Write a SQL query to find duplicate rows in a table.**
 
@@ -854,7 +930,13 @@ WHERE salary < (SELECT MAX(salary) FROM employees);
 1. What is the difference between DELETE, TRUNCATE, and DROP in SQL?
 2. Explain inner join, outer join, left join, and right join.
 
+
+</details>
+
 ### 🌐 Web & Frontend
+<details><summary>Click to expand Q&A</summary>
+
+
 
 3. **What is event-driven programming in JavaScript?**
 
@@ -876,6 +958,73 @@ WHERE salary < (SELECT MAX(salary) FROM employees);
 
 
 ### 🧪 Miscellaneous & Puzzles
+<details><summary>Click to expand Q&A</summary>
+
+
+
+### 🧠 Additional Core Java & OOP Questions (Extended)
+
+1. **What is the use of the `super` keyword in Java?**
+> **Answer:** `super` is used to refer to the immediate parent class. It is commonly used to:
+> - Call a parent class constructor
+> - Access parent class methods/fields that are overridden or hidden
+
+2. **What exactly is `System.out.println` in Java?**
+> **Answer:** `System` is a class from `java.lang`, `out` is a static PrintStream object, and `println()` is a method of PrintStream used to print a line to the console.
+
+3. **What part of memory is cleaned during garbage collection?**
+> **Answer:** The heap memory. It stores objects, and garbage collection reclaims memory from unreachable objects in the heap.
+
+4. **What is constructor overloading in Java?**
+> **Answer:** Defining multiple constructors with different parameter lists in the same class to initialize objects in various ways.
+
+5. **What is the difference between static methods, static variables, and static classes?**
+> **Answer:**
+> - **Static variable:** Shared across all instances of a class
+> - **Static method:** Belongs to the class, not the instance
+> - **Static class:** Only inner classes can be static in Java; used for grouping static methods/constants
+
+6. **What is the difference between a private and a protected modifier?**
+> **Answer:**
+> - **Private:** Accessible only within the declared class
+> - **Protected:** Accessible within the same package and by subclasses
+
+7. **What is a marker interface?**
+> **Answer:** An interface with no methods or fields, used to signal the compiler or JVM with metadata (e.g., `Serializable`, `Cloneable`).
+
+8. **What is the purpose of the Comparable interface?**
+> **Answer:** Provides a way to define natural ordering for objects. Requires implementing `compareTo()`.
+
+9. **What is the difference between a HashSet and a TreeSet?**
+> **Answer:**
+> - **HashSet:** Unordered, constant-time performance
+> - **TreeSet:** Sorted, logarithmic time performance
+
+10. **What is the purpose of the `java.util.concurrent` package?**
+> **Answer:** It provides utilities for concurrent programming (e.g., thread pools, atomic variables, locks, concurrent collections) to improve multithreading performance and scalability.
+
+### 🧵 Additional Multithreading Questions
+
+1. **What is context switching in Java?**
+> **Answer:** Switching the CPU from one thread to another. It involves saving the state of the current thread and loading the state of the next thread.
+
+2. **What is the difference between user threads and daemon threads?**
+> **Answer:**
+> - **User threads:** Run until task completion, prevent JVM shutdown
+> - **Daemon threads:** Run in background (e.g., GC), JVM terminates when only daemon threads remain
+
+3. **What is the purpose of the sleep() method in Java?**
+> **Answer:** Pauses the execution of the current thread for a specified time, allowing other threads to execute.
+
+4. **What is the difference between wait() and sleep()?**
+> **Answer:**
+> - `wait()` releases the monitor lock; used in synchronization blocks for inter-thread communication
+> - `sleep()` pauses execution but retains locks
+
+5. **What is the difference between notify() and notifyAll()?**
+> **Answer:**
+> - `notify()` wakes a single waiting thread
+> - `notifyAll()` wakes all waiting threads on the object's monitor
 
 1. **Explain Agile methodologies.**
 
@@ -916,6 +1065,9 @@ WHERE salary < (SELECT MAX(salary) FROM employees);
 
 > **Answer:** Bulbs with an odd number of divisors remain ON. Only perfect squares have an odd number of divisors. So, bulbs 1, 4, 9, ..., 100 (i.e., 10 bulbs) remain ON.
 
+
+</details>
+
 ### 📚 Resources & Recommended Reading
 
 **📘 Books:**
@@ -939,3 +1091,4 @@ WHERE salary < (SELECT MAX(salary) FROM employees);
 - [Docker Docs](https://docs.docker.com/) — For containerization fundamentals
 - [JWT.io](https://jwt.io/introduction) — JWT standards and debugging tool
 - [OWASP](https://owasp.org/) — Security standards and Top 10 risks
+
