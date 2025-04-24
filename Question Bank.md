@@ -1,4 +1,4 @@
-## 📘 Software Engineering Interview Question Bank
+## 📘 Comprehensive Software Engineering Interview Question Bank
 
 ### 📑 Table of Contents
 
@@ -19,8 +19,6 @@
 - [📚 Resources & Recommended Reading](#📚-resources--recommended-reading)
 
 ### 🧠 Programming Fundamentals
-<details><summary>Click to expand Q&A</summary>
-
 
 #### Beginner
 
@@ -258,12 +256,7 @@ public class SharedObject {
 
 
 
-
-</details>
-
 ### ☕ Core Java & Exception Handling
-<details><summary>Click to expand Q&A</summary>
-
 
 1. **Explain Java ClassLoader and its types.**
 
@@ -317,12 +310,7 @@ public class MyException extends Exception {
 
 
 
-
-</details>
-
 ### 📚 Collections Framework
-<details><summary>Click to expand Q&A</summary>
-
 
 1. **What is the difference between List, Set, and Map?**
 
@@ -348,12 +336,7 @@ public class MyException extends Exception {
 
 
 
-
-</details>
-
 ### 🧵 Multithreading
-<details><summary>Click to expand Q&A</summary>
-
 
 1. **Explain thread lifecycle in Java.**
 
@@ -375,12 +358,7 @@ public class MyException extends Exception {
 
 
 
-
-</details>
-
 ### ☕ Spring Boot & Core
-<details><summary>Click to expand Q&A</summary>
-
 
 1. **Explain Spring IOC container.**
 
@@ -402,12 +380,7 @@ public class MyException extends Exception {
 
 
 
-
-</details>
-
 ### 📖 Spring Data JPA & Hibernate
-<details><summary>Click to expand Q&A</summary>
-
 
 1. **What is Hibernate, and how does it integrate with Spring Data JPA?**
 
@@ -429,12 +402,7 @@ public class MyException extends Exception {
 
 
 
-
-</details>
-
 ### 🧩 Microservices
-<details><summary>Click to expand Q&A</summary>
-
 
 5. **What is distributed tracing and why is it important?**
 
@@ -498,12 +466,7 @@ public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
 
 
 
-
-</details>
-
 ### 🌐 REST API in Java Spring
-<details><summary>Click to expand Q&A</summary>
-
 
 1. **What are RESTful web services, and how do you design them?**
 
@@ -538,12 +501,7 @@ public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
 
 
 
-
-</details>
-
 ### 🚀 Advanced & Additional Questions
-<details><summary>Click to expand Q&A</summary>
-
 
 6. **What are best practices for writing secure Java code?**
 
@@ -650,12 +608,7 @@ public void shouldReturnUser() throws Exception {
 
 
 
-
-</details>
-
 ### 🧩 Data Structures and Algorithms
-<details><summary>Click to expand Q&A</summary>
-
 
 #### Beginner
 
@@ -796,12 +749,7 @@ class LRUCache {
 
 
 
-
-</details>
-
 ### 🧱 System Design
-<details><summary>Click to expand Q&A</summary>
-
 
 1. **Design a URL shortener ensuring uniqueness.**
 
@@ -859,12 +807,7 @@ class LRUCache {
 
 > **Answer:** Use Redis or Memcached in a cluster. Partition keys using consistent hashing. Use replication and backup nodes for high availability. Implement cache invalidation strategies (LRU, TTL). Consider eventual consistency for distributed nodes.
 
-
-</details>
-
 ### 💾 Database & SQL
-<details><summary>Click to expand Q&A</summary>
-
 
 3. **Write a SQL query to find duplicate rows in a table.**
 
@@ -911,12 +854,7 @@ WHERE salary < (SELECT MAX(salary) FROM employees);
 1. What is the difference between DELETE, TRUNCATE, and DROP in SQL?
 2. Explain inner join, outer join, left join, and right join.
 
-
-</details>
-
 ### 🌐 Web & Frontend
-<details><summary>Click to expand Q&A</summary>
-
 
 3. **What is event-driven programming in JavaScript?**
 
@@ -937,15 +875,46 @@ WHERE salary < (SELECT MAX(salary) FROM employees);
 
 
 
-
-</details>
-
 ### 🧪 Miscellaneous & Puzzles
-<details><summary>Click to expand Q&A</summary>
+
+1. **Explain Agile methodologies.**
+
+> **Answer:** Agile is an iterative approach to software development that focuses on collaboration, customer feedback, and small, rapid releases. Frameworks include Scrum, Kanban, XP.
+
+2. **Describe Continuous Integration and Continuous Deployment (CI/CD).**
+
+> **Answer:** CI automates code integration into a shared repo, running tests with every commit. CD automates deployment to production after CI, reducing release time and risks.
 
 
 
-</details>
+> **Answer:**
+>
+> - **Monolithic:** Single codebase, tightly coupled components, easier to deploy but harder to scale and maintain.
+> - **Microservices:** Multiple independent services, loosely coupled, easier to scale and deploy, but more complex to manage and require inter-service communication.
+
+6. **How do you ensure data consistency in a distributed system?**
+
+> **Answer:** Use distributed transactions (e.g., two-phase commit), eventual consistency models, or consensus algorithms (e.g., Paxos, Raft). Choose based on system requirements and trade-offs between consistency and availability.
+
+7. **What is the CAP theorem?**
+
+> **Answer:** The CAP theorem states that in a distributed system, you can only achieve two of the following three guarantees:
+>
+> - **Consistency:** All nodes see the same data at the same time.
+> - **Availability:** Every request receives a response, regardless of the state of any individual node.
+> - **Partition Tolerance:** The system continues to operate despite network partitions.
+
+8. **How would you calculate the time complexity of a given algorithm?**
+
+> **Answer:** Analyze how the number of operations grows with input size. Look at loops, recursion depth, and nested operations. Express it using Big-O notation (e.g., O(1), O(n), O(log n), O(n²)).
+
+9. **A poisoned candy problem: How many test subjects are needed to detect the poisoned candy from 1000 options within 1 hour?**
+
+> **Answer:** Use binary encoding. You need `log2(1000) ≈ 10` test subjects. Each candy corresponds to a binary number, and each tester represents one bit. You test all candies simultaneously and decode results using which testers get poisoned.
+
+10. **Given 100 bulbs toggled by 100 people based on divisibility rules, how many bulbs are on at the end?**
+
+> **Answer:** Bulbs with an odd number of divisors remain ON. Only perfect squares have an odd number of divisors. So, bulbs 1, 4, 9, ..., 100 (i.e., 10 bulbs) remain ON.
 
 ### 📚 Resources & Recommended Reading
 
@@ -961,7 +930,6 @@ WHERE salary < (SELECT MAX(salary) FROM employees);
 
 **🌐 Online Platforms:**
 
-- [LeetCode](https://leetcode.com/) — DSA & coding practice
 - [GeeksforGeeks](https://www.geeksforgeeks.org/) — CS concepts and Java
 - [Java Brains](https://www.youtube.com/user/koushks) — Spring & RESTful APIs (YouTube)
 - [Baeldung](https://www.baeldung.com/) — High-quality Java + Spring articles
@@ -971,23 +939,3 @@ WHERE salary < (SELECT MAX(salary) FROM employees);
 - [Docker Docs](https://docs.docker.com/) — For containerization fundamentals
 - [JWT.io](https://jwt.io/introduction) — JWT standards and debugging tool
 - [OWASP](https://owasp.org/) — Security standards and Top 10 risks
-
-3. **How would you calculate the time complexity of a given algorithm?**
-
-> **Answer:** Analyze how the number of operations grows with input size. Look at loops, recursion depth, and nested operations. Express it using Big-O notation (e.g., O(1), O(n), O(log n), O(n²)).
-
-4. **A poisoned candy problem: How many test subjects are needed to detect the poisoned candy from 1000 options within 1 hour?**
-
-> **Answer:** Use binary encoding. You need `log2(1000) ≈ 10` test subjects. Each candy corresponds to a binary number, and each tester represents one bit. You test all candies simultaneously and decode results using which testers get poisoned.
-
-5. **Given 100 bulbs toggled by 100 people based on divisibility rules, how many bulbs are on at the end?**
-
-> **Answer:** Bulbs with an odd number of divisors remain ON. Only perfect squares have an odd number of divisors. So, bulbs 1, 4, 9, ..., 100 (i.e., 10 bulbs) remain ON.
-
-1. **Explain Agile methodologies.**
-
-> **Answer:** Agile is an iterative approach to software development that focuses on collaboration, customer feedback, and small, rapid releases. Frameworks include Scrum, Kanban, XP.
-
-2. **Describe Continuous Integration and Continuous Deployment (CI/CD).**
-
-> **Answer:** CI automates code integration into a shared repo, running tests with every commit. CD automates deployment to production after CI, reducing release time and risks.
