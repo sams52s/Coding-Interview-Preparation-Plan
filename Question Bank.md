@@ -955,7 +955,7 @@ WHERE salary < (SELECT MAX(salary) FROM employees);
 
 
 
-
+</details>
 
 ### 🧪 Miscellaneous & Puzzles
 <details><summary>Click to expand Q&A</summary>
