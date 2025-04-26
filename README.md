@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/sams52s/Coding-Interview-Preparation-Plan/banner.png" alt="5-Week Java Software Engineering Interview Prep Banner" width="100%" />
+  <img src="https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/banner.png" alt="5-Week Java Software Engineering Interview Prep Banner" width="100%" />
 </p>
 
 # 📅 5-WEEK JAVA SOFTWARE ENGINEERING INTERVIEW PREPARATION PLAN
