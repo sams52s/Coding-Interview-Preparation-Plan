@@ -54,10 +54,3 @@
 - ✅ Build strong grip on Arrays and Strings patterns.
 
 ---
-
-# 📊 Optional: Progress Tracking (Manually)
-
-- You can add a small progress bar badge like:
-
-```markdown
-![Week 1 Progress](https://progress-bar.dev/0/?title=Week%201%20Progress)

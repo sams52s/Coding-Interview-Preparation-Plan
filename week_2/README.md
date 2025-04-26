@@ -63,7 +63,7 @@
 
 ## 📅 Weekly Revision + Mock Test
 - **Revision**: Review all topics covered this week.
-- [Problem List](../week_2/solution_of_week_2_coding_problem/problem_list.md)
+- [Problem List](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/week_2/solution_of_week_2_coding_problem/problem%20List.md)
 
 ---
 

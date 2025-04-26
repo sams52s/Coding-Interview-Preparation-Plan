@@ -43,8 +43,3 @@
 - ✅ Solve 20–25 problems minimum.
 
 ---
-# 📊 Optional: Progress Tracking (Manually)
-
-```markdown
-![Week 2 Progress](https://progress-bar.dev/0/?title=Week%202%20Progress)
-```

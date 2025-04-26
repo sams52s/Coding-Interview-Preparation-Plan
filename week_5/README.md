@@ -85,7 +85,7 @@
 ---
 
 ## 📅 Weekly Revision + Mock Test
-- [Problem List](../week_5/solution_of_week_5_coding_problem/problem_list.md)
+- [Problem List](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/week_5/solution_of_week_5_coding_problem/problem%20List.md)
 
 ---
 

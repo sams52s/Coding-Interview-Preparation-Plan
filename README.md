@@ -19,11 +19,11 @@ Here you will find a complete and structured plan that covers everything — fro
 
 | Week | Topics Focus | Study Plan | Problem List |
 |:----:|:------------|:-----------|:-------------|
-| 🗓️ [Week 1](week_1/README.md) | Java Fundamentals + DSA Basics | [View](week_1/README.md) | [Problem List](week_1/Problem_List.md) |
-| 🗓️ [Week 2](week_2/README.md) | Java Advanced + DSA Intermediate | [View](week_2/README.md) | [Problem List](week_2/Problem_List.md) |
-| 🗓️ [Week 3](week_3/README.md) | Spring Boot + Hibernate + REST APIs | [View](week_3/README.md) | [Problem List](week_3/Problem_List.md) |
-| 🗓️ [Week 4](week_4/README.md) | System Design + API Advanced + Behavioral | [View](week_4/README.md) | [Problem List](week_4/Problem_List.md) |
-| 🗓️ [Week 5](week_5/README.md) | Full Revision + Mock Interviews | [View](week_5/README.md) | [Problem List](week_5/Problem_List.md) |
+| 🗓️ [Week 1](week_1/README.md) | Java Fundamentals + DSA Basics | [View](week_1/README.md) | [Problem List](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/week_1/solution_of_week_1_coding_problem/problem%20List.md) |
+| 🗓️ [Week 2](week_2/README.md) | Java Advanced + DSA Intermediate | [View](week_2/README.md) | [Problem List](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/week_2/solution_of_week_2_coding_problem/problem%20List.md) |
+| 🗓️ [Week 3](week_3/README.md) | Spring Boot + Hibernate + REST APIs | [View](week_3/README.md) | [Problem List](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/week_3/solution_of_week_3_coding_problem/problem%20List.md) |
+| 🗓️ [Week 4](week_4/README.md) | System Design + API Advanced + Behavioral | [View](week_4/README.md) | [Problem List](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/week_4/solution_of_week_4_coding_problem/problem%20List.md) |
+| 🗓️ [Week 5](week_5/README.md) | Full Revision + Mock Interviews | [View](week_5/README.md) | [Problem List](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/week_5/solution_of_week_5_coding_problem/problem%20List.md) |
 
 ---
 

@@ -6,7 +6,7 @@
 
 ## 📚 Topics Covered:
 
-### [Java Syntax & Structure]() – Learn how Java code is organized and executed.
+### [Java Syntax & Structure](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Introduction%20to%20Java/README.md) – Learn how Java code is organized and executed.
 - [ ] Variables, Data Types, Operators
 - [ ] Control Flow (if-else, switch-case, loops)
 - [ ] Methods (definition, parameters, return types)
@@ -57,7 +57,7 @@
 
 ## 📅 Weekly Revision + Mock Test
 - **Revision**: Review all topics covered this week.
-- [Problem List](../week_1/solution_of_week_1_coding_problem/problem_list.md)
+- [Problem List](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/week_1/solution_of_week_1_coding_problem/problem%20List.md)
 
 ---
 
