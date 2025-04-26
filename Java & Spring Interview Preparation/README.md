@@ -1,377 +1,405 @@
+# 🚩 Java & Spring Boot Interview Preparation Checklist
 
-# 🚩 Java & Spring Interview Preparation Checklist
-
-
-## 🚀 [Introduction to Java](https://github.com/sams52s/Coding-Interview-Preparation-Plan/tree/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Introduction%20to%20Java)
 ---
-## Topics to cover:
-- [Java Basics](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Introduction%20to%20Java/Java%20Basics.md)
-- [History, Features, Evolution (Java 8 → Java 24+)](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Introduction%20to%20Java/Java%20History%2C%20Features%2C%20and%20Evolution.md)
-- [JVM, JRE, JDK – Differences & Roles](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Introduction%20to%20Java/JVM%2C%20JRE%2C%20JDK%20%E2%80%93%20Differences%20%26%20Roles.md)
-- [Java IDEs (Eclipse, IntelliJ IDEA, NetBeans)](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Introduction%20to%20Java/Java%20IDEs.md)
 
-## 🔍 OOP Concepts
-- Classes & Objects
-- Constructors & Overloading
-- Static & Instance Members
-- Inheritance, super keyword, Method Overriding
-- Abstraction & Abstract Classes
-- Interfaces & Functional Interfaces
-- Polymorphism (Compile-time & Runtime)
-- Encapsulation
-- Access Modifiers (public, private, protected, default)
+## 🚀 [Introduction to Java](https://github.com/sams52s/Coding-Interview-Preparation-Plan/tree/main/Java%20&%20Spring%20Interview%20Preparation/JAVA/Introduction%20to%20Java)
+
+> 📚 Build strong basics: language structure, compilation model, JVM, JDK, IDEs.
+
+- [ ] [Java Basics](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20&%20Spring%20Interview%20Preparation/JAVA/Introduction%20to%20Java/Java%20Basics.md)
+- [ ] [Java History, Features & Evolution](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20&%20Spring%20Interview%20Preparation/JAVA/Introduction%20to%20Java/Java%20History%2C%20Features%2C%20and%20Evolution.md)
+- [ ] [JVM vs JRE vs JDK](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20&%20Spring%20Interview%20Preparation/JAVA/Introduction%20to%20Java/JVM%2C%20JRE%2C%20JDK%20%E2%80%93%20Differences%20%26%20Roles.md)
+- [ ] [Java IDEs Overview](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20&%20Spring%20Interview%20Preparation/JAVA/Introduction%20to%20Java/Java%20IDEs.md)
+
+---
+
+## 🔍 Object-Oriented Programming (OOP) Concepts
+
+> 🎯 Master Java’s real-world modeling techniques.
+
+- [ ] Classes & Objects
+- [ ] Constructors & Overloading
+- [ ] Static vs Instance Members
+- [ ] Inheritance & `super` Keyword
+- [ ] Method Overriding
+- [ ] Abstract Classes vs Interfaces
+- [ ] Functional Interfaces
+- [ ] Compile-time vs Runtime Polymorphism
+- [ ] Encapsulation
+- [ ] Access Modifiers
+- [ ] Association, Aggregation, Composition
+
+---
 
 ## 📌 Exception Handling
-- Checked vs Unchecked Exceptions
-- `try-catch-finally`
-- Multi-catch blocks
-- `throw` vs `throws`
-- Custom Exceptions
-- Best Practices
+
+> ⚡ Safeguard Java programs against failures.
+
+- [ ] Checked vs Unchecked Exceptions
+- [ ] try-catch-finally block
+- [ ] Multi-catch block
+- [ ] throw vs throws
+- [ ] Custom Exceptions
+- [ ] Best Exception Handling Practices
+
+---
 
 ## 📚 Java Collections Framework
-- Interfaces: List, Set, Queue, Map
-- Implementations: `ArrayList`, `LinkedList`, `HashSet`, `TreeSet`, `HashMap`, `LinkedHashMap`, `TreeMap`
-- Iterator, ListIterator, Enumeration
-- Collections Utility Class
-- Comparable vs Comparator
+
+> 📦 Master Java’s built-in data structures.
+
+- [ ] Core Interfaces (List, Set, Queue, Map)
+- [ ] Implementations: `ArrayList`, `LinkedList`, `HashSet`, `TreeSet`, `HashMap`, `TreeMap`
+- [ ] Fail-fast vs Fail-safe Collections
+- [ ] Comparable vs Comparator
+- [ ] Collections Utility Class
+- [ ] Synchronized Collections
+
+---
 
 ## ✨ Generics
-- Type Parameters & Wildcards
-- Bounded Types
-- Generic Methods & Classes
 
-## 💾 Java I/O & NIO
-- File Handling (File, FileReader, BufferedReader)
-- Serialization & Deserialization
-- Java NIO (Buffers, Channels, Selectors)
+> 🧩 Build reusable code safely.
 
+- [ ] Type Parameters
+- [ ] Wildcards (`?`, `extends`, `super`)
+- [ ] Bounded Types
+- [ ] Generic Methods
+- [ ] Type Erasure Concept
+
+---
+
+## 💾 Java I/O and NIO
+
+> 🗃️ File handling, faster non-blocking operations.
+
+- [ ] Java I/O Streams (InputStream, OutputStream)
+- [ ] Readers and Writers (FileReader, BufferedReader)
+- [ ] Serialization and Deserialization
+- [ ] NIO Channels and Buffers
+- [ ] Selectors and Multiplexing
+
+---
 ## 🔄 Multithreading & Concurrency
-- Thread Lifecycle, Runnable, Callable
-- Executor Framework (ThreadPool)
-- Synchronization, Locks (ReentrantLock)
-- `wait()`, `notify()`, `notifyAll()`
-- Atomic Classes, `volatile`
-- Concurrency Utilities (`CountDownLatch`, `CyclicBarrier`, `Semaphore`)
-- CompletableFuture
+
+> ⚙️ Parallelism and high-performance Java coding.
+
+- [ ] Thread Lifecycle
+- [ ] Runnable vs Callable
+- [ ] Executor Framework (ThreadPool)
+- [ ] Synchronization, Locks (ReentrantLock)
+- [ ] wait(), notify(), notifyAll()
+- [ ] Atomic Classes
+- [ ] volatile keyword
+- [ ] CompletableFuture
+- [ ] Advanced Concurrency Utilities (CountDownLatch, CyclicBarrier, Semaphore)
+
+---
 
 ## 🔗 Lambda & Streams (Java 8+)
-- Lambda Expressions
-- Stream API (filter, map, reduce, collect)
-- Method References
-- Functional Interfaces (Predicate, Function, Consumer, Supplier)
-- Optional Class
+
+> 🚀 Modern Java programming style.
+
+- [ ] Lambda Expressions Syntax
+- [ ] Method References
+- [ ] Stream API (filter, map, reduce)
+- [ ] Collectors and Terminal Operations
+- [ ] Functional Interfaces (Predicate, Function, Supplier, Consumer)
+- [ ] Optional Class Handling
+
+---
 
 ## 🏷️ Java Annotations
-- Built-in (`@Override`, `@FunctionalInterface`, `@SuppressWarnings`)
-- Custom Annotations
-- Retention, Target, Reflection Processing
-- Meta-Annotations (`@Documented`, `@Inherited`, `@Retention`, `@Target`)
 
+> 🛠️ Metadata-driven programming.
+
+- [ ] Built-in Annotations (@Override, @SuppressWarnings)
+- [ ] Custom Annotation Creation
+- [ ] Retention and Target
+- [ ] Meta-Annotations
+
+---
 
 ## 🧠 Java Memory Management
-- Stack vs Heap Memory
-- Garbage Collection & Types (G1, ZGC, Shenandoah)
-- JVM Flags & Optimization
-- Memory Leaks, Profiling Tools (VisualVM, JProfiler)
-- Escape Analysis
 
-## 📦 Java Modules (Java 9+)
-- Introduction to JPMS
-- `module-info.java`
-- Modular Programming
+> 🧹 Optimize performance and avoid memory leaks.
+
+- [ ] Stack vs Heap Memory
+- [ ] JVM Memory Areas (Method Area, Heap, Stack, Native)
+- [ ] Garbage Collection Basics
+- [ ] GC Types (G1, ZGC, Shenandoah)
+- [ ] JVM Flags and Monitoring Tools
+
+---
+
+## 📦 Java Modules (JPMS)
+
+> 📦 Modularize your applications for Java 9+.
+
+- [ ] `module-info.java` file
+- [ ] Module Encapsulation
+- [ ] requires, exports, opens keywords
+
+---
 
 ## 🛠️ ClassLoader & Reflection
-- ClassLoader Hierarchy (Bootstrap, Extension, Application)
-- Custom ClassLoader Implementation
-- Reflection API
 
-## 🔵 Java Reflection
--  Dynamic Class & Method Invocation
--  Pros & Cons of Reflection
--  Use Cases (Frameworks, Libraries)
+> 🔍 Explore dynamic loading and runtime inspection.
 
-## 🎯 Design Patterns
-- Singleton, Factory, Abstract Factory
-- Builder, Prototype
-- Adapter, Strategy, Observer, Template
-- DAO, DTO, MVC
+- [ ] ClassLoader Hierarchy
+- [ ] Custom ClassLoader Example
+- [ ] Reflection API Usage
+- [ ] Proxy Classes in Java
 
-## ✅ Best Practices
-- Clean Code Principles
-- Code Optimization Techniques
-- Defensive Coding
-- Immutability & Exception Design
+---
 
-## 🍃 Spring Core
-- IoC & Dependency Injection (Constructor, Setter, Field)
-- Bean Scopes & Lifecycle
-- XML, Annotation, Java Configurations
-- ApplicationContext vs BeanFactory
+## 🎯 Design Patterns (Java)
 
-### Spring Core & Dependency Injection
-- IoC Container & DI Patterns (Constructor, Setter, Field)
-- Bean Lifecycle & Scopes (singleton, prototype, request, session)
-- BeanPostProcessor & BeanFactoryPostProcessor
-- Circular Dependency Resolution
-- Advanced DI Annotations (`@Lazy`, `@Primary`, `@Qualifier`, `@Lookup`)
-- Profiles & Conditional Beans (`@Profile`, `@Conditional`)
+> 🎨 Solve common architecture problems.
 
-## 📌 Spring Annotations (Comprehensive List)
-### 🌱 Core Stereotype Annotations
-- @Component
-- @Service
-- @Repository
-- @Controller
+- [ ] Singleton, Factory, Abstract Factory
+- [ ] Builder, Prototype
+- [ ] Adapter, Strategy, Observer, Template
+- [ ] DAO, DTO, MVC Patterns
 
-### ⚙️ Configuration Annotations
-- @Configuration
-- @Bean
-- @Import
-- @ImportResource
-- @ComponentScan
-- @ConfigurationProperties
-- @EnableConfigurationProperties
-- @PropertySource
+---
 
-### 🔄 Lifecycle Callback Annotations
-- @PostConstruct
-- @PreDestroy
+## ✅ Java Best Practices
 
-### 🔍 Conditional Annotations
-- @Conditional
-- @ConditionalOnClass
-- @ConditionalOnMissingBean
-- @ConditionalOnProperty
+> 🌟 Write production-grade Java code.
 
-### 🔗 Dependency Injection Annotations
-- @Autowired
-- @Qualifier
-- @Primary
-- @Lazy
-- @Value
+- [ ] Clean Code Principles
+- [ ] Immutability
+- [ ] Defensive Coding
+- [ ] Effective Exception Handling
+- [ ] Null Handling Best Practices
+- [ ] Logging Best Practices
 
-### 📐 Bean Scope & Profile Annotations
-- @Scope
-- @Profile
+---
 
-### 🗂️ Event & Asynchronous Annotations
-- @EventListener
-- @EnableAsync
-- @Async
+## 🍃 Spring Core (IoC & Dependency Injection)
 
-### ⏰ Scheduling Annotations
-- @Scheduled
-- @EnableScheduling
+> 🍃 Build modular, maintainable Spring applications.
 
-### 🔄 Transaction Management Annotations
-- @Transactional
-- @EnableTransactionManagement
+- [ ] IoC Container Overview
+- [ ] Dependency Injection Types
+- [ ] Bean Scopes and Lifecycle
+- [ ] ApplicationContext vs BeanFactory
+- [ ] Profiles and Conditional Beans
 
-### 🗃️ Caching Annotations
-- @Cacheable
-- @CachePut
-- @CacheEvict
-- @Caching
-- @EnableCaching
+---
 
-### 🌐 Web & Reactive Web Annotations
-- @EnableWebMvc
-- @EnableWebFlux
-- @RestController
-- @RequestMapping
-- @GetMapping, @PostMapping, @PutMapping, @DeleteMapping
-- @RequestBody, @ResponseBody
-- @PathVariable, @RequestParam, @RequestHeader, @CookieValue
-- @ControllerAdvice
-- @ExceptionHandler
-- @CrossOrigin
+## ⚡ Spring Boot
 
-### 📡 Spring Boot Specific Annotations
-- @SpringBootApplication
-- @EnableAutoConfiguration
-- @ConditionalOnBean
-- @ConditionalOnMissingClass
-- @ConditionalOnExpression
-- @ConditionalOnResource
-- @ConditionalOnSingleCandidate
-- @ConditionalOnWebApplication
-- @ConditionalOnNotWebApplication
+> 🚀 Rapid application development.
 
-### 🧩 AOP Annotations
-- @Aspect
-- @Before
-- @After
-- @AfterReturning
-- @AfterThrowing
-- @Around
-- @EnableAspectJAutoProxy
+- [ ] Starters and Auto-Configuration
+- [ ] `application.properties` and YAML configs
+- [ ] Profiles and Environment Setup
+- [ ] Embedded Tomcat, Jetty
+- [ ] CommandLineRunner and ApplicationRunner
 
-
-## 🚦 Spring Boot
-- Starters & Auto-Configuration
-- Application Properties & YAML
-- Profiles & Environment
-- CommandLineRunner & ApplicationRunner
-- Embedded Servers (Tomcat, Jetty)
+---
 
 ## 🌐 Spring MVC
-- DispatcherServlet Flow
-- Controllers & RequestMapping
-- REST Controllers (`@RestController`, `@RequestBody`, `@PathVariable`)
-- Exception Handling (`@ExceptionHandler`, `@ControllerAdvice`)
-- Validation (`@Valid`, BindingResult)
-- Form Handling & Data Binding
+
+> 🌍 Build REST APIs with Spring.
+
+- [ ] DispatcherServlet Architecture
+- [ ] Controllers & RequestMapping
+- [ ] REST APIs (@RestController, @RequestBody)
+- [ ] Validation (`@Valid`, `BindingResult`)
+- [ ] Global Exception Handling (`@ControllerAdvice`, `@ExceptionHandler`)
+
+---
 
 ## 🗃️ Spring Data JPA
-- Repository Interfaces (`CrudRepository`, `JpaRepository`)
-- Entities & Relationships (OneToOne, OneToMany, ManyToOne, ManyToMany)
-- Fetch Types (EAGER vs LAZY)
-- Query Methods & `@Query`
-- Transaction Management (`@Transactional`)
-- Pagination & Sorting
-- Spring Data REST
-- Spring Data JPA Auditing
-- Resolving N+1 Problem
-- Criteria API & Specifications
+
+> 💾 ORM and database interaction made easy.
+
+- [ ] JpaRepository and CrudRepository
+- [ ] Entity Relationships (OneToOne, OneToMany, ManyToOne, ManyToMany)
+- [ ] Fetch Type (LAZY vs EAGER)
+- [ ] Query Methods and JPQL
+- [ ] Transaction Management (@Transactional)
+- [ ] Solving N+1 Query Problems
+- [ ] Criteria API Basics
+
+---
 
 ## 🔐 Spring Security
-- Basic Authentication & JWT
-- OAuth2 Concepts
-- Filters & Authentication Flow
-- Security Annotations (`@PreAuthorize`, `@Secured`)
 
-## 🟠 Spring Reactive Programming
--  Reactor (`Mono`, `Flux`)
--  WebFlux & WebClient
--  Backpressure & RSocket Integration
+> 🔒 Secure Java web applications.
 
-## 🔗 Spring Integration
-- Message Channels & Endpoints
-- Spring Integration DSL
-- File Transfer & Transformation
-- Spring Cloud Stream
-- Spring Cloud Data Flow
+- [ ] Authentication and Authorization Basics
+- [ ] Security Filters and Interceptors
+- [ ] JWT Authentication
+- [ ] OAuth2 Basics
+- [ ] Secure Password Storage (BCrypt)
 
-## Spring AOP
--  Joinpoints, Pointcuts, Advice
--  Proxy Types (CGLIB vs JDK Dynamic
--  AspectJ Integration
--  Transaction Management with AOP
--  Logging & Monitoring with AOP
--  Performance Monitoring
--  Caching with AOP
+---
 
+## 🟠 Spring Reactive (WebFlux)
 
+> 🔁 Non-blocking asynchronous programming.
 
-## 🛠️ Lombok
-- Annotations (`@Getter`, `@Setter`, `@Data`, `@Builder`, `@Slf4j`)
-- Lombok & Spring Integration
+- [ ] Reactor Core (Mono, Flux)
+- [ ] WebClient for API calls
+- [ ] Reactive CRUD with R2DBC
 
-## 💼 Hibernate Integration
-- JPA vs Hibernate
-- First & Second-Level Caching
-- Lazy Initialization Issues
+---
 
-## 📡 Spring REST APIs
-- Building RESTful APIs
-- HATEOAS, HTTP Methods & Status Codes
-- Global Exception Handling in REST
-- Swagger & OpenAPI Documentation
+## 🔗 Spring Cloud
 
-## ⚙️ JVM Internals & Performance
-- Java Compilation & Class Loading
-- JIT Compiler & Garbage Collection Tuning
-- Profiling Tools (VisualVM, JProfiler)
-- Thread Dumps & Heap Dumps
+> ☁️ Microservices made easy.
 
-## 🐳 DevOps & Build Tools
-- Maven & Gradle
-- Docker & Containerization
-- CI/CD Basics
-- Logging (Logback, Log4j)
-- Spring Boot Deployment (AWS, Linux Server)
+- [ ] Service Discovery (Eureka)
+- [ ] API Gateway (Zuul, Spring Cloud Gateway)
+- [ ] Circuit Breaker (Resilience4j, Hystrix Basics)
+- [ ] Distributed Configuration (Spring Cloud Config)
 
-## 🧪 Testing
-- JUnit 5 & Mockito
-- Integration Testing
-- TestContainers
-- Spring Test (`@WebMvcTest`, `@DataJpaTest`, `@SpringBootTest`)
+---
 
-## 📖 Miscellaneous
-- Java vs Kotlin, Spring vs Spring Boot
-- Microservices Concepts
-- REST vs SOAP APIs
-- JSON & XML Serialization (Jackson, Gson)
-- Postman API Testing
+## 📦 Spring AOP (Aspect Oriented Programming)
 
-## 🔧 Additional Topics
-- Dependency Injection
-- `@Autowired`, Constructor Injection
-- Beans & Java Lifecycle
-- Classpath Management
-- Java & Spring Integration
-- Lombok & Spring Annotation Deep Dive
+> 🛡️ Modularize cross-cutting concerns.
 
-## ⚪️ Build Tools & DevOps
--  Maven (Lifecycle & Dependencies)
--  Gradle Basics
--  Docker & Containerization
+- [ ] Aspect, Advice, JoinPoint, Pointcut
+- [ ] @Aspect, @Before, @After, @Around Annotations
+- [ ] Logging, Security, Performance Monitoring using AOP
 
-## 🟡 Design Patterns
-- Singleton, Factory, Abstract Factory
-- Builder, Prototype, Adapter, Strategy, Observer, Decorator
-- Spring Patterns (Proxy/AOP, Template method)
-- MVC, DAO, DTO
-- Microservices Patterns (Circuit Breaker, API Gateway)
-- Event-Driven Architecture
-- CQRS, Saga Pattern
-- Event Sourcing
-- Domain-Driven Design (DDD)
-- Microservices Communication Patterns (REST, gRPC, GraphQL)
-- Service Discovery Patterns
-- Rate Limiting Patterns
+---
 
-## 📅 Interview Preparation Tips
-- Daily coding practice
-- Mock interviews
-- Diagram visualizations
-- Real-world scenarios & clear explanations
+## 📡 Spring REST APIs & Documentation
 
-# 🔗 Java & Spring Resources & Practice Links
+> 📡 Build and document robust APIs.
 
-## 🌐 Official Documentation
-- [Java Official Documentation](https://docs.oracle.com/en/java/)
-- [Spring Framework Official](https://spring.io/projects/spring-framework)
-- [Spring Boot Official](https://spring.io/projects/spring-boot)
-- [JUnit 5 User Guide](https://junit.org/junit5/docs/current/user-guide/)
-- [Mockito Official Documentation](https://site.mockito.org/)
-- [Hibernate ORM Documentation](https://hibernate.org/orm/documentation/)
-- [Docker Official Documentation](https://docs.docker.com/)
-- [Maven Central Repository](https://search.maven.org/)
-- [Gradle Documentation](https://docs.gradle.org/current/userguide/userguide.html)
-- [Spring Security Reference](https://spring.io/projects/spring-security)
-- [Spring Annotations Reference](https://docs.spring.io/spring-framework/reference/core/beans/annotation-config.html)
-- [RESTful API Guide](https://restfulapi.net/)
-- [Postman API Testing](https://learning.postman.com/docs/getting-started/introduction/)
+- [ ] REST Best Practices
+- [ ] HATEOAS Concepts
+- [ ] OpenAPI 3 / Swagger Integration
 
-## 📖 Tutorials & Guides
-- [Baeldung (Java & Spring Tutorials)](https://www.baeldung.com/)
-- [Java Guides](https://www.javaguides.net/)
-- [GeeksforGeeks Java](https://www.geeksforgeeks.org/java/)
-- [Java Design Patterns (Refactoring Guru)](https://refactoring.guru/design-patterns/java)
-- [FreeCodeCamp Java & Spring](https://www.freecodecamp.org/learn/java-programming/)
+---
 
-## 🎓 Courses
-- [Udemy: Java Masterclass](https://www.udemy.com/course/java-the-complete-java-developer-course/)
+## 🛢️ Hibernate ORM
 
-## 📚 Books
-- [Effective Java](https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997)
-- [Spring in Action](https://www.amazon.com/Spring-Action-Craig-Walls/dp/1617294942)
+> 🗃️ Master relational database mapping.
 
-## 💻 Practice Platforms
-- [LeetCode](https://leetcode.com/)
-- [HackerRank (Java)](https://www.hackerrank.com/domains/java)
+- [ ] Hibernate vs JPA
+- [ ] First-Level and Second-Level Caching
+- [ ] Lazy Loading vs Eager Fetching
+- [ ] Hibernate Transaction Management
 
-## 🖥️ GitHub Examples
-- [GitHub Spring Boot Examples](https://github.com/spring-projects/spring-boot/tree/main/spring-boot-samples)
+---
+
+## 🐳 Docker Basics for Java & Spring Boot
+
+> 🐳 Learn lightweight containerization.
+
+- [ ] Writing Dockerfile for Java/Spring Boot app
+- [ ] Docker Commands (`build`, `run`, `stop`)
+- [ ] Docker Compose Basics
+- [ ] Dockerizing a Simple Spring Boot Application
+
+---
+
+## 📡 Messaging & Event-Driven Architecture
+
+> 📨 Build loosely-coupled systems.
+
+- [ ] RabbitMQ Basics
+- [ ] Kafka Basics (Producer, Consumer)
+- [ ] Event Sourcing & CQRS Basics
+
+---
+
+## 🧩 GraphQL vs REST APIs (Modern APIs)
+
+> 🔍 Compare API design philosophies.
+
+- [ ] REST vs GraphQL Basic Differences
+- [ ] GraphQL Queries and Mutations
+- [ ] Spring Boot GraphQL Support (Spring for GraphQL)
+
+---
+
+## 🔭 Observability & Distributed Tracing
+
+> 🔭 Monitor and debug distributed systems.
+
+- [ ] Introduction to OpenTelemetry
+- [ ] Zipkin, Jaeger Basics
+- [ ] Distributed Log Tracing Setup
+
+---
+
+## ⚙️ JVM Internals & Performance Tuning
+
+> ⚙️ Make Java run faster!
+
+- [ ] Class Loading and JIT Compilation
+- [ ] GC Tuning Parameters
+- [ ] JVM Profiling Tools (VisualVM, JProfiler)
+
+---
+
+## 🧪 Testing Java & Spring Boot Apps
+
+> 🧪 Write robust test suites.
+
+- [ ] Unit Testing (JUnit 5)
+- [ ] Mocking (Mockito)
+- [ ] SpringBootTest, WebMvcTest
+- [ ] Integration Testing (Testcontainers)
+
+---
+
+## 📖 Miscellaneous Topics
+
+> 📚 Broader topics and comparisons.
+
+- [ ] Java vs Kotlin Overview
+- [ ] REST vs SOAP API Differences
+- [ ] JSON vs XML Serialization
+- [ ] Postman for API Testing
+- [ ] Gradle vs Maven Overview
+
+---
+
+# 📈 Progress Tracker
+
+| Section | Status | Notes |
+|:--------|:------:|:------|
+| Introduction to Java | ✅ Completed | |
+| OOP Concepts | ⏳ In Progress | |
+| Exception Handling | ❌ Pending | |
+| Collections Framework | ❌ Pending | |
+| Generics | ❌ Pending | |
+| Java I/O and NIO | ❌ Pending | |
+| Multithreading & Concurrency | ❌ Pending | |
+| Lambda & Streams | ❌ Pending | |
+| Java Annotations | ❌ Pending | |
+| Memory Management | ❌ Pending | |
+| Java Modules | ❌ Pending | |
+| ClassLoader & Reflection | ❌ Pending | |
+| Design Patterns | ❌ Pending | |
+| Java Best Practices | ❌ Pending | |
+| Spring Core | ❌ Pending | |
+| Spring Boot | ❌ Pending | |
+| Spring MVC | ❌ Pending | |
+| Spring Data JPA | ❌ Pending | |
+| Spring Security | ❌ Pending | |
+| Spring Reactive | ❌ Pending | |
+| Spring Cloud | ❌ Pending | |
+| Spring AOP | ❌ Pending | |
+| Spring REST APIs | ❌ Pending | |
+| Hibernate ORM | ❌ Pending | |
+| Docker Basics | ❌ Pending | |
+| Messaging & Event-Driven Architecture | ❌ Pending | |
+| GraphQL vs REST | ❌ Pending | |
+| Observability & Tracing | ❌ Pending | |
+| JVM Performance Tuning | ❌ Pending | |
+| Testing Java & Spring Apps | ❌ Pending | |
+| Miscellaneous Topics | ❌ Pending | |
+
+---
+
