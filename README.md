@@ -1,8 +1,17 @@
+<p align="center">
+  <img src="https://github.com/sams52s/Coding-Interview-Preparation-Plan/banner.png" alt="5-Week Java Software Engineering Interview Prep Banner" width="100%" />
+</p>
+
 # 📅 5-WEEK JAVA SOFTWARE ENGINEERING INTERVIEW PREPARATION PLAN
 
+[![Question Bank](https://img.shields.io/badge/Question_Bank-Available-brightgreen?style=for-the-badge&logo=readme&logoColor=white)](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank.md) 
+[![5-Week Plan In Progress](https://img.shields.io/badge/5_Week_Plan-In_Progress-2ea44f?style=for-the-badge&logo=dependabot&logoColor=white)](https://github.com/sams52s/Coding-Interview-Preparation-Plan/issues/7)
+
+
 Welcome!  
-This repository documents my complete 5-week self-preparation plan for Java Software Engineering interviews.  
-Feel free to follow along, suggest improvements, or fork this to build your own roadmap! 🚀
+This repository documents my complete **5-week self-preparation plan** for *Java Software Engineering* interviews.  
+It includes study materials, coding practice routines, and a full 🏆 **Interview Question Bank** covering Java, DSA, System Design, and more. 🚀
+
 
 --- 
 ## [🗓️ Week 1: Java Fundamentals + DSA Basics](week_1/README.md)
@@ -152,10 +161,21 @@ Feel free to follow along, suggest improvements, or fork this to build your own 
 - 🔥 Weekly Review + Coding Test
 - 🎯 Final Week = Full Revision + Mock Interviews
 
-## 🚀 Goal
-> By the end of 5 weeks, you will be technically strong, coding efficient, system design aware, and interview-ready for any Java Software Engineering role!
+---
+
+## 📑 Interview Question Bank
+I have also compiled a **Comprehensive Question Bank** covering multiple key topics like Java, Spring, DSA, System Design, SQL, REST APIs, Microservices, and more.
+
+Feel free to check it out for quick revision and self-assessment!
+
+🔗 [Click here to view the Full Question Bank](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank.md)
+
+- 📚 Topics covered: 
+> Programming Fundamentals, Core Java, Collections, Multithreading, Spring Boot, Spring Data JPA, Microservices, REST APIs, Advanced Topics, DSA, System Design, SQL, Web, and more!
 
 ---
+
+
 
 ## 📚 Resources & Study Materials
 
@@ -179,7 +199,6 @@ Feel free to follow along, suggest improvements, or fork this to build your own 
 - [Java Guides](https://www.javaguides.net/)
 - [GeeksforGeeks Java](https://www.geeksforgeeks.org/java/)
 - [Java Design Patterns (Refactoring Guru)](https://refactoring.guru/design-patterns/java)
-- [FreeCodeCamp Java & Spring](https://www.freecodecamp.org/learn/java-programming/)
 
 ### 🎓 Courses
 - [Udemy: Java Masterclass](https://www.udemy.com/course/java-the-complete-java-developer-course/)
@@ -191,6 +210,9 @@ Feel free to follow along, suggest improvements, or fork this to build your own 
 ### 💻 Practice Platforms
 - [LeetCode](https://leetcode.com/)
 - [HackerRank (Java)](https://www.hackerrank.com/domains/java)
+- [CodeSignal](https://codesignal.com/)
 
-### 🖥️ GitHub Examples
-- [GitHub Spring Boot Examples](https://github.com/spring-projects/spring-boot/tree/main/spring-boot-samples)
+---
+
+## 🚀 Goal
+> By the end of 5 weeks, you will be technically strong, coding efficient, system design aware, and interview-ready for any Java Software Engineering role!
