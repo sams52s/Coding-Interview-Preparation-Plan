@@ -144,53 +144,73 @@ This series breaks down the Java Collection Framework with in-depth yet beginner
 ## 📚 Additional Resources
 
 ### Official Documentation
-- 📘 [Oracle Java Collection Docs](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/package-summary.html) - Comprehensive API reference with method details and examples
-- 📘 [Java Tutorials: Collections](https://docs.oracle.com/javase/tutorial/collections/) - Oracle's official collection framework tutorials with step-by-step guides
-- 📘 [JDK Enhancement Proposals (JEPs)](https://openjdk.org/projects/jdk/) - Track evolution of collections in recent Java versions
+- 📘 [Oracle Java Collection Docs](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/package-summary.html)
+- 📘 [Java Tutorials: Collections](https://docs.oracle.com/javase/tutorial/collections/)
+- 📘 [JDK Enhancement Proposals (JEPs)](https://openjdk.org/projects/jdk/)
 
 ### Tutorials & Articles
-- 📝 [Baeldung on Java Collections](https://www.baeldung.com/java-collections) - Practical, in-depth tutorials with modern coding practices
-- 📝 [GeeksforGeeks Collections](https://www.geeksforgeeks.org/collections-in-java/) - Excellent visualizations and interview-focused explanations
-- 📝 [Java Collections Cheat Sheet](https://www.jrebel.com/blog/java-collections-cheat-sheet) - Quick reference guide with time complexity information
-- 📝 [DZone Collections Refcard](https://dzone.com/refcardz/java-collections) - Concise overview of all major collection classes
+- 📝 [Baeldung on Java Collections](https://www.baeldung.com/java-collections)
+- 📝 [GeeksforGeeks Collections](https://www.geeksforgeeks.org/collections-in-java/)
+- 📝 [Java Collections Cheat Sheet](https://www.jrebel.com/blog/java-collections-cheat-sheet)
+- 📝 [DZone Collections Refcard](https://dzone.com/refcardz/java-collections)
 
 ### Video Resources
-- 🎥 [Java Collections Framework by Telusko](https://www.youtube.com/watch?v=rI4kdGLaUiQ&list=PLsyeobzWxl7oJj5BXYF088REBm-K4c_SR) - Beginner-friendly visual explanations
-- 🎥 [Java Collections In-Depth by Cave of Programming](https://www.youtube.com/watch?v=GdAon80-0KA&list=PL27BCE863B6A864E3) - Detailed walkthrough with real-world applications
-- 🎥 [Collections Framework Performance Analysis](https://www.youtube.com/watch?v=sz5EEFpgwLc) - Deep dive into performance characteristics
+- 🎥 [Java Collections Framework by Telusko](https://www.youtube.com/watch?v=rI4kdGLaUiQ&list=PLsyeobzWxl7oJj5BXYF088REBm-K4c_SR)
+- 🎥 [Java Collections In-Depth by Cave of Programming](https://www.youtube.com/watch?v=GdAon80-0KA&list=PL27BCE863B6A864E3)
+- 🎥 [Collections Framework Performance Analysis](https://www.youtube.com/watch?v=sz5EEFpgwLc)
 
 ### Practice Resources
-- 🧪 [LeetCode Collections Problems](https://leetcode.com/tag/array/) - Algorithmic challenges using arrays and collections
-- 🧪 [HackerRank Java Collections](https://www.hackerrank.com/domains/java?filters%5Bsubdomains%5D%5B%5D=java-data-structure) - Interactive coding challenges with automatic validation
-- 🧪 [Project Euler](https://projecteuler.net/) - Mathematical problems that exercise collection performance optimization
-- 🧪 [Java Collections Visualizer](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html) - Interactive tool for visualizing data structures
+- 🧪 [LeetCode Collections Problems](https://leetcode.com/tag/array/)
+- 🧪 [HackerRank Java Collections](https://www.hackerrank.com/domains/java?filters%5Bsubdomains%5D%5B%5D=java-data-structure)
+- 🧪 [Project Euler](https://projecteuler.net/)
+- 🧪 [Java Collections Visualizer](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
 
 ### Books
-- 📚 **"Effective Java"** by Joshua Bloch - Contains critical best practices for collections (Items 25-33)
-- 📚 **"Java Generics and Collections"** by Maurice Naftalin & Philip Wadler - Deep theoretical and practical coverage
-- 📚 **"Java Performance: The Definitive Guide"** by Scott Oaks - Advanced collection performance tuning
-- 📚 **"Data Structures and Algorithms in Java"** by Robert Lafore - Fundamental understanding of underlying concepts
+- 📚 **"Effective Java"** by Joshua Bloch
+- 📚 **"Java Generics and Collections"** by Maurice Naftalin & Philip Wadler
+- 📚 **"Java Performance: The Definitive Guide"** by Scott Oaks
+- 📚 **"Data Structures and Algorithms in Java"** by Robert Lafore
 
 ### Community Resources
-- 💬 [Stack Overflow Java Collections Tag](https://stackoverflow.com/questions/tagged/java-collections) - Common problems and solutions
-- 💬 [Reddit r/java](https://www.reddit.com/r/java/) - Discussions about Java including collection implementations
-- 💬 [Java Collections Framework Discussions on GitHub](https://github.com/openjdk/jdk/tree/master/src/java.base/share/classes/java/util) - Source code and issues
+- 💬 [Stack Overflow Java Collections Tag](https://stackoverflow.com/questions/tagged/java-collections) - Q&A platform with numerous collection-related problems and solutions
+- 💬 [Reddit r/java](https://www.reddit.com/r/java/) - Active community discussing Java trends, challenges, and solutions
+- 💬 [Java Collections Framework Discussions on GitHub](https://github.com/openjdk/jdk/tree/master/src/java.base/share/classes/java/util) - Source code and discussions from core contributors
+- 💬 [Java User Groups (JUGs)](https://www.oracle.com/java/user-groups/) - Local communities of Java developers worldwide
+- 💬 [Java Discord](https://discord.com/invite/java) - Real-time discussions and help from Java developers
+- 💬 [DZone Java Zone](https://dzone.com/java-jdk-development-tutorials-tools-news) - Articles and discussions from experienced Java developers
 
 ### Advanced Topics
-- 🔬 [Custom Collection Implementations](https://www.baeldung.com/java-custom-collection) - Creating specialized collections
-- 🔬 [Eclipse Collections](https://www.eclipse.org/collections/) - High-performance collection extensions
-- 🔬 [Guava Collections](https://github.com/google/guava/wiki/CollectionUtilitiesExplained) - Google's enhanced collections library
-- 🔬 [FastUtil](https://fastutil.di.unimi.it/) - Fast and compact specialized collections for primitive types
+#### Specialized Libraries
+- 🔬 [Eclipse Collections](https://www.eclipse.org/collections/) - Rich, performant collection APIs with primitive specializations
+- 🔬 [Guava Collections](https://github.com/google/guava/wiki/CollectionUtilitiesExplained) - Google's core libraries for Java with extended collection utilities
+- 🔬 [FastUtil](https://fastutil.di.unimi.it/) - Fast & compact specialized collections that extend the Java Collections Framework
+- 🔬 [Apache Commons Collections](https://commons.apache.org/proper/commons-collections/) - Extends the Java Collections Framework with valuable utilities
+- 🔬 [Koloboke](https://koloboke.com/) - Java Collections till Java 8 with zero overhead and advanced features
+
+#### Collection Internals & Implementation
+- 🔬 [Custom Collection Implementations](https://www.baeldung.com/java-custom-collection) - Tutorial on building your own collections
+- 🔬 [Collection Internals Series](https://www.baeldung.com/java-collections-complexity) - Deep dive into implementation details
+- 🔬 [Java Collections Source Code](https://github.com/openjdk/jdk/tree/master/src/java.base/share/classes/java/util) - Study the original implementations
+
+#### Performance Tools
+- 🔬 [JMH (Java Microbenchmark Harness)](https://github.com/openjdk/jmh) - Framework for benchmarking Java code including collections
+- 🔬 [VisualVM](https://visualvm.github.io/) - Visual tool for monitoring Java application memory usage
+- 🔬 [JITWatch](https://github.com/AdoptOpenJDK/jitwatch) - Analyze the JIT compiler optimizations on collection operations
+
+#### Interactive Learning
+- 🔬 [Java Collections Visualizer](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html) - Visual representation of collection operations
+- 🔬 [Big-O Cheat Sheet](https://www.bigocheatsheet.com/) - Compare algorithm complexities across collections
+- 🔬 [Collection Streams Playground](https://stackblitz.com/@code-with-random/java-stream-api-examples) - Interactive environment for streams
 
 ---
 
 ## ⏭️ What's Next
 
-After this folder:
-
-- 📦 Dive into `java.util.stream` and functional patterns
-- 🧠 Learn how to design custom collections using generics
-- 💥 Explore memory optimization and serialization with collections
+- 📦 Dive into `java.util.stream` and functional patterns with collections
+- 🧠 Learn how to design custom collections using generics and type-safety
+- 💥 Explore memory optimization techniques and serialization with collections
+- 🔄 Master concurrent collection patterns for high-performance applications
+- 📱 Investigate Android-specific collection adaptations and performance considerations
 
 ---
 
