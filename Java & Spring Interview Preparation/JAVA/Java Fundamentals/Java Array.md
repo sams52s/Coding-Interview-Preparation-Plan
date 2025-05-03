@@ -1,4 +1,4 @@
-# 📘 Advanced Guide to Arrays in Java
+# 📘 Arrays in Java
 
 ## 🔍 Overview
 Arrays in Java are foundational data structures that store a fixed-size collection of elements of the same type. While simple in nature, arrays have deep performance implications and many advanced features worth understanding.
