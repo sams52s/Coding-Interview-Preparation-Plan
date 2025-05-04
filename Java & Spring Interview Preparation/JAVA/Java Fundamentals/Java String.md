@@ -94,6 +94,218 @@ System.out.println(s); // now prints "Java Language"
 
 ---
 
+## 🚀 5.1. String Immutability & DSA Considerations
+
+When solving algorithm problems, string immutability has significant performance implications:
+
+### 🔍 Time Complexity of Common String Operations
+
+| Operation                | Time Complexity | Space Complexity | Notes                                    |
+|--------------------------|-----------------|------------------|------------------------------------------|
+| Access by index (charAt) | O(1)            | O(1)             | Direct access to character array         |
+| String concatenation (+) | O(n+m)          | O(n+m)           | Creates new string of combined length    |
+| substring(begin, end)    | O(end-begin)    | O(end-begin)     | Java 7+ copies the characters            |
+| contains()               | O(n*m)          | O(1)             | n = string length, m = pattern length    |
+| indexOf()                | O(n*m)          | O(1)             | Naive implementation                     |
+| equals()                 | O(n)            | O(1)             | Must check every character               |
+| startsWith(), endsWith() | O(n)            | O(1)             | In worst case                            |
+
+### 🧩 Common String Algorithm Patterns
+
+1. **Sliding Window**:
+   ```java
+   // Find longest substring without repeating characters
+   public int lengthOfLongestSubstring(String s) {
+       int n = s.length();
+       Set<Character> set = new HashSet<>();
+       int maxLength = 0, i = 0, j = 0;
+       
+       while (i < n && j < n) {
+           if (!set.contains(s.charAt(j))) {
+               set.add(s.charAt(j++));
+               maxLength = Math.max(maxLength, j - i);
+           } else {
+               set.remove(s.charAt(i++));
+           }
+       }
+       return maxLength;
+   }
+   ```
+
+2. **Two Pointers**:
+   ```java
+   // Check if string is palindrome
+   public boolean isPalindrome(String s) {
+       int left = 0, right = s.length() - 1;
+       while (left < right) {
+           if (s.charAt(left) != s.charAt(right)) {
+               return false;
+           }
+           left++;
+           right--;
+       }
+       return true;
+   }
+   ```
+
+3. **String Builder for In-place Modification**:
+   ```java
+   // Reverse words in a string
+   public String reverseWords(String s) {
+       String[] words = s.trim().split("\\s+");
+       StringBuilder result = new StringBuilder();
+       
+       for (int i = words.length - 1; i >= 0; i--) {
+           result.append(words[i]);
+           if (i > 0) result.append(" ");
+       }
+       
+       return result.toString();
+   }
+   ```
+
+### 🔥 DSA Optimization Tips
+
+1. **Avoid String Concatenation in Loops**:
+   ```java
+   // Bad - O(n²) time complexity
+   String result = "";
+   for (int i = 0; i < n; i++) {
+       result += s.charAt(i);
+   }
+   
+   // Good - O(n) time complexity
+   StringBuilder sb = new StringBuilder();
+   for (int i = 0; i < n; i++) {
+       sb.append(s.charAt(i));
+   }
+   String result = sb.toString();
+   ```
+
+2. **Character Frequency Counting**:
+   ```java
+   // Count character frequency (for strings with ASCII characters)
+   public Map<Character, Integer> getFrequencyMap(String s) {
+       // More efficient for ASCII strings
+       int[] freq = new int[128]; 
+       for (char c : s.toCharArray()) {
+           freq[c]++;
+       }
+       
+       // For Unicode strings
+       Map<Character, Integer> map = new HashMap<>();
+       for (char c : s.toCharArray()) {
+           map.put(c, map.getOrDefault(c, 0) + 1);
+       }
+       return map;
+   }
+   ```
+
+3. **String Comparison in Algorithms**:
+   ```java
+   // Use equals() not == for string comparison
+   String a = new String("test");
+   String b = new String("test");
+   
+   if (a.equals(b)) {  // Correct: compares content
+       // Do something
+   }
+   
+   if (a == b) {  // Incorrect: compares references
+       // Will not execute
+   }
+   ```
+
+4. **String Hashing for Fast Comparison**:
+   ```java
+   // Rolling hash for pattern matching (Rabin-Karp algorithm)
+   public int rabinKarp(String text, String pattern) {
+       int m = pattern.length();
+       int n = text.length();
+       int patternHash = 0, textHash = 0;
+       int prime = 101;
+       int power = 1;
+       
+       // Calculate initial hash values
+       for (int i = 0; i < m; i++) {
+           patternHash = (patternHash + pattern.charAt(i)) % prime;
+           textHash = (textHash + text.charAt(i)) % prime;
+           if (i > 0) power = (power * 256) % prime;
+       }
+       
+       for (int i = 0; i <= n - m; i++) {
+           if (patternHash == textHash) {
+               // Potential match, verify character by character
+               boolean match = true;
+               for (int j = 0; j < m; j++) {
+                   if (text.charAt(i + j) != pattern.charAt(j)) {
+                       match = false;
+                       break;
+                   }
+               }
+               if (match) return i;
+           }
+           
+           // Calculate rolling hash for next window
+           if (i < n - m) {
+               textHash = (256 * (textHash - text.charAt(i) * power) + text.charAt(i + m)) % prime;
+               if (textHash < 0) textHash += prime;
+           }
+       }
+       
+       return -1; // Not found
+   }
+   ```
+
+5. **Trie Data Structure for String Problems**:
+   ```java
+   // Efficient prefix search with Trie
+   class TrieNode {
+       TrieNode[] children = new TrieNode[26]; // For lowercase English letters
+       boolean isEndOfWord;
+   }
+   
+   class Trie {
+       TrieNode root = new TrieNode();
+       
+       // Insert a word into the trie - O(word length)
+       public void insert(String word) {
+           TrieNode node = root;
+           for (char c : word.toCharArray()) {
+               int index = c - 'a';
+               if (node.children[index] == null) {
+                   node.children[index] = new TrieNode();
+               }
+               node = node.children[index];
+           }
+           node.isEndOfWord = true;
+       }
+       
+       // Search for exact word - O(word length)
+       public boolean search(String word) {
+           TrieNode node = getNode(word);
+           return node != null && node.isEndOfWord;
+       }
+       
+       // Check if any word starts with prefix - O(prefix length)
+       public boolean startsWith(String prefix) {
+           return getNode(prefix) != null;
+       }
+       
+       private TrieNode getNode(String word) {
+           TrieNode node = root;
+           for (char c : word.toCharArray()) {
+               int index = c - 'a';
+               if (node.children[index] == null) return null;
+               node = node.children[index];
+           }
+           return node;
+       }
+   }
+   ```
+
+---
+
 ## 🔁 6. StringBuilder vs StringBuffer vs String
 
 | Feature           | String       | StringBuilder    | StringBuffer     |
