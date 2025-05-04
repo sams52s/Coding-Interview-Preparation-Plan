@@ -34,20 +34,22 @@ This documentation provides a progressive roadmap through the **fundamentals of 
 
 ## 📂 Contents
 
-1. [Java Syntax Fundamentals](./Java-Syntax-Fundamentals.md)
-2. [Data Types and Variables](./Data-Types-and-Variables.md)
-3. [Operators and Control Flow](./Operators-and-Control-Flow.md)
-4. [Classes and Objects](./Classes-and-Objects.md)
-5. [Methods and Constructors](./Methods-and-Constructors.md)
-6. [Inheritance and Polymorphism](./Inheritance-and-Polymorphism.md)
-7. [Interfaces and Abstract Classes](./Interfaces-and-Abstract-Classes.md)
-8. [Exception Handling](./Exception-Handling.md)
-9. [Java Collections Framework](./Collections-Framework.md)
-10. [Generics](./Generics.md)
-11. [Multithreading](./Multithreading.md)
-12. [Lambda Expressions](./Lambda-Expressions.md)
-13. [Java I/O Operations](./IO-Operations.md)
-14. [Java 8+ Features](./Java8-Features.md)
+1. [Java Basics](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Fundamentals/Java%20Basics.md)
+2. [Java Syntax Fundamentals](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Fundamentals/Java%20Syntax%20%26%20Structure.md)
+3. [JVM, JRE, JDK – Differences, Roles & Execution Flow](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Fundamentals/JVM%2C%20JRE%2C%20JDK%20%E2%80%93%20Differences%20%26%20Roles.md)
+4. [Java History, Features, and Evolution (Java 8 → Java 24+)](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Fundamentals/Java%20History%2C%20Features%2C%20and%20Evolution.md)
+5. [Java IDEs](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Fundamentals/Java%20IDEs.md)
+6. [Data Types and Variables](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Fundamentals/Java%20Variables%2C%20Data%20Types%20and%20Operators.md)
+7. [Java Type System and Modifiers](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Fundamentals/Java%20Type%20System%20and%20Modifiers.md)
+8. [Java Methods](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Fundamentals/Java%20Methods.md)
+9. [Java Control Flow](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Fundamentals/Java%20Control%20Flow.md)
+10. [this vs super Keywords in Java](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Fundamentals/%60this%60%20vs%20%60super%60%20Keywords%20in%20Java.md)
+11. [Java String](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Fundamentals/Java%20String.md)
+12. [Arrays in Java](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Fundamentals/Java%20Array.md)
+13. [Final Keyword in Java](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Fundamentals/Final%20Keyword%20in%20Java.md)
+14. [Java Static vs Non-Static Members](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Fundamentals/%20Java%20Static%20vs%20Non-Static%20Members.md)
+15. [Java Memory Management & Garbage Collection](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Fundamentals/%20Java%20Memory%20Management%20%26%20Garbage%20Collection.md)
+
 
 > 📌 Each file is modular and includes: 
 > - Conceptual explanations
@@ -56,6 +58,8 @@ This documentation provides a progressive roadmap through the **fundamentals of 
 > - Interview-style questions and answers
 
 ---
+## 📂 [Java Collection Framework](https://github.com/sams52s/Coding-Interview-Preparation-Plan/tree/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework)
+## 📂 [Java OOP](https://github.com/sams52s/Coding-Interview-Preparation-Plan/tree/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/OOP)
 
 ## 🚀 Quick Start
 
