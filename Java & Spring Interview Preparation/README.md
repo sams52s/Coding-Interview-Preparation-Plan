@@ -372,11 +372,11 @@
 
 | Section | Status | Notes |
 |:--------|:------:|:------|
-| Introduction to Java | ✅ Completed | |
-| OOP Concepts | ⏳ In Progress | |
-| Exception Handling | ❌ Pending | |
-| Collections Framework | ❌ Pending | |
-| Generics | ❌ Pending | |
+| Introduction to Java | ✅ Completed | [Java Fundamentals](https://github.com/sams52s/Coding-Interview-Preparation-Plan/tree/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Fundamentals) |
+| OOP Concepts | ✅ Completed  | [OOP Concepts](https://github.com/sams52s/Coding-Interview-Preparation-Plan/tree/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/OOP) |
+| Exception Handling | ✅ Completed | [Exception Handling](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Exception%20Handling.md) |
+| Collections Framework | ✅ Completed | [Collections Framework Introduction](https://github.com/sams52s/Coding-Interview-Preparation-Plan/tree/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework) |
+| Generics | ⏳ In Progress | |
 | Java I/O and NIO | ❌ Pending | |
 | Multithreading & Concurrency | ❌ Pending | |
 | Lambda & Streams | ❌ Pending | |
