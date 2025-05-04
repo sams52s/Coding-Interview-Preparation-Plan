@@ -9,8 +9,8 @@
 
 | #  | Problem                                           |  Source  |                                         Link                                          | Difficulty  | Status | My Solution  |
 |:--:|:--------------------------------------------------|:--------:|:-------------------------------------------------------------------------------------:|:-----------:|:------:|:------------:|
-| 1  | 🧮 Two Sum                                        | LeetCode |                    [Link](https://leetcode.com/problems/two-sum/)                     |    Easy     |  [✅]   | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/TwoSum.java) |
-| 2  | 📈 Maximum Subarray                               | LeetCode |                [Link](https://leetcode.com/problems/maximum-subarray/)                | Easy-Medium |  [✅]   | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/MaxSubArray.java) |
+| 1  | 🧮 Two Sum                                        | LeetCode |                    [Link](https://leetcode.com/problems/two-sum/)                     |    Easy     |  ✅   | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/TwoSum.java) |
+| 2  | 📈 Maximum Subarray                               | LeetCode |                [Link](https://leetcode.com/problems/maximum-subarray/)                | Easy-Medium |  ✅   | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/MaxSubArray.java) |
 | 3  | 🔎 Contains Duplicate                             | LeetCode |               [Link](https://leetcode.com/problems/contains-duplicate/)               |    Easy     |  [ ]   | [Solution]() |
 | 4  | 💰 Best Time to Buy and Sell Stock                | LeetCode |        [Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)         | Easy-Medium |  [ ]   | [Solution]() |
 | 5  | 🛒 Product of Array Except Self                   | LeetCode |          [Link](https://leetcode.com/problems/product-of-array-except-self/)          |   Medium    |  [ ]   | [Solution]() |

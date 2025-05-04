@@ -71,8 +71,7 @@
 
 ### 🧪 Practice Focus for this Week
 
-- Solve 2–3 LeetCode/HackerRank/Codeforces/Codechef problems daily.
-- Suggested LeetCode Topics: Arrays 101, String problems, Easy recursion.
+- Solve 2–3 LeetCode/HackerRank/Codeforces/Codechef problems daily. Suggested LeetCode Topics: Arrays 101, String problems, Easy recursion. | [Problem List](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/problem%20List.md)
 - Mini Project (Optional): Build a "Student Record Management" mini app (just using classes, arrays). | [MY PROJECT: Student Record Management](https://github.com/sams52s/Coding-Interview-Preparation-Plan/tree/main/week_1/StudentRecordManagement)
 
 ---
