@@ -34,23 +34,24 @@ This series breaks down the Java Collection Framework with in-depth yet beginner
 
 ## 📂 Contents
 
-1. [Collection Framework Introduction](./01_Collection_Framework_Introduction.md)
-2. [Collection Interfaces](./02_Collection_Interfaces.md)
-3. [List Interface](./03_List_Interface.md)
-4. [Set Interface](./04_Set_Interface.md)
-5. [Queue and Deque](./05_Queue_and_Deque.md)
-6. [Map Interface](./06_Map_Interface.md)
-7. [Iterator and Iterable](./07_Iterator_and_Iterable.md)
-8. [Collections vs Collection](./08_Collections_vs_Collection.md)
-9. [Comparable vs Comparator](./09_Comparable_vs_Comparator.md)
-10. [Collections Utility Class](./10_Collections_Utility_Class.md)
-11. [Sorting and Searching](./11_Sorting_and_Searching.md)
-12. [Performance Comparison Table](./12_Performance_Comparison_Table.md)
-13. [Concurrent Collections](./13_Concurrent_Collections.md)
-14. [Synchronization and FailFast](./14_Synchronization_and_FailFast.md)
-15. [Immutable Collections](./15_Immutable_Collections.md)
-16. [Best Practices](./16_Best_Practices.md)
-17. [Interview Questions and Answers](./17_Interview_Questions_and_Answers.md)
+1. [Collection Framework Introduction](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/01_Collection_Framework_Introduction.md)
+2. [Collection Interfaces](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/02_Collection_Interfaces.md)
+3. [List Interface](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/03_List_Interface.md)
+4. [Set Interface](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/04_Set_Interface.md)
+5. [Queue and Deque](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/05_Queue_and_Deque.md)
+6. [Map Interface](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/06_Map_Interface.md)
+7. [Iterator and Iterable](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/07_Iterator_and_Iterable.md)
+8. [Collections vs Collection](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/08_Collections_vs_Collection.md)
+9. [Comparable vs Comparator](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/09_Comparable_vs_Comparator.md)
+10. [Collections Utility Class](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/10_Collections_Utility_Class.md)
+11. [Sorting and Searching](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/11_Sorting_and_Searching.md)
+12. [Performance Comparison Table](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/12_Performance_Comparison_Table.md)
+13. [Concurrent Collections](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/13_Concurrent_Collections.md)
+14. [Synchronization and FailFast](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/14_Synchronization_and_FailFast.md)
+15. [Immutable Collections](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/15_Immutable_Collections.md)
+16. [Best Practices](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/16_Best_Practices.md)
+17. [Interview Questions and Answers](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/17_Interview_Questions_and_Answers.md)
+18. [Problem List](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/problem%20List.md)
 
 > Each file includes diagrams, use cases, code samples, trade-offs, and interview-ready notes.
 
@@ -58,10 +59,10 @@ This series breaks down the Java Collection Framework with in-depth yet beginner
 
 ## 🚀 Quick Start
 
-- **🧱 Beginner?** Start with [Collection Framework Introduction](./01_Collection_Framework_Introduction.md)
-- **🎯 Interview prep?** Go straight to [Interview Questions and Answers](./17_Interview_Questions_and_Answers.md)
-- **🔍 Looking for usage guidance?** Check [Best Practices](./16_Best_Practices.md)
-- **⚖️ Comparing collections?** Refer to [Performance Comparison Table](./12_Performance_Comparison_Table.md)
+- **🧱 Beginner?** Start with [Collection Framework Introduction](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/01_Collection_Framework_Introduction.md)
+- **🎯 Interview prep?** Go straight to [Interview Questions and Answers](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/17_Interview_Questions_and_Answers.md)
+- **🔍 Looking for usage guidance?** Check [Best Practices](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/16_Best_Practices.md)
+- **⚖️ Comparing collections?** Refer to [Performance Comparison Table](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/12_Performance_Comparison_Table.md)
 
 ---
 
