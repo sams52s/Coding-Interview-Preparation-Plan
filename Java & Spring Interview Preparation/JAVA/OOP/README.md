@@ -37,7 +37,7 @@ Object-Oriented Programming (OOP) is a programming paradigm that uses "objects" 
 - [Composition vs Inheritance](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/OOP/Inheritance%20vs%20Composition%20in%20OOP.md)
 - [SOLID Principles](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/OOP/SOLID%20Principles%20in%20Java%20OOP.md)
 
-- 17. [Interview Questions and Answers](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/17_Interview_Questions_and_Answers.md)
+- [Interview Questions and Answers](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/OOP/Interview%20Questions%20and%20Answers.md)
 
 > Each file includes diagrams, use cases, code samples, trade-offs, and interview-ready notes.
 
