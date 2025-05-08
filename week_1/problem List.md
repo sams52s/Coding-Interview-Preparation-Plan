@@ -11,12 +11,12 @@
 |:--:|:--------------------------------------------------|:--------:|:-------------------------------------------------------------------------------------:|:-----------:|:------:|:------------:|
 | 1  | 🧮 Two Sum                                        | LeetCode |                    [Link](https://leetcode.com/problems/two-sum/)                     |    Easy     |  ✅   | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/TwoSum.java) |
 | 2  | 📈 Maximum Subarray                               | LeetCode |                [Link](https://leetcode.com/problems/maximum-subarray/)                | Easy-Medium |  ✅   | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/MaxSubArray.java) |
-| 3  | 🔎 Contains Duplicate                             | LeetCode |               [Link](https://leetcode.com/problems/contains-duplicate/)               |    Easy     |  [ ]   | [Solution]() |
-| 4  | 💰 Best Time to Buy and Sell Stock                | LeetCode |        [Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)         | Easy-Medium |  [ ]   | [Solution]() |
-| 5  | 🛒 Product of Array Except Self                   | LeetCode |          [Link](https://leetcode.com/problems/product-of-array-except-self/)          |   Medium    |  [ ]   | [Solution]() |
-| 6  | 🔄 Rotate Array                                   | LeetCode |                  [Link](https://leetcode.com/problems/rotate-array/)                  |   Medium    |  [ ]   | [Solution]() |
-| 7  | 🧹 Move Zeroes                                    | LeetCode |                  [Link](https://leetcode.com/problems/move-zeroes/)                   |    Easy     |  [ ]   | [Solution]() |
-| 8  | ➕ Plus One                                        | LeetCode |                    [Link](https://leetcode.com/problems/plus-one/)                    |    Easy     |  [ ]   | [Solution]() |
+| 3  | 🔎 Contains Duplicate                             | LeetCode |               [Link](https://leetcode.com/problems/contains-duplicate/)               |    Easy     |  ✅    | [Solution]() |
+| 4  | 💰 Best Time to Buy and Sell Stock                | LeetCode |        [Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)         | Easy-Medium |  ✅    | [Solution]() |
+| 5  | 🛒 Product of Array Except Self                   | LeetCode |          [Link](https://leetcode.com/problems/product-of-array-except-self/)          |   Medium    |  ✅    | [Solution]() |
+| 6  | 🔄 Rotate Array                                   | LeetCode |                  [Link](https://leetcode.com/problems/rotate-array/)                  |   Medium    |  ✅    | [Solution]() |
+| 7  | 🧹 Move Zeroes                                    | LeetCode |                  [Link](https://leetcode.com/problems/move-zeroes/)                   |    Easy     |  ✅    | [Solution]() |
+| 8  | ➕ Plus One                                        | LeetCode |                    [Link](https://leetcode.com/problems/plus-one/)                    |    Easy     |  ✅    | [Solution]() |
 | 9  | 🔗 Merge Sorted Array                             | LeetCode |               [Link](https://leetcode.com/problems/merge-sorted-array/)               |    Easy     |  [ ]   | [Solution]() |
 | 10 | 👻 Find All Numbers Disappeared in an Array       | LeetCode |    [Link](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)    |    Easy     |  [ ]   | [Solution]() |
 | 11 | 🔄 Reverse String                                 | LeetCode |                 [Link](https://leetcode.com/problems/reverse-string/)                 |    Easy     |  [ ]   | [Solution]() |
