@@ -273,3 +273,56 @@ JDK ⊃ JRE ⊃ JVM
 
 - ❓ **What are JVM Flight Recordings and how can they help in troubleshooting?**
   > JVM Flight Recorder (JFR) is a low-overhead monitoring tool that collects diagnostic and profiling data from a running Java application. JFR captures detailed information about GC events, method profiling, thread activity, I/O operations, and memory allocations. This data helps identify performance bottlenecks, excessive memory usage, lock contention issues, and inefficient code paths with minimal impact on application performance.
+
+### Performance and Optimization
+
+- ❓ **How does the JVM handle String interning?**
+  > String interning is the process of storing only one copy of each distinct string value in a pool:
+  ```java
+  String s1 = "hello";          // Goes to string pool
+  String s2 = new String("hello"); // Creates new object
+  String s3 = s2.intern();      // Adds to pool or returns existing
+  System.out.println(s1 == s3); // true
+  ```
+
+- ❓ **What is the difference between -XX:+UseCompressedOops and -XX:+UseCompressedClassPointers?**
+  > - `CompressedOops`: Compresses object references to reduce heap memory usage
+  > - `CompressedClassPointers`: Compresses class metadata pointers in Metaspace
+  > Both use 32-bit offsets instead of 64-bit pointers when possible, improving memory efficiency.
+
+- ❓ **How does JVM handle native memory allocation?**
+  > JVM manages native memory through:
+  ```java
+  // Direct ByteBuffer allocation
+  ByteBuffer buffer = ByteBuffer.allocateDirect(1024);
+  
+  // Native memory tracking
+  // Use -XX:NativeMemoryTracking=summary|detail
+  // jcmd <pid> VM.native_memory
+  ```
+
+### Security and Monitoring
+
+- ❓ **What are the different types of JVM crashes and how to diagnose them?**
+  > Common crash types and diagnosis:
+  ```bash
+  # Crash dump location
+  -XX:ErrorFile=/path/to/hs_err_pid%p.log
+  
+  # Common causes:
+  # - Segmentation fault
+  # - Native memory exhaustion
+  # - JNI errors
+  # - Stack overflow
+  ```
+
+- ❓ **How can you monitor JVM thread states and deadlocks?**
+  > Using JMX and diagnostic commands:
+  ```java
+  // Via jstack
+  jstack -l <pid>
+  
+  // Programmatically
+  ThreadMXBean threadMXBean = ManagementFactory.getThreadMXBean();
+  long[] deadlockedThreads = threadMXBean.findDeadlockedThreads();
+  ```
