@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/week_2/week2" alt="Week 2 Advanced Java + Intermediate DSA" width="100%" />
+  <img src="https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/week_2/week2.png" alt="Week 2 Advanced Java + Intermediate DSA" width="100%" />
 </p>
 # 📅 Week 2: Advanced Java + Intermediate DSA
 
