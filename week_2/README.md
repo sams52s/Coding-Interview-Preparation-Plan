@@ -8,23 +8,23 @@
 
 ### ✅ Java – Language & Runtime
 
-- [Generics](../java-docs/generics.md)
-- [Java I/O and NIO](../java-docs/io-nio.md)
-- [Lambda Expressions & Stream API](../java-docs/lambda-streams.md)
-- [Java Annotations](../annotations-docs/java-annotations.md)
-- [Spring Annotations](../annotations-docs/spring-annotations.md)
-- [Lambda-related Annotations](../annotations-docs/lambda-annotations.md)
-- [JPA Annotations](../annotations-docs/jpa-annotations.md)
-- [Test Annotations](../annotations-docs/test-annotations.md)
-- [Java Memory Management](../java-docs/memory-management.md)
+- [Generics](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Generics.md)
+- [Java I/O and NIO](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20IO%20%26%20NIO.md)
+- [Lambda Expressions & Stream API](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Lambda%20Expressions%20%26%20Functional%20Programming%20in%20Java.md)
+- [Java Annotations](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/annotations-docs/java-annotations.md)
+- [Spring Annotations](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/annotations-docs/spring-annotations.md)
+- [Lambda-related Annotations](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/annotations-docs/lambda-annotations.md)
+- [JPA Annotations](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/annotations-docs/jpa-annotations.md)
+- [Test Annotations](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/annotations-docs/test-annotations.md)
+- [Java Memory Management](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Memory%20Management.md)
 
 ### ✅ DSA – Data Structures & Algorithms
 
-- [Linked Lists](../dsa/linked-lists.md)
-- [Stacks and Queues](../dsa/stacks-queues.md)
-- [Priority Queues](../dsa/priority-queues.md)
-- [Sorting Algorithms](../dsa/sorting-algorithms.md)
-- [Binary Search](../dsa/binary-search.md)
+- [Linked Lists](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/DSA/linked%20lists.md)
+- [Stacks and Queues](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/DSA/stacks-queues.md)
+- [Priority Queues](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/DSA/priority-queues.md)
+- [Sorting Algorithms](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/DSA/sorting-algorithms.md)
+- [Binary Search](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/DSA/binary-search.md)
 
 ---
 
@@ -77,20 +77,20 @@
 
 | Topic                        | Status  | Resource Link |
 |-----------------------------|:-------:|---------------|
-| Generics                    | ✅ Done | [Link](../java-docs/generics.md) |
-| Java I/O and NIO            | ✅ Done | [Link](../java-docs/io-nio.md) |
-| Lambda & Streams            | ✅ Done | [Link](../java-docs/lambda-streams.md) |
-| Java Annotations            | ✅ Done | [Link](../annotations-docs/java-annotations.md) |
-| Spring Annotations          | ✅ Done | [Link](../annotations-docs/spring-annotations.md) |
-| Lambda-related Annotations  | ✅ Done | [Link](../annotations-docs/lambda-annotations.md) |
-| JPA Annotations             | ✅ Done | [Link](../annotations-docs/jpa-annotations.md) |
-| Test Annotations            | ✅ Done | [Link](../annotations-docs/test-annotations.md) |
-| Java Memory Management      | ✅ Done | [Link](../java-docs/memory-management.md) |
-| Linked Lists                | ✅ Done | [Link](../dsa/linked-lists.md) |
-| Stacks and Queues           | ✅ Done | [Link](../dsa/stacks-queues.md) |
-| Priority Queues             | ✅ Done | [Link](../dsa/priority-queues.md) |
-| Sorting Algorithms          | ✅ Done | [Link](../dsa/sorting-algorithms.md) |
-| Binary Search               | ✅ Done | [Link](../dsa/binary-search.md) |
+| Generics                    | ✅ Done | [Link](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Generics.md) |
+| Java I/O and NIO            | ✅ Done | [Link](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20IO%20%26%20NIO.md) |
+| Lambda & Streams            | ✅ Done | [Link](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Lambda%20Expressions%20%26%20Functional%20Programming%20in%20Java.md) |
+| Java Annotations            | ✅ Done | [Link](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/annotations-docs/java-annotations.md) |
+| Spring Annotations          | ✅ Done | [Link](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/annotations-docs/spring-annotations.md) |
+| Lambda-related Annotations  | ✅ Done | [Link](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/annotations-docs/lambda-annotations.md) |
+| JPA Annotations             | ✅ Done | [Link](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/annotations-docs/jpa-annotations.md) |
+| Test Annotations            | ✅ Done | [Link](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/annotations-docs/test-annotations.md) |
+| Java Memory Management      | ✅ Done | [Link](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Memory%20Management.md) |
+| Linked Lists                | ✅ Done | [Link](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/DSA/linked%20lists.md) |
+| Stacks and Queues           | ✅ Done | [Link](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/DSA/stacks-queues.md) |
+| Priority Queues             | ✅ Done | [Link](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/DSA/priority-queues.md) |
+| Sorting Algorithms          | ✅ Done | [Link](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/DSA/sorting-algorithms.md) |
+| Binary Search               | ✅ Done | [Link](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/DSA/binary-search.md) |
 
 ---
 
