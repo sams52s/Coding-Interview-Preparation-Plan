@@ -1,36 +1,115 @@
-# 📅 Week 3: Spring Boot + Hibernate + REST APIs
+# 📅 Week 3: Advanced Spring Boot + Hibernate + REST APIs
 
-> 🎯 This week, transition from Core Java into real-world backend application development. Learn how to build powerful REST APIs with Spring Boot and master ORM using Hibernate.
+> 🎯 Master enterprise-grade backend development with Spring Boot, focusing on advanced patterns, best practices, and scalable architectures.
 
 ---
 
-## 📚 Topics Covered:
+## 📚 Advanced Topics:
 
-### [Spring Core (IoC & Dependency Injection)]() – Understand the heart of Spring Framework.
-- [ ] Inversion of Control (IoC) Principle
-- [ ] Dependency Injection Types (Constructor, Setter, Field)
-- [ ] Bean Lifecycle and Scopes
-- [ ] ApplicationContext vs BeanFactory
-- [ ] Profiles and Conditional Beans
+### [Spring Core (Advanced IoC & DI)]() 
+- [ ] Advanced Bean Configuration
+  - Custom Bean Post Processors
+  - Bean Factory Post Processors
+  - Custom Scopes
+  - Method Injection
+  - Circular Dependencies Handling
+- [ ] Event Processing
+  - Application Events
+  - Custom Events
+  - Async Event Processing
+- [ ] AOP Programming
+  - Custom Annotations
+  - Pointcuts & Advice
+  - Around Advice
+  - Method Interception
+- [ ] Advanced Bean Lifecycle
+  - Bean Creation Phases
+  - Lifecycle Callbacks
+  - @PostConstruct and @PreDestroy
+  - SmartLifecycle Interface
+- [ ] Advanced Context Management
+  - Multiple Context Hierarchies
+  - Context Propagation
+  - WebApplicationContext
+  - Reactive Context
 
-### [Spring Boot Fundamentals]()) – Rapid Java application development made easy.
-- [ ] Starters and Auto-Configuration
-- [ ] Embedded Servers (Tomcat, Jetty)
-- [ ] Externalized Configuration (application.properties, YAML)
-- [ ] Profiles & Environment Management
+### [Spring Boot Advanced Features]()
+- [ ] Custom Auto-Configuration
+  - Conditional Configuration
+  - Failure Analysis
+  - Custom Starters
+- [ ] Advanced Application Properties
+  - Property Sources
+  - Configuration Properties
+  - Custom Property Sources
+- [ ] Actuator & Monitoring
+  - Custom Endpoints
+  - Metrics with Micrometer
+  - Health Indicators
+  - Application Insights
+- [ ] Advanced Deployment Strategies
+  - Docker Integration
+  - Kubernetes Deployment
+  - Cloud-Native Features
+  - GraalVM Native Image
+- [ ] Reactive Programming
+  - WebFlux Integration
+  - Reactive Repositories
+  - Backpressure Handling
+  - Reactive Security
 
-### [Spring MVC (RESTful Services)]() – Build Web APIs with Spring MVC.
-- [ ] DispatcherServlet Flow
-- [ ] Controller-Service-Repository Pattern
-- [ ] REST API Design with `@RestController`
-- [ ] Exception Handling with `@ControllerAdvice`
+### [Advanced REST Architecture]()
+- [ ] Advanced REST Patterns
+  - HATEOAS Implementation
+  - Versioning Strategies
+  - Caching Mechanisms
+  - ETags & Conditional Requests
+- [ ] Content Negotiation
+  - Custom Media Types
+  - Response Compression
+  - Streaming Responses
+- [ ] Advanced Exception Handling
+  - Global Error Handling
+  - Custom Error Responses
+  - Validation Groups
+  - Bean Validation
+- [ ] GraphQL Integration
+  - Schema Design
+  - Resolvers
+  - Subscriptions
+  - Federation
+- [ ] API Gateway Patterns
+  - Rate Limiting
+  - Circuit Breaking
+  - Request Transformation
+  - Service Aggregation
 
-### [Hibernate ORM Basics]() – Seamlessly connect Java and databases.
-- [ ] ORM Concepts
-- [ ] Entity Mapping (OneToOne, OneToMany, ManyToOne, ManyToMany)
-- [ ] FetchType (LAZY vs EAGER)
-- [ ] CRUD Operations
-- [ ] JPQL Basics
+### [Hibernate Advanced Concepts]()
+- [ ] Performance Optimization
+  - N+1 Problem Solutions
+  - Query Cache
+  - Second-Level Cache
+  - Batch Processing
+- [ ] Advanced Mappings
+  - Composite Keys
+  - Custom Types
+  - Inheritance Strategies
+  - Dynamic Update/Insert
+- [ ] Query Optimization
+  - Native SQL
+  - Criteria API
+  - QueryDSL Integration
+  - Stored Procedures
+- [ ] Advanced JPA Features
+  - Attribute Converters
+  - Entity Graphs
+  - Derived Identifiers
+  - Multitenancy
+- [ ] Hibernate Envers
+  - Auditing
+  - Revision History
+  - Temporal Queries
+  - Custom Revision Entity
 
 ### [Spring Data JPA]() – Simplify database interaction.
 - [ ] JpaRepository and CrudRepository
@@ -38,15 +117,183 @@
 - [ ] Custom Queries using `@Query`
 - [ ] Transaction Management (@Transactional)
 
-### [Spring Security Basics]() – Secure your REST APIs.
-- [ ] Basic Authentication and Authorization
-- [ ] Password Encoding (BCrypt)
+### [Enterprise Security]()
+- [ ] Advanced Authentication
+  - Multi-Factor Authentication
+  - SSO Integration
+  - OAuth2 with JWT
+  - Keycloak Integration
+- [ ] Advanced Authorization
+  - Custom Permissions
+  - Dynamic Authorities
+  - Method Security Expressions
+- [ ] Security Best Practices
+  - Password Policies
+  - Rate Limiting
+  - Audit Logging
+  - Security Headers
 
-### **DSA Focus: Trees, BSTs**
-- [ ] Binary Tree Basics
-- [ ] Tree Traversal (Inorder, Preorder, Postorder)
-- [ ] Binary Search Tree Concepts
-- [ ] Insert/Search/Delete Operations
+### [Advanced Testing Strategies]()
+- [ ] Performance Testing
+  - JMeter Integration
+  - Gatling Scripts
+  - Load Testing
+- [ ] Security Testing
+  - Penetration Testing
+  - OWASP Integration
+  - Security Scan
+- [ ] Advanced Mocking
+  - Custom Argument Matchers
+  - Answer Interfaces
+  - Mock MVC Advanced
+
+### [Advanced Design Patterns & Architecture]()
+- [ ] Cloud Design Patterns
+  - Circuit Breaker
+  - Bulkhead
+  - Saga Pattern
+  - Event Sourcing
+- [ ] Microservices Patterns
+  - API Gateway
+  - Service Discovery
+  - Configuration Server
+  - Distributed Tracing
+
+### [Enterprise Integration]()
+- [ ] Message Brokers
+  - Apache Kafka
+  - RabbitMQ
+  - Amazon SQS
+  - Google Pub/Sub
+- [ ] Cache Integration
+  - Redis
+  - Hazelcast
+  - Ehcache
+  - Memcached
+- [ ] Search Engine Integration
+  - Elasticsearch
+  - Apache Solr
+  - Full-Text Search
+  - Search Optimization
+
+### [Cloud-Native Development]()
+- [ ] Service Mesh
+  - Istio
+  - Linkerd
+  - Traffic Management
+  - Observability
+- [ ] Container Orchestration
+  - Kubernetes Operators
+  - Helm Charts
+  - StatefulSets
+  - Custom Resources
+- [ ] Cloud Platforms
+  - AWS Services Integration
+  - Azure Spring Cloud
+  - Google Cloud Platform
+  - Platform-specific Features
+
+### [Advanced Spring Core Features]()
+- [ ] Advanced Bean Scoping
+  - Request/Session Scopes
+  - Custom Scope Implementation
+  - Scope Proxies
+  - Conversation Scope
+- [ ] Spring Expression Language (SpEL)
+  - Complex Expressions
+  - Collection Selection
+  - Bean Definition Expressions
+  - Dynamic Resolution
+- [ ] Advanced ApplicationContext
+  - Custom Context Initialization
+  - Context Hierarchies
+  - Event Multicasting
+  - Resource Management
+
+### [Spring Boot Production Features]()
+- [ ] Advanced Externalized Configuration
+  - Cloud Config Server
+  - Vault Integration
+  - Dynamic Configuration Updates
+  - Environment Post-Processing
+- [ ] Production Monitoring
+  - Prometheus Integration
+  - Grafana Dashboards
+  - Custom Metrics
+  - Alert Management
+- [ ] Containerization Advanced Topics
+  - Multi-stage Builds
+  - Custom Base Images
+  - Layer Optimization
+  - Security Scanning
+
+### [Enterprise Integration Patterns]()
+- [ ] Message-Based Integration
+  - Spring Integration
+  - Enterprise Service Bus
+  - Message Transformers
+  - Channel Adapters
+- [ ] Batch Processing
+  - Spring Batch
+  - Chunk Processing
+  - Job Partitioning
+  - Remote Chunking
+
+### [Advanced Microservices Patterns]()
+- [ ] Service Mesh Implementation
+  - Istio Integration
+  - Traffic Management
+  - Security Policies
+  - Observability
+- [ ] Advanced Service Discovery
+  - Multiple Zones
+  - Client-Side Load Balancing
+  - Health Check Customization
+  - Service Registry Replication
+
+## 🛠️ Advanced Projects
+1. Build a Microservice Architecture
+   - Service Discovery (Eureka)
+   - API Gateway (Spring Cloud Gateway)
+   - Circuit Breaker (Resilience4j)
+   - Distributed Tracing (Sleuth/Zipkin)
+
+2. Real-time Event Processing System
+   - Kafka Integration
+   - WebSocket Implementation
+   - Real-time Analytics
+   - Event Sourcing
+
+3. Advanced Security Implementation
+   - OAuth2 with Keycloak
+   - Custom Authorization Server
+   - Multi-factor Authentication
+   - Audit Logging System
+
+4. Search Engine Implementation
+   - Elasticsearch Integration
+   - Advanced Search Features
+   - Aggregations
+   - Geospatial Search
+
+5. Multi-tenant SaaS Application
+   - Tenant Isolation
+   - Dynamic Database Routing
+   - Shared Schema Design
+   - Tenant-specific Features
+
+6. Event-Driven Architecture Implementation
+   - Event Sourcing with Axon Framework
+   - CQRS Pattern
+   - Event Store
+   - Saga Pattern Implementation
+
+7. Cloud-Native Spring Application
+   - Config Server
+   - Service Discovery
+   - Circuit Breaking
+   - Distributed Tracing
+   - Metrics Collection
 
 ---
 
@@ -62,26 +309,20 @@
 - [Spring Boot Documentation](https://spring.io/projects/spring-boot)
 - [Spring MVC Fundamentals - Baeldung](https://www.baeldung.com/spring-controller-vs-restcontroller)
 - [LeetCode Binary Trees Card](https://leetcode.com/explore/learn/card/data-structure-tree/)
+- [Spring Cloud Documentation](https://spring.io/projects/spring-cloud)
+- [Hibernate Performance Tuning Guide](https://docs.jboss.org/hibernate/orm/current/performance/html_single/Hibernate_Performance_Tuning_Guide.html)
+- [Reactive Programming with Spring WebFlux](https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html)
+- [GraphQL Spring Boot](https://github.com/graphql-java-kickstart/graphql-spring-boot)
+- [Spring Framework Internals](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#spring-core)
+- [Spring Cloud Stream Reference Guide](https://docs.spring.io/spring-cloud-stream/docs/current/reference/html/)
+- [Spring Security Architecture](https://spring.io/guides/topicals/spring-security-architecture/)
+- [Production-Ready Microservices](https://microservices.io/patterns/microservices.html)
 
 ---
 
 ## 📅 Weekly Revision + Mock Test
 - **Revision**: Review all topics covered this week.
 - [Problem List](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/week_3/solution_of_week_3_coding_problem/problem%20List.md)
-
----
-
-## 📈 Progress Tracker
-
-| Section | Status | Notes |
-|:--------|:------:|:------|
-| Spring Core Concepts | ❌ Pending | |
-| Spring Boot Fundamentals | ❌ Pending | |
-| Spring MVC (REST APIs) | ❌ Pending | |
-| Hibernate ORM Basics | ❌ Pending | |
-| Spring Data JPA | ❌ Pending | |
-| Spring Security Basics | ❌ Pending | |
-| DSA Trees and BSTs | ❌ Pending | |
 
 ---
 
