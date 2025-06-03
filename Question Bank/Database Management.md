@@ -1,19 +1,3 @@
-# 🎤 Mock Interviewer Script: Database Engineer (Extended Multi-Round Q&A)
-
----
-
-## 🟠 **Round 1: Basic & Behavioral Questions**
-
-### Interviewer:
-1️⃣ Can you walk me through your experience with database administration, specifically MySQL or MongoDB?
-
-### Candidate:
-➤ Understanding: I have managed both MySQL and MongoDB environments, focusing on installation, configuration, security, backup, and performance optimization.
-➤ Process: I handle setup, configure replication, manage backups, and tune queries for performance. I automate routine administration tasks using scripts and collaborate with development teams to resolve production issues efficiently.
-➤ Tools/Commands: For MySQL, I use `mysqldump`, `mysqladmin`, `EXPLAIN`, and Workbench; for MongoDB, I use `mongodump`, `mongo shell`, and Atlas tools.
-➤ Example: Managed a MySQL 8.0 cluster, setting up GTID-based replication and automated backups; implemented MongoDB 4.x sharding and aggregation pipelines for analytics workloads.
-➤ Final Check: I ensure regular health checks, review logs, and validate backup/restoration success.
-
 ### Interviewer (Follow-up):
 ➤ Which specific MySQL or MongoDB version features have you worked with, and how did they impact your administration tasks?
 
