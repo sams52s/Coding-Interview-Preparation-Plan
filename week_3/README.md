@@ -33,6 +33,27 @@
   - WebApplicationContext
   - Reactive Context
 
+#### Practical Example: Custom Bean Post Processor
+
+```java
+@Component
+public class CustomBeanPostProcessor implements BeanPostProcessor {
+    @Override
+    public Object postProcessBeforeInitialization(Object bean, String beanName) {
+        // Custom logic before bean initialization
+        return bean;
+    }
+
+    @Override
+    public Object postProcessAfterInitialization(Object bean, String beanName) {
+        // Custom logic after bean initialization
+        return bean;
+    }
+}
+```
+
+---
+
 ### [Spring Boot Advanced Features]()
 - [ ] Custom Auto-Configuration
   - Conditional Configuration
@@ -57,6 +78,21 @@
   - Reactive Repositories
   - Backpressure Handling
   - Reactive Security
+
+#### Real-World Example: Custom Actuator Endpoint
+
+```java
+@Component
+@Endpoint(id = "customHealth")
+public class CustomHealthEndpoint {
+    @ReadOperation
+    public Map<String, String> health() {
+        return Collections.singletonMap("status", "UP");
+    }
+}
+```
+
+---
 
 ### [Advanced REST Architecture]()
 - [ ] Advanced REST Patterns
@@ -83,6 +119,20 @@
   - Circuit Breaking
   - Request Transformation
   - Service Aggregation
+
+#### Code Snippet: HATEOAS Example
+
+```java
+@GetMapping("/users/{id}")
+public EntityModel<User> getUser(@PathVariable Long id) {
+    User user = userService.findById(id);
+    return EntityModel.of(user,
+        linkTo(methodOn(UserController.class).getUser(id)).withSelfRel(),
+        linkTo(methodOn(UserController.class).getAllUsers()).withRel("users"));
+}
+```
+
+---
 
 ### [Hibernate Advanced Concepts]()
 - [ ] Performance Optimization
@@ -111,11 +161,31 @@
   - Temporal Queries
   - Custom Revision Entity
 
+#### Example: Batch Processing with Hibernate
+
+```java
+@Transactional
+public void batchInsert(List<Entity> entities) {
+    int batchSize = 50;
+    for (int i = 0; i < entities.size(); i++) {
+        entityManager.persist(entities.get(i));
+        if (i % batchSize == 0) {
+            entityManager.flush();
+            entityManager.clear();
+        }
+    }
+}
+```
+
+---
+
 ### [Spring Data JPA]() – Simplify database interaction.
 - [ ] JpaRepository and CrudRepository
 - [ ] Query Methods (`findByName`, etc.)
 - [ ] Custom Queries using `@Query`
 - [ ] Transaction Management (@Transactional)
+
+---
 
 ### [Enterprise Security]()
 - [ ] Advanced Authentication
@@ -133,6 +203,17 @@
   - Audit Logging
   - Security Headers
 
+#### Practical Security Example: Method Security
+
+```java
+@PreAuthorize("hasRole('ADMIN')")
+public void deleteUser(Long userId) {
+    userRepository.deleteById(userId);
+}
+```
+
+---
+
 ### [Advanced Testing Strategies]()
 - [ ] Performance Testing
   - JMeter Integration
@@ -147,6 +228,8 @@
   - Answer Interfaces
   - Mock MVC Advanced
 
+---
+
 ### [Advanced Design Patterns & Architecture]()
 - [ ] Cloud Design Patterns
   - Circuit Breaker
@@ -158,6 +241,8 @@
   - Service Discovery
   - Configuration Server
   - Distributed Tracing
+
+---
 
 ### [Enterprise Integration]()
 - [ ] Message Brokers
@@ -176,6 +261,8 @@
   - Full-Text Search
   - Search Optimization
 
+---
+
 ### [Cloud-Native Development]()
 - [ ] Service Mesh
   - Istio
@@ -192,6 +279,8 @@
   - Azure Spring Cloud
   - Google Cloud Platform
   - Platform-specific Features
+
+---
 
 ### [Advanced Spring Core Features]()
 - [ ] Advanced Bean Scoping
@@ -210,6 +299,8 @@
   - Event Multicasting
   - Resource Management
 
+---
+
 ### [Spring Boot Production Features]()
 - [ ] Advanced Externalized Configuration
   - Cloud Config Server
@@ -227,6 +318,8 @@
   - Layer Optimization
   - Security Scanning
 
+---
+
 ### [Enterprise Integration Patterns]()
 - [ ] Message-Based Integration
   - Spring Integration
@@ -238,6 +331,8 @@
   - Chunk Processing
   - Job Partitioning
   - Remote Chunking
+
+---
 
 ### [Advanced Microservices Patterns]()
 - [ ] Service Mesh Implementation
@@ -251,7 +346,152 @@
   - Health Check Customization
   - Service Registry Replication
 
+---
+
+### [Advanced Messaging and Event Streaming]()
+- [ ] Event-Driven Architectures
+  - Apache Kafka Deep Dive
+  - Kafka Streams and KSQL
+  - Advanced RabbitMQ configurations
+  - AWS Kinesis integration
+
+---
+
+### [Database Advanced Practices]()
+- [ ] Database Sharding Techniques
+  - Horizontal vs Vertical Sharding
+  - Sharding Strategies with Hibernate
+  - Multi-master Databases
+- [ ] Database Migration Strategies
+  - Flyway & Liquibase
+  - Automated Schema Migrations
+  - Data Migration Patterns
+
+---
+
+### [Advanced Observability & Logging]()
+- [ ] Centralized Logging
+  - ELK Stack Implementation
+  - Fluentd & Fluent Bit
+  - Structured Logging Best Practices
+- [ ] Distributed Tracing
+  - Jaeger Integration
+  - OpenTelemetry
+
+#### Observability Example: OpenTelemetry Integration
+
+```java
+@Bean
+public OpenTelemetry openTelemetry() {
+    return OpenTelemetrySdk.builder()
+        .setTracerProvider(SdkTracerProvider.builder().build())
+        .build();
+}
+```
+
+---
+
+### [Advanced DevOps and CI/CD]()
+- [ ] Continuous Integration Tools
+  - Jenkins Advanced Pipelines
+  - GitHub Actions
+  - GitLab CI
+- [ ] Continuous Delivery & Deployment
+  - Blue-Green Deployments
+  - Canary Releases
+  - Rollback Strategies
+
+---
+
+### [Security Compliance & Standards]()
+- [ ] Compliance Standards
+  - GDPR Compliance
+  - PCI DSS Standards
+  - ISO/IEC 27001 Security Management
+
+---
+
+### [Performance Engineering]()
+- [ ] JVM Performance Tuning
+  - GC Optimization
+  - Heap Analysis
+- [ ] Profiling Tools
+  - JProfiler
+  - VisualVM
+  - Java Mission Control (JMC)
+
+---
+
+### [Advanced Spring Testing]()
+- [ ] Test Containers
+  - Database Containers
+  - Message Broker Containers
+  - Custom Container Configurations
+- [ ] Chaos Engineering
+  - Chaos Monkey Integration
+  - Resilience Testing
+  - Fault Injection
+- [ ] Contract Testing
+  - Spring Cloud Contract
+  - Consumer-Driven Contracts
+  - Contract Evolution
+
+---
+
+### [Advanced Spring Data]()
+- [ ] Polyglot Persistence
+  - Multiple Database Types
+  - Database Router
+  - Cross-Database Transactions
+- [ ] Advanced Query Optimization
+  - Query Plan Analysis
+  - Index Optimization
+  - Query Cache Management
+- [ ] Data Versioning
+  - Temporal Tables
+  - Audit Tables
+  - Change Data Capture
+
+---
+
+### [Cloud Platform Integration]()
+- [ ] AWS Integration
+  - S3 Integration
+  - SQS/SNS Integration
+  - Lambda Integration
+  - ECS/EKS Deployment
+- [ ] Azure Integration
+  - Azure Spring Cloud
+  - Cosmos DB Integration
+  - Service Bus Integration
+  - AKS Deployment
+- [ ] GCP Integration
+  - Cloud Run
+  - Cloud SQL
+  - Pub/Sub
+  - GKE Deployment
+
+---
+
+### [Advanced Caching Strategies]()
+- [ ] Distributed Caching
+  - Redis Cluster
+  - Hazelcast IMDG
+  - Cache Synchronization
+- [ ] Cache Patterns
+  - Cache-Aside
+  - Write-Through
+  - Write-Behind
+  - Read-Through
+- [ ] Cache Eviction
+  - TTL Strategies
+  - LRU/LFU Policies
+  - Custom Eviction Rules
+
+---
+
 ## 🛠️ Advanced Projects
+
 1. Build a Microservice Architecture
    - Service Discovery (Eureka)
    - API Gateway (Spring Cloud Gateway)
@@ -297,7 +537,7 @@
 
 ---
 
-### 🧪 Practice Focus for this Week
+## 🧪 Practice Focus for this Week
 
 - Solve 2–3 LeetCode/HackerRank/Codeforces/Codechef problems daily focused on Trees/BSTs.
 - Build a small Spring Boot REST API Project: (Example → "Student Management System" with CRUD operations)
@@ -317,6 +557,103 @@
 - [Spring Cloud Stream Reference Guide](https://docs.spring.io/spring-cloud-stream/docs/current/reference/html/)
 - [Spring Security Architecture](https://spring.io/guides/topicals/spring-security-architecture/)
 - [Production-Ready Microservices](https://microservices.io/patterns/microservices.html)
+- [Spring Framework 6 Performance](https://spring.io/blog/category/performance)
+- [Redis Documentation](https://redis.io/documentation)
+- [Kubernetes Patterns](https://kubernetes.io/docs/patterns/)
+- [Event Sourcing Patterns](https://microservices.io/patterns/data/event-sourcing.html)
+- [OAuth 2.0 in Action](https://oauth.net/2/)
+- [Reactive Programming Patterns](https://www.reactivemanifesto.org/)
+
+---
+
+## 🆕 Additional Comprehensive Sections
+
+### DevSecOps Integration in Spring Boot
+
+- **Security as Code:** Integrate security scanning into CI/CD pipelines using tools like Snyk and OWASP Dependency Check.
+- **Secrets Management:** Use Vault or AWS Secrets Manager to safely inject secrets and credentials.
+- **Automated Compliance Checks:** Enforce compliance with automated tools such as OpenSCAP or Chef InSpec.
+
+#### Example: Integrating Dependency Vulnerability Scan in GitHub Actions
+
+```yaml
+name: Security Scan
+on: [push]
+jobs:
+  snyk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Snyk to check vulnerabilities
+        uses: snyk/actions/maven@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+```
+
+---
+
+### Frontend Integration with Spring Boot
+
+- Use **Spring Boot REST APIs** as backend services for frontend frameworks like React, Angular, or Vue.
+- Enable **CORS** configuration for cross-origin requests.
+- Serve static frontend assets directly from Spring Boot using `src/main/resources/static`.
+
+#### CORS Configuration Example
+
+```java
+@Configuration
+public class WebConfig implements WebMvcConfigurer {
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/api/**")
+            .allowedOrigins("http://localhost:3000")
+            .allowedMethods("GET", "POST", "PUT", "DELETE");
+    }
+}
+```
+
+---
+
+### Infrastructure-as-Code (IaC) for Spring Boot Deployments
+
+- Use **Terraform** or **CloudFormation** to provision cloud infrastructure.
+- Automate deployment pipelines with **Ansible** or **Helm Charts**.
+- Manage Kubernetes manifests declaratively with **Kustomize**.
+
+#### Terraform Sample Snippet for AWS EC2 Instance
+
+```hcl
+resource "aws_instance" "spring_boot_app" {
+  ami           = "ami-0abcdef1234567890"
+  instance_type = "t2.micro"
+  tags = {
+    Name = "SpringBootAppServer"
+  }
+}
+```
+
+---
+
+### Machine Learning Integration in Spring Boot
+
+- Use Spring Boot to expose ML models as REST APIs.
+- Integrate with TensorFlow Serving or use libraries like **Deep Java Library (DJL)**.
+- Implement batch predictions or real-time inference.
+
+#### Example: Exposing a TensorFlow Model via REST
+
+```java
+@RestController
+@RequestMapping("/ml")
+public class MLController {
+
+    @PostMapping("/predict")
+    public PredictionResult predict(@RequestBody InputData input) {
+        // Call TensorFlow Serving or local model inference here
+        return predictionService.predict(input);
+    }
+}
+```
 
 ---
 
@@ -334,5 +671,8 @@ By the end of this week, you should be able to:
 - Map relational databases using Hibernate ORM.
 - Perform CRUD operations with Spring Data JPA.
 - Solve coding problems involving Binary Trees and BSTs.
+- Integrate advanced enterprise patterns and observability.
+- Understand infrastructure automation and DevSecOps practices.
+- Expose machine learning models through Spring Boot APIs.
 
 ---

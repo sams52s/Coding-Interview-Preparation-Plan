@@ -131,11 +131,304 @@
 
 ---
 
+## 6. DevSecOps Practices and Tools
+
+### Overview
+DevSecOps integrates security into every phase of the DevOps lifecycle, ensuring continuous security and compliance without slowing down development.
+
+### Key Practices
+- Shift-left security: Integrate security early in the development process.
+- Automated security testing: Static Application Security Testing (SAST), Dynamic Application Security Testing (DAST).
+- Secrets management: Use tools like HashiCorp Vault or AWS Secrets Manager.
+- Container security: Scan images with Clair or Trivy.
+- Infrastructure security: Implement policy as code with tools like Open Policy Agent (OPA).
+
+### Tools
+- **Snyk**: Vulnerability scanning for dependencies.
+- **Aqua Security**: Container security platform.
+- **SonarQube**: Code quality and security analysis.
+- **Twistlock (Palo Alto Prisma Cloud)**: Cloud-native security platform.
+
+### Real-World Use Case
+A fintech company integrated SAST and DAST tools into their CI/CD pipeline, catching vulnerabilities before deployment, reducing production incidents by 40%.
+
+### Example: Integrating Snyk in GitHub Actions
+
+```yaml
+name: Security Scan
+on: [push, pull_request]
+
+jobs:
+  snyk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Snyk to check vulnerabilities
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          args: test
+```
+
+---
+
+## 7. Frontend Integration (React, Angular, Vue)
+
+### Overview
+Modern system design requires smooth integration between backend services and frontend frameworks.
+
+### React
+- Component-based architecture.
+- Use of hooks for state and lifecycle management.
+- Integration with REST/gRPC APIs via Axios or Fetch.
+
+**Example: Fetching data in React**
+
+```jsx
+import React, { useEffect, useState } from 'react';
+
+function UserList() {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    fetch('/api/users')
+      .then(res => res.json())
+      .then(data => setUsers(data));
+  }, []);
+
+  return (
+    <ul>
+      {users.map(user => (<li key={user.id}>{user.name}</li>))}
+    </ul>
+  );
+}
+
+export default UserList;
+```
+
+### Angular
+- Uses TypeScript and RxJS for reactive programming.
+- Built-in dependency injection.
+- HTTPClient for API calls.
+
+**Example: Angular service to fetch data**
+
+```typescript
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+@Injectable({ providedIn: 'root' })
+export class UserService {
+  constructor(private http: HttpClient) {}
+
+  getUsers(): Observable<any> {
+    return this.http.get('/api/users');
+  }
+}
+```
+
+### Vue
+- Lightweight and flexible.
+- Vuex for state management.
+- Axios for HTTP requests.
+
+**Example: Vue component fetching data**
+
+```vue
+<template>
+  <ul>
+    <li v-for="user in users" :key="user.id">{{ user.name }}</li>
+  </ul>
+</template>
+
+<script>
+import axios from 'axios';
+
+export default {
+  data() {
+    return { users: [] };
+  },
+  mounted() {
+    axios.get('/api/users').then(response => {
+      this.users = response.data;
+    });
+  }
+};
+</script>
+```
+
+### Real-World Use Case
+An e-commerce platform used React with GraphQL to optimize frontend-backend communication, reducing data over-fetching and improving load times.
+
+---
+
+## 8. Infrastructure as Code (Terraform, Pulumi)
+
+### Overview
+IaC enables automated, repeatable infrastructure provisioning and management.
+
+### Terraform
+- Declarative language (HCL).
+- Provider ecosystem (AWS, Azure, GCP, Kubernetes).
+- State management for tracking infrastructure.
+
+**Example: Terraform to provision an AWS EC2 instance**
+
+```hcl
+provider "aws" {
+  region = "us-west-2"
+}
+
+resource "aws_instance" "web" {
+  ami           = "ami-0abcdef1234567890"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "ExampleInstance"
+  }
+}
+```
+
+### Pulumi
+- Uses general-purpose languages (TypeScript, Python, Go).
+- Allows complex logic and reusable components.
+
+**Example: Pulumi TypeScript to create an S3 bucket**
+
+```typescript
+import * as aws from "@pulumi/aws";
+
+const bucket = new aws.s3.Bucket("my-bucket", {
+    acl: "private",
+});
+```
+
+### Real-World Use Case
+A SaaS startup adopted Terraform for multi-cloud deployments, enabling consistent environment setup and reducing manual errors.
+
+---
+
+## 9. Machine Learning Integration
+
+### Overview
+Integrating ML models into system architecture enables intelligent features like recommendations, fraud detection, and personalization.
+
+### Common Approaches
+- Model as a Service: Deploy models via REST/gRPC APIs.
+- Batch inference pipelines for offline predictions.
+- Online inference for real-time predictions.
+
+### Tools & Frameworks
+- TensorFlow Serving
+- MLflow for model tracking
+- Kubeflow for ML pipelines
+- AWS SageMaker, Azure ML, GCP AI Platform
+
+### Example: Simple Flask API serving a scikit-learn model
+
+```python
+from flask import Flask, request, jsonify
+import pickle
+
+app = Flask(__name__)
+model = pickle.load(open('model.pkl', 'rb'))
+
+@app.route('/predict', methods=['POST'])
+def predict():
+    data = request.json['data']
+    prediction = model.predict([data])
+    return jsonify({'prediction': prediction.tolist()})
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+### Real-World Use Case
+Netflix uses ML to personalize content recommendations, increasing user engagement and retention.
+
+---
+
+## 10. Cloud-Native Practices (AWS, Azure, GCP)
+
+### Overview
+Cloud-native architectures leverage managed services, container orchestration, and microservices for scalability and agility.
+
+### AWS
+- Services: EC2, Lambda, ECS/EKS, RDS, S3, CloudWatch.
+- Infrastructure as Code with CloudFormation or CDK.
+- Serverless computing with Lambda.
+
+### Azure
+- Services: Azure Functions, AKS, Cosmos DB, Azure Monitor.
+- Azure DevOps for CI/CD pipelines.
+- Integration with Active Directory for identity management.
+
+### GCP
+- Services: Compute Engine, Cloud Functions, GKE, BigQuery.
+- Deployment Manager for IaC.
+- Stackdriver for monitoring and logging.
+
+### Real-World Use Case
+A global media company migrated to Kubernetes on AWS EKS, enabling zero-downtime deployments and autoscaling during peak traffic.
+
+---
+
+## 11. Observability (Prometheus, Grafana, ELK)
+
+### Overview
+Observability ensures visibility into system health, performance, and debugging capabilities.
+
+### Prometheus
+- Metrics collection and alerting.
+- Pull-based model with exporters.
+- Query language: PromQL.
+
+### Grafana
+- Visualization of metrics.
+- Dashboards for real-time monitoring.
+- Supports multiple data sources including Prometheus, Elasticsearch.
+
+### ELK Stack (Elasticsearch, Logstash, Kibana)
+- Centralized logging solution.
+- Logstash for log ingestion and transformation.
+- Elasticsearch for storage and search.
+- Kibana for visualization.
+
+### Example: Prometheus metrics exposition in a Python app
+
+```python
+from prometheus_client import start_http_server, Summary
+import random
+import time
+
+REQUEST_TIME = Summary('request_processing_seconds', 'Time spent processing request')
+
+@REQUEST_TIME.time()
+def process_request():
+    time.sleep(random.random())
+
+if __name__ == '__main__':
+    start_http_server(8000)
+    while True:
+        process_request()
+```
+
+### Real-World Use Case
+Uber uses Prometheus and Grafana for monitoring microservices performance and ELK for centralized logging, enabling rapid incident response.
+
+---
+
 ### 🧪 Practice Focus for this Week
 
 - Solve 2–3 LeetCode/HackerRank/Codeforces/Codechef problems daily focused on Graphs and DP.
 - Design a basic System Architecture for "URL Shortener" or "File Sharing Service".
 - Build a small Spring Boot project containerized with Docker (Optional Challenge).
+- Implement a simple Prometheus exporter for a sample service.
+- Create a Terraform script to provision a basic cloud resource.
+- Develop a React component that consumes a backend API.
+- Build a minimal ML inference API in Flask.
 
 ## 📚 Recommended Case Studies
 - URL Shortener System
@@ -175,8 +468,13 @@
 - [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Foundations-Scalability/dp/1492035612)
 - [Spring Boot Reference Documentation](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
 - [Docker Official Documentation](https://docs.docker.com/get-started/)
+- [Terraform Documentation](https://www.terraform.io/docs)
+- [Pulumi Documentation](https://www.pulumi.com/docs/)
+- [Prometheus Documentation](https://prometheus.io/docs/introduction/overview/)
+- [Grafana Documentation](https://grafana.com/docs/)
+- [ELK Stack Documentation](https://www.elastic.co/what-is/elk-stack)
 
-
+---
 
 ### 📜 Engineering Articles
 - [How Discord stores trillions of messages](https://discord.com/blog/how-discord-stores-trillions-of-messages)
@@ -229,8 +527,6 @@
 
 ---
 
-
-
 ## 🎯 Advanced Challenges
 1. Design a distributed rate limiter
 2. Implement a simple distributed cache
@@ -247,5 +543,11 @@ By the end of this week, you should be able to:
 - Build professional APIs following best practices.
 - Write optimized SQL queries and manage transaction integrity.
 - Solve graph and DP-based problems with confidence.
+- Integrate security seamlessly in CI/CD pipelines.
+- Build frontend applications consuming backend APIs.
+- Automate infrastructure provisioning using IaC tools.
+- Deploy machine learning models in production environments.
+- Implement cloud-native solutions leveraging managed services.
+- Establish observability pipelines for monitoring and alerting.
 
 ---
