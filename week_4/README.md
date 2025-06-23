@@ -11,15 +11,60 @@
   - Horizontal vs Vertical Scaling
   - Capacity Planning
   - Performance Metrics & SLAs
+  - Load Shedding Techniques (e.g., dropping excess requests, queue backpressure)
+  - SLA vs SLO vs SLI:  
+    | Term | Definition | Example |
+    |------|------------|---------|
+    | SLA  | Service Level Agreement (contractual) | "99.9% uptime per month" |
+    | SLO  | Service Level Objective (target) | "99.95% requests < 200ms" |
+    | SLI  | Service Level Indicator (metric) | "99.97% requests < 200ms (last 30d)" |
+  - **Auto-scaling Example (Kubernetes HPA):**
+    ```yaml
+    apiVersion: autoscaling/v2
+    kind: HorizontalPodAutoscaler
+    metadata:
+      name: my-app
+    spec:
+      scaleTargetRef:
+        apiVersion: apps/v1
+        kind: Deployment
+        name: my-app
+      minReplicas: 2
+      maxReplicas: 10
+      metrics:
+      - type: Resource
+        resource:
+          name: cpu
+          target:
+            type: Utilization
+            averageUtilization: 70
+    ```
+  
 - [ ] **High Availability**
   - Redundancy & Replication
   - Fault Tolerance Strategies
   - Disaster Recovery Planning
+  - Geo-replication (multi-region data, failover)
+  - **Multi-AZ Deployment Example (AWS):**
+    ```hcl
+    resource "aws_db_instance" "main" {
+      multi_az = true
+      # ...other config...
+    }
+    ```
+  
 - [ ] **Distributed Systems**
   - CAP Theorem in Practice
   - ACID vs BASE
   - Consistency Models
   - Consensus Protocols (Paxos, Raft)
+  - Idempotency in Distributed Systems (ensuring safe retries)
+  - **Leader Election Example (ZooKeeper):**
+    ```java
+    LeaderSelector selector = new LeaderSelector(client, path, listener);
+    selector.start();
+    ```
+  
 - [ ] **Security & Performance**
   - Authentication & Authorization
   - SSL/TLS
@@ -27,54 +72,148 @@
   - Rate Limiting Strategies
   - Performance Monitoring
   - APM Tools Integration
+  - **Rate Limiting Example (Spring Cloud Gateway):**
+    ```yaml
+    spring:
+      cloud:
+        gateway:
+          routes:
+            - id: rate_limit_route
+              uri: http://my-service
+              predicates:
+                - Path=/api/**
+              filters:
+                - name: RequestRateLimiter
+                  args:
+                    redis-rate-limiter.replenishRate: 10
+                    redis-rate-limiter.burstCapacity: 20
+    ```
 - [ ] **Data Management**
   - Data Partitioning
   - Consistent Hashing
   - Write-Ahead Logging
   - Change Data Capture
   - Data Migration Strategies
+  - **CDC Example (Debezium Kafka Connector):**
+    ```json
+    {
+      "name": "inventory-connector",
+      "config": {
+        "connector.class": "io.debezium.connector.mysql.MySqlConnector",
+        "database.hostname": "mysql",
+        "database.port": "3306",
+        ...
+      }
+    }
+    ```
 
 ### 2. Core Infrastructure Components
 - [ ] **Load Balancing**
   - Algorithms (Round Robin, Least Connections)
   - Health Checks
-  - SSL Termination
+  - SSL/TLS Termination
+  - API Throttling (protecting backend resources)
+  - **Nginx Load Balancer Example:**
+    ```nginx
+    upstream backend {
+      server backend1.example.com;
+      server backend2.example.com;
+    }
+    server {
+      listen 80;
+      location / {
+        proxy_pass http://backend;
+      }
+    }
+    ```
 - [ ] **Caching**
   - Distributed Cache (Redis, Memcached)
   - Cache Invalidation Strategies
   - Cache-Aside Pattern
+  - CDN Integration (Cloudflare, Akamai)
+  - **Redis Cache Example (Spring Boot):**
+    ```java
+    @Cacheable("users")
+    public User getUser(Long id) { ... }
+    ```
 - [ ] **Data Storage**
   - Polyglot Persistence
   - Sharding Strategies
   - Replication Patterns
   - Indexing Optimization
+  - **MongoDB Sharding Example:**
+    ```js
+    sh.enableSharding("mydb")
+    sh.shardCollection("mydb.mycoll", { "userId": 1 })
+    ```
 - [ ] **Service Communication**
   - gRPC vs REST
   - GraphQL Implementation
-  - Service Discovery
+  - Service Discovery (Eureka, Consul, Kubernetes DNS)
   - Circuit Breaking
-  - Bulk heading
+  - Bulkheading
   - Retry Patterns
+  - **gRPC Service Example (Java):**
+    ```java
+    public class GreeterImpl extends GreeterGrpc.GreeterImplBase {
+      @Override
+      public void sayHello(HelloRequest req, StreamObserver<HelloReply> responseObserver) {
+        HelloReply reply = HelloReply.newBuilder().setMessage("Hello " + req.getName()).build();
+        responseObserver.onNext(reply);
+        responseObserver.onCompleted();
+      }
+    }
+    ```
 - [ ] **Monitoring & Observability**
   - Distributed Tracing
   - Log Aggregation
   - Metrics Collection
   - Alert Management
   - SLO/SLA Monitoring
+  - **Prometheus Metric Example (Spring Boot):**
+    ```java
+    @Timed("service.process.time")
+    public void process() { ... }
+    ```
 
-### 3. Modern Architecture Patterns
 - [ ] **Microservices**
   - Domain-Driven Design
   - Service Mesh
   - API Gateway Pattern
+  - Backend for Frontend (BFF)
+  - **API Gateway Example (Spring Cloud Gateway):**
+    ```yaml
+    spring:
+      cloud:
+        gateway:
+          routes:
+            - id: user-service
+              uri: lb://user-service
+              predicates:
+                - Path=/api/v1/users/**
+    ```
 - [ ] **Event-Driven Architecture**
   - Event Sourcing
   - CQRS
   - Message Queues
+  - Event Replay (reprocessing historical events for recovery)
+  - **Kafka Producer Example:**
+    ```java
+    @Autowired
+    private KafkaTemplate<String, String> kafkaTemplate;
+    public void send(String topic, String message) {
+      kafkaTemplate.send(topic, message);
+    }
+    ```
 - [ ] **Serverless Architecture**
   - FaaS vs BaaS
   - Cold/Warm Starts
   - Cost Optimization
+  - **AWS Lambda Example (Python):**
+    ```python
+    def handler(event, context):
+        return {"statusCode": 200, "body": "Hello from Lambda"}
+    ```
 - [ ] **Cloud-Native Patterns**
   - Container Orchestration
   - Service Mesh Implementation
@@ -82,6 +221,17 @@
   - Infrastructure as Code
   - Blue-Green Deployment
   - Canary Releases
+  - Self-Healing Architecture (auto-recovery, health probes)
+  - **Blue-Green Deployment Example (Kubernetes):**
+    ```yaml
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: app-green
+    spec:
+      replicas: 3
+      ...
+    ```
 - [ ] **Resilience Patterns**
   - Circuit Breaker
   - Bulkhead
@@ -89,45 +239,135 @@
   - Rate Limiter
   - Dead Letter Queues
   - Fallback Mechanisms
+  - **Resilience4j Circuit Breaker Example:**
+    ```java
+    @CircuitBreaker(name = "backendService", fallbackMethod = "fallback")
+    public String callBackend() { ... }
+    ```
 
-### 4. Advanced Distributed Systems Concepts
+-### 4. Advanced Distributed Systems Concepts
 - [ ] **Consensus Algorithms**
   - Raft Implementation
   - Byzantine Fault Tolerance
-  - Vector Clocks
+  - Vector Clocks (tracking causality in distributed systems; e.g., Lamport clocks, version vectors)
   - Gossip Protocols
+  - Anti-Entropy Mechanisms (e.g., Merkle trees, data repair)
+  - CRDTs (Conflict-free Replicated Data Types)
 - [ ] **Distributed Transactions**
   - 2PC/3PC Protocols
   - Saga Pattern
   - Distributed Locking
   - Transaction Isolation Levels
+  - **Saga Pattern Example (Axon Framework):**
+    ```java
+    @Saga
+    public class OrderSaga { ... }
+    ```
 - [ ] **Stream Processing**
   - Apache Kafka Streams
   - Apache Flink
   - Real-time Analytics
   - Complex Event Processing
+  - **Kafka Streams Example:**
+    ```java
+    StreamsBuilder builder = new StreamsBuilder();
+    KStream<String, String> stream = builder.stream("input-topic");
+    stream.mapValues(value -> value.toUpperCase()).to("output-topic");
+    ```
 - [ ] **Data Replication**
   - Multi-Master Replication
   - Change Data Capture
   - Conflict Resolution
   - Eventual Consistency
 
-### 5. Performance Engineering
+-### 5. Performance Engineering
 - [ ] **Load Testing**
   - Performance Metrics
   - Stress Testing
   - Chaos Engineering
   - Performance Profiling
+  - Profiling Tools: VisualVM, YourKit, JProfiler
+  - **JMeter Load Test Example:**
+    ```xml
+    <ThreadGroup>
+      <stringProp name="ThreadGroup.num_threads">100</stringProp>
+      <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+    </ThreadGroup>
+    ```
 - [ ] **Database Optimization**
   - Query Optimization
   - Index Design
   - Partitioning Strategies
   - Read/Write Separation
+  - **SQL Index Example:**
+    ```sql
+    CREATE INDEX idx_user_email ON users(email);
+    ```
 - [ ] **Network Optimization**
   - Protocol Optimization
   - Connection Pooling
   - Content Delivery
   - Edge Computing
+  - **Connection Pool Example (HikariCP):**
+
+- [ ] **JVM & GC Tuning**
+  - JVM Heap Sizing, GC Selection, Tuning Flags
+  -  
+    | Area             | Option/Flag                | Example/Description                |
+    |------------------|----------------------------|------------------------------------|
+    | Heap Size        | `-Xms`, `-Xmx`             | `-Xmx4g` for 4GB max heap          |
+    | GC Algorithm     | `-XX:+UseG1GC`             | Use G1 Garbage Collector           |
+    | GC Logging       | `-Xlog:gc*`                | Detailed GC logs (Java 9+)         |
+    | Metaspace        | `-XX:MaxMetaspaceSize`     | Limit class metadata size          |
+    | Thread Stack     | `-Xss`                     | Stack size per thread              |
+    | GC Pause Target  | `-XX:MaxGCPauseMillis`     | Target max GC pause (G1)           |
+    | Young Gen Ratio  | `-XX:NewRatio`             | Ratio of young to old gen          |
+---
+
+## 6. AI-Augmented Architecture
+
+### Overview
+Modern systems increasingly integrate AI/ML and LLM (Large Language Model) capabilities, requiring new architectural considerations for performance, security, and scalability.
+
+- [ ] **LLM Caching Strategies**
+  - Embedding cache (vector DB), prompt+output cache, response deduplication
+  - Tiered cache: in-memory, Redis, distributed
+
+- [ ] **Token-aware Load Balancing**
+  - Load balance requests based on LLM token counts (to avoid OOM/latency spikes)
+  - Example: Route long prompts to high-memory nodes, short prompts to standard nodes
+
+- [ ] **Prompt Injection Prevention**
+  - Input sanitization, output validation, context isolation
+  - Use allow-lists/deny-lists for system prompts
+  - Example:  
+    ```python
+    def is_safe_prompt(prompt: str) -> bool:
+        return not any(bad in prompt.lower() for bad in ["ignore previous", "admin password"])
+    ```
+
+- [ ] **OpenAI/HuggingFace Serving Patterns**
+  - Model as a Service (REST/gRPC, FastAPI, Ray Serve, TorchServe)
+  - Multi-model routing, A/B testing, canary deploys
+  - Autoscaling LLM endpoints, GPU/CPU node pools
+  - Example (FastAPI for HuggingFace model):  
+    ```python
+    from fastapi import FastAPI
+    from transformers import pipeline
+    app = FastAPI()
+    nlp = pipeline("sentiment-analysis")
+    @app.post("/predict")
+    async def predict(text: str):
+        return nlp(text)
+    ```
+
+---
+    ```yaml
+    spring:
+      datasource:
+        hikari:
+          maximum-pool-size: 20
+    ```
 
 ---
 
@@ -259,6 +499,16 @@ export default {
 </script>
 ```
 
+### GraphQL Integration Example (React Apollo):
+```jsx
+import { useQuery, gql } from '@apollo/client';
+const GET_USERS = gql`query { users { id name } }`;
+function UserList() {
+  const { data } = useQuery(GET_USERS);
+  return <ul>{data?.users.map(u => <li key={u.id}>{u.name}</li>)}</ul>;
+}
+```
+
 ### Real-World Use Case
 An e-commerce platform used React with GraphQL to optimize frontend-backend communication, reducing data over-fetching and improving load times.
 
@@ -305,6 +555,21 @@ const bucket = new aws.s3.Bucket("my-bucket", {
 });
 ```
 
+- **Kubernetes Deployment Example (YAML):**
+  ```yaml
+  apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: my-app
+  spec:
+    replicas: 3
+    template:
+      spec:
+        containers:
+        - name: my-app
+          image: my-app:latest
+  ```
+
 ### Real-World Use Case
 A SaaS startup adopted Terraform for multi-cloud deployments, enabling consistent environment setup and reducing manual errors.
 
@@ -345,6 +610,18 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
+- **Spring Boot ML REST Example:**
+  ```java
+  @RestController
+  @RequestMapping("/ml")
+  public class MLController {
+      @PostMapping("/predict")
+      public PredictionResult predict(@RequestBody InputData input) {
+          return predictionService.predict(input);
+      }
+  }
+  ```
+
 ### Real-World Use Case
 Netflix uses ML to personalize content recommendations, increasing user engagement and retention.
 
@@ -369,6 +646,21 @@ Cloud-native architectures leverage managed services, container orchestration, a
 - Services: Compute Engine, Cloud Functions, GKE, BigQuery.
 - Deployment Manager for IaC.
 - Stackdriver for monitoring and logging.
+
+- **Kubernetes Service Discovery Example:**
+  ```yaml
+  apiVersion: v1
+  kind: Service
+  metadata:
+    name: my-service
+  spec:
+    selector:
+      app: my-app
+    ports:
+      - protocol: TCP
+        port: 80
+        targetPort: 8080
+  ```
 
 ### Real-World Use Case
 A global media company migrated to Kubernetes on AWS EKS, enabling zero-downtime deployments and autoscaling during peak traffic.
@@ -415,6 +707,15 @@ if __name__ == '__main__':
         process_request()
 ```
 
+- **Spring Boot Actuator Metrics Example:**
+  ```yaml
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: health,info,metrics,prometheus
+  ```
+
 ### Real-World Use Case
 Uber uses Prometheus and Grafana for monitoring microservices performance and ELK for centralized logging, enabling rapid incident response.
 
@@ -455,24 +756,6 @@ Uber uses Prometheus and Grafana for monitoring microservices performance and EL
 - System Design Interview (Alex Xu)
 - Designing Data-Intensive Applications (Martin Kleppmann)
 - Building Microservices (Sam Newman)
-
----
-
-## 🔗 Additional Resources
-- [System Design Primer GitHub](https://github.com/donnemartin/system-design-primer)
-- [Spring Cloud Official Docs](https://spring.io/projects/spring-cloud)
-- [LeetCode Graph Problems Card](https://leetcode.com/explore/learn/card/graph/)
-- [LeetCode Dynamic Programming Problems Card](https://leetcode.com/explore/learn/card/dynamic-programming/)
-- [GeeksforGeeks System Design](https://www.geeksforgeeks.org/system-design-tutorial/)
-- [System Design Interview – An Insider's Guide](https://www.amazon.com/System-Design-Interview-insiders-guide/dp/0984782850)
-- [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Foundations-Scalability/dp/1492035612)
-- [Spring Boot Reference Documentation](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
-- [Docker Official Documentation](https://docs.docker.com/get-started/)
-- [Terraform Documentation](https://www.terraform.io/docs)
-- [Pulumi Documentation](https://www.pulumi.com/docs/)
-- [Prometheus Documentation](https://prometheus.io/docs/introduction/overview/)
-- [Grafana Documentation](https://grafana.com/docs/)
-- [ELK Stack Documentation](https://www.elastic.co/what-is/elk-stack)
 
 ---
 
@@ -528,10 +811,10 @@ Uber uses Prometheus and Grafana for monitoring microservices performance and EL
 ---
 
 ## 🎯 Advanced Challenges
-1. Design a distributed rate limiter
-2. Implement a simple distributed cache
-3. Build a basic service mesh
-4. Create a fault-tolerant message queue
+1. Design a distributed rate limiter (e.g., using Redis or token bucket algorithm)
+2. Implement a simple distributed cache (e.g., using consistent hashing)
+3. Build a basic service mesh (e.g., with Istio or Linkerd)
+4. Create a fault-tolerant message queue (e.g., with Kafka or RabbitMQ)
 
 ---
 
