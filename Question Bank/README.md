@@ -17,25 +17,28 @@
 
 ## 📑 Enhanced Table of Contents
 
-- [🧠 Programming Fundamentals](./programming-fundamentals)
-- [☕ Core Java Concepts](./core-java-concepts)
-- [📚 Collections Framework](./collections-framework)
-- [🧵 Multithreading & Concurrency](./multithreading--concurrency)
-- [🛡 Exception Handling](./exception-handling)
-- [🌿 Spring Boot & Core](./spring-boot--core)
-- [📖 Spring Data JPA & Hibernate](./spring-data-jpa--hibernate)
-- [🧩 Microservices Architecture](./microservices-architecture)
-- [🌐 REST API Design](./rest-api-design)
-- [🧩 Data Structures & Algorithms](./data-structures--algorithms)
-- [🧱 System Design](./system-design)
-- [💾 Database & SQL](./database--sql)
-- [🌐 Web & Frontend](./web--frontend)
-- [🧪 Miscellaneous & Puzzles](./miscellaneous--puzzles)
-- [📚 Resources & Recommended Reading](./resources--recommended-reading)
-- [📊 Java Version Features](./java-version-features)
-- [🧪 Testing & Quality](./testing--quality)
-- [☁️ Cloud & DevOps](./cloud--devops)
-- [🔒 Security](./security)
+- [ Behavioral & HR Questions](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/behavioral.md)
+- [🧠 Programming Fundamentals](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/programming-fundamentals.md)
+- [☕ Core Java Concepts](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/core-java.md)
+- [📚 Collections Framework](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/17_Interview_Questions_and_Answers.md)
+- [🧵 Multithreading & Concurrency](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/multithreading.md)
+- [🛡 Exception Handling](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Exception%20Handling.md)
+- [🌿 Spring Boot & Core](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/spring-boot.md)
+- [📖 Spring Data JPA & Hibernate](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/spring-data-JPA-&-Hibernate.md)
+- [🧩 Microservices Architecture](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/microservices.md)
+- [🌐 REST API Design](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/rest-api.md)
+- [🧩 Data Structures & Algorithms](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/dsa.md)
+- [🧱 System Design](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/system-design.md)
+- [📊 Low-Level Design (LLD)](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/lld.md)
+- [💾 Database & SQL](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/database-sql.md)
+- [💾 Database Management Systems](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/Database%20Management.md)
+- [ DBA CHEAT SHEET](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/DBA_CHEAT_SHEET.md)
+- [🌐 Web & Frontend](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/web-frontend.md)
+- [📊 Java Version Features](https://github.com/sams52s/Coding-Interview-Preparation-Plan/tree/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20History%2C%20Features%2C%20and%20Evolution)
+- [🧪 Testing & Quality](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/testing-quality.md)
+- [☁️ Cloud & DevOps](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/cloud-devops.md)
+- [🔒 Security](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/security.md)
+- [ Advanced Topics](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/advanced-topics.md)
 
 ---
 
@@ -103,7 +106,7 @@ This README now includes all original materials, optional extensions, cross-chec
 
 [![GitHub Stars](https://img.shields.io/github/stars/sams52s/Coding-Interview-Preparation-Plan.svg)](https://github.com/sams52s/Coding-Interview-Preparation-Plan/stargazers)  
 [![GitHub Forks](https://img.shields.io/github/forks/sams52s/Coding-Interview-Preparation-Plan.svg)](https://github.com/sams52s/Coding-Interview-Preparation-Plan/network)  
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 [![Build Status](https://img.shields.io/github/actions/workflow/status/sams52s/Coding-Interview-Preparation-Plan/ci.yml?branch=main)](https://github.com/sams52s/Coding-Interview-Preparation-Plan/actions)
 
 ---
