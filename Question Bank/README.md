@@ -17,28 +17,28 @@
 
 ## 📑 Enhanced Table of Contents
 
-- [ Behavioral & HR Questions](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/behavioral.md)
+- [🗣️ Behavioral & HR Questions](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/behavioral.md)
 - [🧠 Programming Fundamentals](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/programming-fundamentals.md)
 - [☕ Core Java Concepts](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/core-java.md)
 - [📚 Collections Framework](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/17_Interview_Questions_and_Answers.md)
 - [🧵 Multithreading & Concurrency](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/multithreading.md)
-- [🛡 Exception Handling](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Exception%20Handling.md)
+- [🛡️ Exception Handling](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Exception%20Handling.md)
 - [🌿 Spring Boot & Core](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/spring-boot.md)
-- [📖 Spring Data JPA & Hibernate](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/spring-data-JPA-&-Hibernate.md)
+- [🗄️ Spring Data JPA & Hibernate](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/spring-data-JPA-&-Hibernate.md)
 - [🧩 Microservices Architecture](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/microservices.md)
 - [🌐 REST API Design](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/rest-api.md)
-- [🧩 Data Structures & Algorithms](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/dsa.md)
-- [🧱 System Design](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/system-design.md)
-- [📊 Low-Level Design (LLD)](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/lld.md)
+- [🧮 Data Structures & Algorithms](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/dsa.md)
+- [🏗️ System Design](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/system-design.md)
+- [🧱 Low-Level Design (LLD)](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/lld.md)
 - [💾 Database & SQL](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/database-sql.md)
-- [💾 Database Management Systems](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/Database%20Management.md)
-- [ DBA CHEAT SHEET](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/DBA_CHEAT_SHEET.md)
+- [🗃️ Database Management Systems](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/Database%20Management.md)
+- [🗄️ DBA CHEAT SHEET](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/DBA_CHEAT_SHEET.md)
 - [🌐 Web & Frontend](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/web-frontend.md)
-- [📊 Java Version Features](https://github.com/sams52s/Coding-Interview-Preparation-Plan/tree/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20History%2C%20Features%2C%20and%20Evolution)
+- [🔢 Java Version Features](https://github.com/sams52s/Coding-Interview-Preparation-Plan/tree/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20History%2C%20Features%2C%20and%20Evolution)
 - [🧪 Testing & Quality](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/testing-quality.md)
 - [☁️ Cloud & DevOps](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/cloud-devops.md)
 - [🔒 Security](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/security.md)
-- [ Advanced Topics](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/advanced-topics.md)
+- [🧬 Advanced Topics](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Question%20Bank/advanced-topics.md)
 
 ---
 
@@ -81,6 +81,56 @@
 - [Reactive Programming](https://projectreactor.io/docs/core/release/reference/)  
 - [Spring Framework Documentation](https://docs.spring.io/spring-framework/reference/)  
 - [Java Language Specification](https://docs.oracle.com/javase/specs/)
+
+✅ Practice Platforms  
+- LeetCode Premium (System Design & Company-specific)
+- AlgoExpert.io (Coding + Systems)
+- InterviewBit
+- HackerRank
+- CodeSignal
+
+✅ System Design Resources  
+- [System Design Interview - Alex Xu](https://bytebytego.com)
+- [Distributed Systems - Martin Kleppmann](https://www.distributed-systems.net)
+- [High Scalability Blog](http://highscalability.com)
+- [Architecture Patterns - Mark Richards](https://www.developertoarchitect.com)
+- [AWS Architecture Center](https://aws.amazon.com/architecture)
+
+✅ Low-Level Design Resources  
+- [Refactoring Guru - Design Patterns](https://refactoring.guru)
+- [Head First Design Patterns](https://www.oreilly.com/library/view/head-first-design/0596007124/)
+- [Clean Architecture - Uncle Bob](https://blog.cleancoder.com)
+- [Object Design Style Guide](https://www.manning.com/books/object-design-style-guide)
+
+## 🎯 Interview Preparation Strategy
+
+### Week-by-Week Plan
+1. **Week 1-2**: Core Java & OOP
+2. **Week 3-4**: DSA & Problem Solving
+3. **Week 5-6**: Spring Framework & Microservices
+4. **Week 7-8**: System Design & Architecture
+5. **Week 9**: Database & SQL
+6. **Week 10**: Practice Interviews & Mock Sessions
+
+### Daily Schedule
+- 2 hours: DSA Practice
+- 2 hours: Core Concepts
+- 1 hour: System Design
+- 1 hour: Project Work/Portfolio
+
+## 🚀 Technical Project Portfolio
+- REST API with Spring Boot
+- Microservices Architecture
+- Full-Stack Application
+- System Design Implementation
+- Design Patterns Demo
+
+## 📈 Progress Tracking
+- [ ] Complete 200 LeetCode Problems
+- [ ] Implement 5 System Designs
+- [ ] Create 3 Full-Stack Projects
+- [ ] Master 23 Design Patterns
+- [ ] Complete 10 Mock Interviews
 
 ---
 
