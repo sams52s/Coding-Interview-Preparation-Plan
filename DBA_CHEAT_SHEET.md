@@ -122,6 +122,22 @@ iostat -xz 1
 iftop
 ```
 
+### Performance Monitoring
+```bash
+# IO monitoring
+iostat -xz 1
+iotop
+
+# Network monitoring
+netstat -tulpn
+ss -tuln
+iftop
+
+# Memory analysis
+free -m
+vmstat 1
+```
+
 ---
 
 ## MySQL
@@ -266,6 +282,24 @@ SHOW TABLE STATUS;
 SHOW SLAVE STATUS\G
 ```
 
+### MySQL Performance Tuning
+```sql
+-- InnoDB buffer pool size
+SET GLOBAL innodb_buffer_pool_size = 4294967296;
+
+-- Check buffer hit ratio
+SELECT (1 - ((SELECT variable_value 
+              FROM performance_schema.global_status 
+              WHERE variable_name = 'Innodb_buffer_pool_reads') / 
+             (SELECT variable_value 
+              FROM performance_schema.global_status 
+              WHERE variable_name = 'Innodb_buffer_pool_read_requests'))) * 100;
+
+-- Optimize query cache
+SHOW VARIABLES LIKE '%query_cache%';
+SET GLOBAL query_cache_size = 67108864;
+```
+
 ### MySQL Replication
 ```sql
 -- Configure master
@@ -391,6 +425,22 @@ COPY t1 FROM '/path/to/file.csv' DELIMITER ',' CSV HEADER;
 
 -- Use parallel query execution (PostgreSQL 9.6+)
 SET max_parallel_workers_per_gather = 4;
+```
+
+### PostgreSQL Configuration Optimization
+```sql
+-- Adjust memory parameters
+ALTER SYSTEM SET shared_buffers = '1GB';
+ALTER SYSTEM SET work_mem = '16MB';
+ALTER SYSTEM SET maintenance_work_mem = '256MB';
+
+-- Connection settings
+ALTER SYSTEM SET max_connections = 200;
+ALTER SYSTEM SET effective_cache_size = '4GB';
+
+-- Write-Ahead Log
+ALTER SYSTEM SET wal_buffers = '16MB';
+ALTER SYSTEM SET checkpoint_completion_target = 0.9;
 ```
 
 ### Logging and Monitoring Enhancements
@@ -557,6 +607,21 @@ db.t1.aggregate([
 ]);
 ```
 
+### MongoDB Index Management
+```javascript
+// Create indexes
+db.collection.createIndex({ field: 1 }, { background: true })
+db.collection.createIndex({ field: "text" })
+
+// Index analysis
+db.collection.aggregate([
+  { $indexStats: {} }
+])
+
+// Find missing indexes
+db.collection.find({field: "value"}).explain("executionStats")
+```
+
 ### MongoDB Advanced Operations
 ```javascript
 // Sharding operations
@@ -683,6 +748,22 @@ nodetool cfstats ks1.t1
 # Use token-aware drivers for efficient data distribution
 ```
 
+### Cassandra Performance Tuning
+```sql
+-- Check cluster health
+nodetool tablestats keyspace.table
+nodetool compactionstats
+nodetool tpstats
+
+-- Repair operations
+nodetool repair -pr keyspace table
+nodetool cleanup keyspace table
+
+-- Memory settings (cassandra.yaml)
+heap_new_size: 800M
+max_heap_size: 8G
+```
+
 ---
 
 ## Kafka
@@ -765,19 +846,18 @@ bin/kafka-configs.sh --alter --entity-type topics --entity-name mytopic --add-co
 bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group <group_id>
 ```
 
-### Logging and Monitoring Enhancements
+### Kafka Monitoring & Optimization
 ```bash
-# Enable DEBUG logging in log4j.properties
-sed -i 's/log4j.rootLogger=INFO, stdout/log4j.rootLogger=DEBUG, stdout/' config/log4j.properties
+# Consumer group management
+kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
+kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group mygroup --describe
 
-# Restart Kafka to apply logging changes
-bin/kafka-server-stop.sh
-bin/kafka-server-start.sh config/server.properties
+# Topic management
+kafka-topics.sh --bootstrap-server localhost:9092 --alter --topic mytopic --partitions 3
+kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic mytopic --under-replicated-partitions
 
-# Monitor Kafka with kafka-run-class tool
-bin/kafka-run-class.sh kafka.tools.JmxTool --jmx-url service:jmx:rmi:///jndi/rmi://localhost:9999/jmxrmi --object-name kafka.server:type=BrokerTopicMetrics,name=MessagesInPerSec
-
-# Use Kafka Manager or other monitoring tools for cluster health
+# Performance testing
+kafka-producer-perf-test.sh --topic mytopic --num-records 1000000 --record-size 1000 --throughput 100000 --producer-props bootstrap.servers=localhost:9092
 ```
 
 ---
@@ -1013,5 +1093,4 @@ curl -X GET "localhost:9200/_cluster/health?pretty"
 curl -X GET "localhost:9200/_nodes/stats?pretty"
 
 # Use Kibana or other monitoring tools for advanced visualization
-```
 ```
