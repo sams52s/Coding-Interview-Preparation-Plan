@@ -165,6 +165,7 @@ public class CashPayment implements PaymentStrategy {
 ### Q6: What are some references to improve LLD skills?
 
 - [How to Answer a LLD Interview Problem](https://blog.algomaster.io/p/how-to-answer-a-lld-interview-problem)
+- [80+ LLD and Concurrency Problem with Solution](https://lldcoding.com/)
 - Practice on real-world systems and review open-source code for applied patterns and class design.
 
 ---
