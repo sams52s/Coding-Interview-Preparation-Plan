@@ -8,21 +8,21 @@
 
 | # | Problem | Source | Link | Difficulty | Status | My Solution |
 |:-:|:--------|:------:|:----:|:----------:|:------:|:-----------:|
-| 1 | 🌳 Maximum Depth of Binary Tree | LeetCode | [Link](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Easy | [ ] | [Solution]() |
-| 2 | 🌲 Symmetric Tree | LeetCode | [Link](https://leetcode.com/problems/symmetric-tree/) | Easy | [ ] | [Solution]() |
-| 3 | 🌲 Binary Tree Level Order Traversal | LeetCode | [Link](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | [ ] | [Solution]() |
-| 4 | 🌳 Same Tree | LeetCode | [Link](https://leetcode.com/problems/same-tree/) | Easy | [ ] | [Solution]() |
-| 5 | 🌳 Invert Binary Tree | LeetCode | [Link](https://leetcode.com/problems/invert-binary-tree/) | Easy | [ ] | [Solution]() |
-| 6 | 🌲 Binary Tree Paths | LeetCode | [Link](https://leetcode.com/problems/binary-tree-paths/) | Easy | [ ] | [Solution]() |
-| 7 | 🌳 Insert Into BST | LeetCode | [Link](https://leetcode.com/problems/insert-into-a-binary-search-tree/) | Medium | [ ] | [Solution]() |
-| 8 | ❌ Delete Node in BST | LeetCode | [Link](https://leetcode.com/problems/delete-node-in-a-bst/) | Medium | [ ] | [Solution]() |
-| 9 | 🧩 Lowest Common Ancestor of BST | LeetCode | [Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Medium | [ ] | [Solution]() |
-| 10 | 🧩 Kth Smallest Element in BST | LeetCode | [Link](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Medium | [ ] | [Solution]() |
-| 11 | 🌳 Balanced Binary Tree | LeetCode | [Link](https://leetcode.com/problems/balanced-binary-tree/) | Easy-Medium | [ ] | [Solution]() |
-| 12 | 🌳 Diameter of Binary Tree | LeetCode | [Link](https://leetcode.com/problems/diameter-of-binary-tree/) | Easy-Medium | [ ] | [Solution]() |
-| 13 | 👀 Right Side View of Binary Tree | LeetCode | [Link](https://leetcode.com/problems/binary-tree-right-side-view/) | Medium | [ ] | [Solution]() |
-| 14 | 🔄 Lowest Common Ancestor in Binary Tree | LeetCode | [Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | Medium | [ ] | [Solution]() |
-| 15 | 📦 Serialize and Deserialize Binary Tree | LeetCode | [Link](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Hard | [ ] | [Solution]() |
+| 1 | 🌳 Maximum Depth of Binary Tree | LeetCode | [Link](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Easy | [x] | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/MaximumDepthOfBinaryTree.java) |
+| 2 | 🌲 Symmetric Tree | LeetCode | [Link](https://leetcode.com/problems/symmetric-tree/) | Easy | [x] | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/SymmetricTree.java) |
+| 3 | 🌲 Binary Tree Level Order Traversal | LeetCode | [Link](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | [x] | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/BinaryTreeLevelOrderTraversal.java) |
+| 4 | 🌳 Same Tree | LeetCode | [Link](https://leetcode.com/problems/same-tree/) | Easy | [x] | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/SameTree.java) |
+| 5 | 🌳 Invert Binary Tree | LeetCode | [Link](https://leetcode.com/problems/invert-binary-tree/) | Easy | [x] | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/InvertBinaryTree.java) |
+| 6 | 🌲 Binary Tree Paths | LeetCode | [Link](https://leetcode.com/problems/binary-tree-paths/) | Easy | [x] | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/BinaryTreePaths.java) |
+| 7 | 🌳 Insert Into BST | LeetCode | [Link](https://leetcode.com/problems/insert-into-a-binary-search-tree/) | Medium | [x] | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/InsertIntoBST.java) |
+| 8 | ❌ Delete Node in BST | LeetCode | [Link](https://leetcode.com/problems/delete-node-in-a-bst/) | Medium | [x] | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/DeleteNodeInBST.java) |
+| 9 | 🧩 Lowest Common Ancestor of BST | LeetCode | [Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Medium | [x] | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/LowestCommonAncestorBST.java) |
+| 10 | 🧩 Kth Smallest Element in BST | LeetCode | [Link](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Medium | [x] | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/KthSmallestElementBST.java) |
+| 11 | 🌳 Balanced Binary Tree | LeetCode | [Link](https://leetcode.com/problems/balanced-binary-tree/) | Easy-Medium | [x] | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/BalancedBinaryTree.java) |
+| 12 | 🌳 Diameter of Binary Tree | LeetCode | [Link](https://leetcode.com/problems/diameter-of-binary-tree/) | Easy-Medium | [x] | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/DiameterOfBinaryTree.java) |
+| 13 | 👀 Right Side View of Binary Tree | LeetCode | [Link](https://leetcode.com/problems/binary-tree-right-side-view/) | Medium | [x] | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/BinaryTreeRightSideView.java) |
+| 14 | 🔄 Lowest Common Ancestor in Binary Tree | LeetCode | [Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | Medium | [x] | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/LowestCommonAncestorBinaryTree.java) |
+| 15 | 📦 Serialize and Deserialize Binary Tree | LeetCode | [Link](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Hard | [x] | [Solution](https://github.com/sams52s/problem_solving/blob/main/LeetCode%20Random/SerializeDeserializeBinaryTree.java) |
 
 ---
 
@@ -30,9 +30,9 @@
 
 | # | Topic | Category | Notes | Status |
 |:-:|:-----:|:--------:|:-----:|:------:|
-| 1 | 🌿 Tree Traversals | Concept | Inorder, Preorder, Postorder | [ ] |
-| 2 | 🌱 BST Properties | Concept | Search, Insert, Delete in BST | [ ] |
-| 3 | 🛤️ DFS vs BFS | Concept | Tree and Graph Traversal Techniques | [ ] |
+| 1 | 🌿 Tree Traversals | Concept | Inorder, Preorder, Postorder | [x] |
+| 2 | 🌱 BST Properties | Concept | Search, Insert, Delete in BST | [x] |
+| 3 | 🛤️ DFS vs BFS | Concept | Tree and Graph Traversal Techniques | [x] |
 
 ---
 

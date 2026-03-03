@@ -1068,6 +1068,222 @@ WHERE salary < (SELECT MAX(salary) FROM employees);
 
 </details>
 
+</details>
+
+### 🎯 Advanced Java 8+ Features & Functional Programming
+<details><summary>Click to expand Q&A</summary>
+
+1. **Explain the Stream API in Java 8. What are the advantages?**
+
+> **Answer:** Stream API provides a functional-style approach to process collections. Operations are lazy and can be parallelized.
+> - **Advantages:** Cleaner code, better performance with parallel streams, chainable operations (map, filter, reduce)
+> - **Example:**
+> ```java
+> List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+> numbers.stream()
+>     .filter(n -> n > 2)
+>     .map(n -> n * 2)
+>     .forEach(System.out::println);
+> ```
+
+2. **What are lambda expressions and functional interfaces?**
+
+> **Answer:** Lambda expressions provide a concise way to implement functional interfaces (interfaces with a single abstract method). 
+> ```java
+> Runnable r = () -> System.out.println("Hello");
+> Function<Integer, Integer> square = x -> x * x;
+> ```
+
+3. **Explain Optional in Java 8. Why is it useful?**
+
+> **Answer:** Optional is a container that may or may not contain a value. It reduces NullPointerException and encourages functional-style null handling.
+> ```java
+> Optional<String> opt = Optional.of("Hello");
+> opt.ifPresent(System.out::println);
+> String result = opt.orElse("Default");
+> ```
+
+4. **What are method references in Java 8?**
+
+> **Answer:** Method references provide a compact way to refer to methods. Types include:
+> - Constructor reference: `String::new`
+> - Static method reference: `Math::abs`
+> - Instance method reference: `obj::methodName`
+> - Array constructor reference: `int[]::new`
+
+5. **Explain the difference between map(), flatMap(), and reduce() in streams.**
+
+> **Answer:**
+> - **map():** Transforms each element using a function
+> - **flatMap():** Maps and flattens nested structures
+> - **reduce():** Combines all elements into a single value
+> ```java
+> int sum = numbers.stream().reduce(0, Integer::sum);
+> ```
+
+</details>
+
+### 🔒 Java Security & Best Practices
+<details><summary>Click to expand Q&A</summary>
+
+1. **What are common security vulnerabilities in Java applications?**
+
+> **Answer:** 
+> - SQL Injection: Use prepared statements
+> - Cross-site scripting (XSS): Escape output
+> - Insecure deserialization: Validate serialized data
+> - XXE (XML External Entity): Disable external entities
+> - Command injection: Sanitize inputs
+
+2. **How would you secure a REST API?**
+
+> **Answer:**
+> - Use HTTPS/TLS for encryption
+> - Implement JWT for stateless authentication
+> - Use API keys or OAuth2 for authorization
+> - Implement rate limiting to prevent DoS attacks
+> - Validate and sanitize all inputs
+> - Use CORS carefully
+> - Log and monitor access
+
+3. **Explain the principle of least privilege in security.**
+
+> **Answer:** Users/applications should have only the minimum permissions needed to perform their functions. This limits damage from compromised accounts or bugs.
+
+4. **What is the difference between Authentication and Authorization?**
+
+> **Answer:**
+> - **Authentication:** Verifying user identity (login)
+> - **Authorization:** Verifying user permissions (access control)
+
+</details>
+
+### 🏗️ Design Patterns & Architecture
+<details><summary>Click to expand Q&A</summary>
+
+1. **Explain the Builder pattern and when to use it.**
+
+> **Answer:** Builder pattern creates complex objects step by step. Useful for immutable objects with many optional parameters.
+> ```java
+> User user = new User.Builder()
+>     .name("John")
+>     .email("john@example.com")
+>     .build();
+> ```
+
+2. **What is the Factory pattern? Provide an example.**
+
+> **Answer:** Factory pattern creates objects without specifying their exact classes. Promotes loose coupling.
+> ```java
+> public class DatabaseFactory {
+>     public static Database createDatabase(String type) {
+>         if (type.equals("MySQL")) return new MySQLDatabase();
+>         if (type.equals("PostgreSQL")) return new PostgreSQLDatabase();
+>         throw new IllegalArgumentException("Unknown type");
+>     }
+> }
+> ```
+
+3. **Explain the Observer pattern.**
+
+> **Answer:** Defines a one-to-many dependency where observers are notified when the subject changes.
+> ```java
+> button.addListener(e -> System.out.println("Button clicked"));
+> ```
+
+4. **What is the Strategy pattern?**
+
+> **Answer:** Encapsulates interchangeable algorithms in separate classes, allowing runtime selection.
+> ```java
+> PaymentStrategy strategy = new CreditCardPayment();
+> order.pay(strategy);
+> ```
+
+5. **Explain MVC (Model-View-Controller) architecture.**
+
+> **Answer:**
+> - **Model:** Business logic and data
+> - **View:** User interface
+> - **Controller:** Handles user input and updates model/view
+> Used extensively in web frameworks.
+
+</details>
+
+### 📊 Performance Optimization & Profiling
+<details><summary>Click to expand Q&A</summary>
+
+1. **How would you identify performance bottlenecks in a Java application?**
+
+> **Answer:**
+> - Use profilers: JProfiler, YourKit, Async Profiler
+> - Monitor JVM metrics: CPU, memory, GC time
+> - Use Java Flight Recorder (JFR) for low-overhead profiling
+> - Analyze logs for slow queries/operations
+> - Use APM tools: New Relic, DataDog
+
+2. **What is the difference between -Xmx and -Xms JVM parameters?**
+
+> **Answer:**
+> - `-Xms`: Initial heap size
+> - `-Xmx`: Maximum heap size
+> Example: `java -Xms512M -Xmx2G App`
+
+3. **How can you optimize database queries in a Spring application?**
+
+> **Answer:**
+> - Use indexes on frequently queried columns
+> - Implement pagination for large result sets
+> - Use lazy loading instead of eager loading when appropriate
+> - Cache query results with Spring Cache
+> - Use batch processing for bulk operations
+> - Monitor query execution times
+
+4. **What is caching and how does Spring Cache work?**
+
+> **Answer:** Caching stores frequently accessed data in memory to reduce database hits.
+> ```java
+> @Cacheable(value = "users")
+> public User getUser(Long id) { ... }
+> ```
+
+</details>
+
+### 🌐 Microservices Best Practices
+<details><summary>Click to expand Q&A</summary>
+
+1. **What is the role of an API Gateway in microservices?**
+
+> **Answer:** Acts as a single entry point for client requests. Handles:
+> - Request routing to appropriate services
+> - Authentication/authorization
+> - Rate limiting
+> - Request/response transformation
+> - Example: Spring Cloud Gateway
+
+2. **Explain service-to-service communication patterns.**
+
+> **Answer:**
+> - **Synchronous:** REST APIs, gRPC
+> - **Asynchronous:** Message queues (RabbitMQ, Kafka), event streaming
+> - Choose based on consistency vs. availability needs
+
+3. **What is the Circuit Breaker pattern?**
+
+> **Answer:** Prevents cascading failures by failing fast when a service is unavailable.
+> ```java
+> @CircuitBreaker(name = "backendService")
+> public void callBackendService() { ... }
+> ```
+
+4. **How do you handle distributed transactions in microservices?**
+
+> **Answer:**
+> - Saga pattern: Break transaction into local transactions managed by coordinators
+> - Event sourcing: Record all changes as events
+> - Compensating transactions: Undo operations on failure
+
+</details>
+
 ### 📚 Resources & Recommended Reading
 
 **📘 Books:**
