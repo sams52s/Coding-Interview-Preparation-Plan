@@ -58,9 +58,13 @@ new Thread(() -> System.out.println("Running in separate thread")).start();
 **Real-world use case**:
 Used extensively in event handlers, stream transformations, and APIs like CompletableFuture.
 
- <!-- TODO -->
-<!-- **See also**: [Functional Programming Patterns](../FunctionalProgramming/Patterns.md)  -->
+**Interview checklist**:
+- Explain how lambdas target functional interfaces, not arbitrary method signatures.
+- Know what "effectively final" means for captured local variables.
+- Prefer method references when the lambda only delegates to one existing method.
+- Avoid putting large business workflows inside a single lambda; extract named methods for readability and testability.
 
+**See also**: [Lambda Expressions & Functional Programming in Java](../Lambda%20Expressions%20%26%20Functional%20Programming%20in%20Java.md)
 
 ---
 
@@ -116,7 +120,7 @@ Summary summary = transactions.parallelStream()
 **Real-world use case**:
 Transforming database result sets, aggregating statistics, or processing collections.
 
-**See also**: [Functional Programming Patterns](../FunctionalProgramming/Patterns.md) [TODO]
+**See also**: [Lambda Expressions & Functional Programming in Java](../Lambda%20Expressions%20%26%20Functional%20Programming%20in%20Java.md)
 
 ---
 
@@ -165,7 +169,7 @@ CompletableFuture.supplyAsync(() -> fetchData())
     .thenAccept(result -> System.out.println("Final result: " + result));
 ```
 
-**See also**: [Java Concurrency Documentation](../Concurrency/README.md) [TODO]
+**See also**: [Multithreading & Concurrency](../Multithreading%20%26%20Concurrency.md)
 
 ---
 
@@ -224,7 +228,7 @@ System.out.println("Today's date: " + today);
 **Real-world use case**:
 Financial applications, scheduling systems, time zone calculations.
 
-**See also**: [Date-Time Best Practices](../DateTime/BestPractices.md) [TODO]
+**See also**: [New Date and Time API section](#-new-date-and-time-api-javatime)
 
 ---
 

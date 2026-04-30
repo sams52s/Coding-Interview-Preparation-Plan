@@ -383,4 +383,4 @@ public int fib(int n) {
 
 ---
 
-> 🔗 Next: [02_Tail_Recursion_and_Optimization.md](./02_Tail_Recursion_and_Optimization.md)
+> Next: continue with [binary-search.md](binary-search.md) or return to the [DSA guide](README.md).

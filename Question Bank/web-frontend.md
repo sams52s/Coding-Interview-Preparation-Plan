@@ -424,10 +424,10 @@ requestAnimationFrame(animate);
 **5. Optimizing images and assets loading:**
 ```html
 <!-- Use responsive images -->
-<img src="image-small.jpg" srcset="image-large.jpg 2x" alt="Description">
+<img src="https://cdn.example.com/image-small.jpg" srcset="https://cdn.example.com/image-large.jpg 2x" alt="Description">
 
 <!-- Lazy loading offscreen images -->
-<img src="image.jpg" loading="lazy" alt="Description">
+<img src="https://cdn.example.com/image.jpg" loading="lazy" alt="Description">
 ```
 
 **6. Reducing JavaScript payload:**

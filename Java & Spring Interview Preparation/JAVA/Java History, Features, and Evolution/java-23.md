@@ -100,10 +100,16 @@ record Truck(int wheels, int loadCapacity) implements Vehicle {}
 
 ---
 
-## 📚 Expected JEP References
+## 📚 Related JEPs to Review
 
-- Enhanced Record Patterns (JEP TBD)
-- Sealed Interface Default Methods (JEP TBD)
+- JEP 455: Primitive Types in Patterns, `instanceof`, and `switch` (Preview).
+- JEP 476: Module Import Declarations (Preview).
+- JEP 477: Implicitly Declared Classes and Instance Main Methods (Third Preview).
+- JEP 480: Structured Concurrency (Third Preview).
+- JEP 481: Scoped Values (Third Preview).
+- JEP 482: Flexible Constructor Bodies (Second Preview).
+
+Record patterns and sealed classes were already established before Java 23. In Java 23 interview discussion, connect them to the newer pattern-matching direction rather than presenting them as brand-new Java 23 features.
 
 ---
 

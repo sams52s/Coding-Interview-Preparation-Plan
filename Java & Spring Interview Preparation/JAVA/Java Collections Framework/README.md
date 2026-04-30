@@ -1,235 +1,50 @@
-# 📘 Java Collection Framework
+# Java Collections Framework
 
-A **comprehensive and practical guide** to mastering the Java Collection Framework (JCF)—a critical skillset for every Java developer and interview candidate. This curated learning folder covers architecture, core interfaces, implementations, performance insights, and modern best practices with clean, runnable code examples.
+This folder is the Java Collections Framework study block. It explains the collection hierarchy, key interfaces, common implementations, iteration, sorting, performance, concurrency, immutability, best practices, and interview Q&A.
 
-[![Java](https://img.shields.io/badge/Java-8%2B-orange)](https://www.oracle.com/java/)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%202025-brightgreen)](https://github.com/sams52s/Coding-Interview-Preparation-Plan)
-[![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-blue.svg)](https://github.com/sams52s/Coding-Interview-Preparation-Plan/issues)
+**Navigation:** [Main README](../../../README.md) | [Learning Roadmap](../../../README.md#learning-roadmap) | [Java Hub](../README.md) | Previous: [OOP](../OOP/README.md) | Related: [Collections Q&A](17_Interview_Questions_and_Answers.md)
 
----
+## Folder files
+- [01_Collection_Framework_Introduction.md](01_Collection_Framework_Introduction.md) — JCF overview, hierarchy, and motivation.
+- [02_Collection_Interfaces.md](02_Collection_Interfaces.md) — `Collection`, `List`, `Set`, `Queue`, `Deque`, and `Map` interface relationships.
+- [03_List_Interface.md](03_List_Interface.md) — `ArrayList`, `LinkedList`, `Vector`, list operations, and trade-offs.
+- [04_Set_Interface.md](04_Set_Interface.md) — `HashSet`, `LinkedHashSet`, `TreeSet`, uniqueness, ordering, and hashing.
+- [05_Queue_and_Deque.md](05_Queue_and_Deque.md) — queue/deque operations, priority queues, and use cases.
+- [06_Map_Interface.md](06_Map_Interface.md) — `HashMap`, `TreeMap`, `LinkedHashMap`, `ConcurrentHashMap`, and map internals.
+- [07_Iterator_and_Iterable.md](07_Iterator_and_Iterable.md) — iterators, fail-fast behavior, custom iteration, and streams.
+- [08_Collections_vs_Collection.md](08_Collections_vs_Collection.md) — framework interface vs utility class distinction.
+- [09_Comparable_vs_Comparator.md](09_Comparable_vs_Comparator.md) — natural ordering, custom sorting, and comparator patterns.
+- [10_Collections_Utility_Class.md](10_Collections_Utility_Class.md) — `Collections` helper methods and common usage.
+- [11_Sorting_and_Searching.md](11_Sorting_and_Searching.md) — sorting/searching APIs and algorithmic considerations.
+- [12_Performance_Comparison_Table.md](12_Performance_Comparison_Table.md) — Big-O and implementation comparison tables.
+- [13_Concurrent_Collections.md](13_Concurrent_Collections.md) — concurrent collection types and multi-threaded access patterns.
+- [14_Synchronization_and_FailFast.md](14_Synchronization_and_FailFast.md) — synchronized wrappers, fail-fast/fail-safe iteration, and concurrency behavior.
+- [15_Immutable_Collections.md](15_Immutable_Collections.md) — immutable collection APIs and defensive copying.
+- [16_Best_Practices.md](16_Best_Practices.md) — collection selection, memory, performance, and clean usage.
+- [17_Interview_Questions_and_Answers.md](17_Interview_Questions_and_Answers.md) — collections interview Q&A.
+- [problem List.md](problem%20List.md) — practice problems.
+- [image.png](image.png), [commonDataStructureOperations.png](commonDataStructureOperations.png), [arraySortingAlgorithms.png](arraySortingAlgorithms.png) — supporting diagrams/images.
+- [README.md](README.md) — this folder guide.
 
-## 📋 Table of Contents
+## Suggested reading order
+1. [01_Collection_Framework_Introduction.md](01_Collection_Framework_Introduction.md)
+2. [02_Collection_Interfaces.md](02_Collection_Interfaces.md)
+3. [03_List_Interface.md](03_List_Interface.md), [04_Set_Interface.md](04_Set_Interface.md), [05_Queue_and_Deque.md](05_Queue_and_Deque.md), [06_Map_Interface.md](06_Map_Interface.md)
+4. [07_Iterator_and_Iterable.md](07_Iterator_and_Iterable.md)
+5. [09_Comparable_vs_Comparator.md](09_Comparable_vs_Comparator.md), [10_Collections_Utility_Class.md](10_Collections_Utility_Class.md), [11_Sorting_and_Searching.md](11_Sorting_and_Searching.md)
+6. [12_Performance_Comparison_Table.md](12_Performance_Comparison_Table.md)
+7. [13_Concurrent_Collections.md](13_Concurrent_Collections.md), [14_Synchronization_and_FailFast.md](14_Synchronization_and_FailFast.md), [15_Immutable_Collections.md](15_Immutable_Collections.md)
+8. [16_Best_Practices.md](16_Best_Practices.md)
+9. [17_Interview_Questions_and_Answers.md](17_Interview_Questions_and_Answers.md)
 
-- [🔍 Overview](#-overview)
-- [📂 Contents](#-contents)
-- [🚀 Quick Start](#-quick-start)
-- [🗺️ Learning Path](#-learning-path)
-- [🎯 Goals](#-goals)
-- [🛠 How to Use](#-how-to-use)
-- [🔥 Highlights](#-highlights)
-- [🧠 Who is this For?](#-who-is-this-for)
-- [📊 Progress Tracker](#-progress-tracker)
-- [❓ FAQ](#-frequently-asked-questions)
-- [📚 Additional Resources](#-additional-resources)
-- [⏭️ What's Next](#-whats-next)
-- [🙌 Contributions & Feedback](#-contributions--feedback)
+## How it connects
+- The [Java foundation stage](../../../README.md#learning-roadmap) uses this folder after Java fundamentals and OOP.
+- The [advanced Java and DSA stage](../../../README.md#learning-roadmap) builds on this with generics, IO/NIO, lambdas, and DSA structures.
+- Related question bank: [Question Bank/core-java.md](../../../Question%20Bank/core-java.md) and [Question Bank/dsa.md](../../../Question%20Bank/dsa.md).
 
----
-
-## 🔍 Overview
-
-This series breaks down the Java Collection Framework with in-depth yet beginner-friendly explanations. From basic interfaces like `List` and `Set` to advanced concepts like `ConcurrentHashMap` and fail-fast iterators, it serves both as a study companion and a technical reference.
-
----
-
-## 📂 Contents
-
-1. [Collection Framework Introduction](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/01_Collection_Framework_Introduction.md)
-2. [Collection Interfaces](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/02_Collection_Interfaces.md)
-3. [List Interface](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/03_List_Interface.md)
-4. [Set Interface](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/04_Set_Interface.md)
-5. [Queue and Deque](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/05_Queue_and_Deque.md)
-6. [Map Interface](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/06_Map_Interface.md)
-7. [Iterator and Iterable](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/07_Iterator_and_Iterable.md)
-8. [Collections vs Collection](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/08_Collections_vs_Collection.md)
-9. [Comparable vs Comparator](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/09_Comparable_vs_Comparator.md)
-10. [Collections Utility Class](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/10_Collections_Utility_Class.md)
-11. [Sorting and Searching](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/11_Sorting_and_Searching.md)
-12. [Performance Comparison Table](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/12_Performance_Comparison_Table.md)
-13. [Concurrent Collections](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/13_Concurrent_Collections.md)
-14. [Synchronization and FailFast](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/14_Synchronization_and_FailFast.md)
-15. [Immutable Collections](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/15_Immutable_Collections.md)
-16. [Best Practices](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/16_Best_Practices.md)
-17. [Interview Questions and Answers](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/17_Interview_Questions_and_Answers.md)
-18. [Problem List](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/problem%20List.md)
-
-> Each file includes diagrams, use cases, code samples, trade-offs, and interview-ready notes.
-
----
-
-## 🚀 Quick Start
-
-- **🧱 Beginner?** Start with [Collection Framework Introduction](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/01_Collection_Framework_Introduction.md)
-- **🎯 Interview prep?** Go straight to [Interview Questions and Answers](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/17_Interview_Questions_and_Answers.md)
-- **🔍 Looking for usage guidance?** Check [Best Practices](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/16_Best_Practices.md)
-- **⚖️ Comparing collections?** Refer to [Performance Comparison Table](https://github.com/sams52s/Coding-Interview-Preparation-Plan/blob/main/Java%20%26%20Spring%20Interview%20Preparation/JAVA/Java%20Collections%20Framework/12_Performance_Comparison_Table.md)
-
----
-
-## 🗺️ Learning Path
-
-```
-01 → Interfaces → List / Set / Map → Sorting & Searching → Utilities → Performance → Advanced Topics → Interview Q&A
-```
-
----
-
-## 🎯 Goals
-
-- Build practical understanding of JCF structure and internals
-- Develop the ability to **choose the right collection** for the task
-- Practice advanced topics: thread safety, immutability, fail-fast behavior
-- Prepare for **coding interviews** with annotated Q&A and patterns
-
----
-
-## 🛠 How to Use
-
-1. Follow topic numbers for a structured progression
-2. Use `.md` files as study notes, technical references, or tutorials
-3. Test the examples directly in your IDE (Java 8+)
-4. Bookmark performance tables and API tips for system design
-
----
-
-## 🔥 Highlights
-
-- 🔗 Rich internal linking between concepts
-- ✅ Interview-style Q&A embedded in all key sections
-- 📌 Modern Java practices (Java 8–17): Lambdas, Streams, `of()` methods
-- 📊 Big-O comparison tables for all major operations
-- 💡 Real-world usage and practical edge-case handling
-
----
-
-## 🧠 Who is this For?
-
-- 🧑‍💻 Java developers reviewing or mastering core libraries
-- 🎓 Students preparing for academic exams or lab work
-- 🧩 Job seekers preparing for DSA/system design interviews
-- 🛠 Backend engineers choosing performant data structures
-
----
-
-## 📊 Progress Tracker
-
-- [ ] Collection Framework Introduction
-- [ ] Interfaces: Collection, List, Set, Map
-- [ ] Implementation Classes: ArrayList, HashSet, HashMap...
-- [ ] Iterators & Traversals
-- [ ] Sorting and Searching
-- [ ] Thread Safety and Concurrency
-- [ ] Best Practices and Q&A
-
----
-
-## ❓ Frequently Asked Questions
-
-<details>
-<summary><b>Which collection is fastest?</b></summary>
-<p>Depends on context. For key-value lookups, `HashMap` is generally fastest. For insertion-order sets, use `LinkedHashSet`. For sorted keys, prefer `TreeMap`.</p>
-</details>
-
-<details>
-<summary><b>How to make collections thread-safe?</b></summary>
-<p>Use `Collections.synchronizedList()` for simple wrappers or switch to concurrent versions like `CopyOnWriteArrayList` and `ConcurrentHashMap` for better performance in multi-threaded environments.</p>
-</details>
-
-<details>
-<summary><b>Is ArrayList always better than LinkedList?</b></summary>
-<p>No. Use `ArrayList` for random access and `LinkedList` when frequent inserts/removals are expected, especially at ends.</p>
-</details>
-
----
-
-## 📚 Additional Resources
-
-### Official Documentation
-- 📘 [Oracle Java Collection Docs](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/package-summary.html)
-- 📘 [Java Tutorials: Collections](https://docs.oracle.com/javase/tutorial/collections/)
-- 📘 [JDK Enhancement Proposals (JEPs)](https://openjdk.org/projects/jdk/)
-
-### Tutorials & Articles
-- 📝 [Baeldung on Java Collections](https://www.baeldung.com/java-collections)
-- 📝 [GeeksforGeeks Collections](https://www.geeksforgeeks.org/collections-in-java/)
-- 📝 [Java Collections Cheat Sheet](https://www.jrebel.com/blog/java-collections-cheat-sheet)
-- 📝 [DZone Collections Refcard](https://dzone.com/refcardz/java-collections)
-
-### Video Resources
-- 🎥 [Java Collections Framework by Telusko](https://www.youtube.com/watch?v=rI4kdGLaUiQ&list=PLsyeobzWxl7oJj5BXYF088REBm-K4c_SR)
-- 🎥 [Java Collections In-Depth by Cave of Programming](https://www.youtube.com/watch?v=GdAon80-0KA&list=PL27BCE863B6A864E3)
-- 🎥 [Collections Framework Performance Analysis](https://www.youtube.com/watch?v=sz5EEFpgwLc)
-
-### Practice Resources
-- 🧪 [LeetCode Collections Problems](https://leetcode.com/tag/array/)
-- 🧪 [HackerRank Java Collections](https://www.hackerrank.com/domains/java?filters%5Bsubdomains%5D%5B%5D=java-data-structure)
-- 🧪 [Project Euler](https://projecteuler.net/)
-- 🧪 [Java Collections Visualizer](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
-
-### Books
-- 📚 **"Effective Java"** by Joshua Bloch
-- 📚 **"Java Generics and Collections"** by Maurice Naftalin & Philip Wadler
-- 📚 **"Java Performance: The Definitive Guide"** by Scott Oaks
-- 📚 **"Data Structures and Algorithms in Java"** by Robert Lafore
-
-### Community Resources
-- 💬 [Stack Overflow Java Collections Tag](https://stackoverflow.com/questions/tagged/java-collections) - Q&A platform with numerous collection-related problems and solutions
-- 💬 [Reddit r/java](https://www.reddit.com/r/java/) - Active community discussing Java trends, challenges, and solutions
-- 💬 [Java Collections Framework Discussions on GitHub](https://github.com/openjdk/jdk/tree/master/src/java.base/share/classes/java/util) - Source code and discussions from core contributors
-- 💬 [Java User Groups (JUGs)](https://www.oracle.com/java/user-groups/) - Local communities of Java developers worldwide
-- 💬 [Java Discord](https://discord.com/invite/java) - Real-time discussions and help from Java developers
-- 💬 [DZone Java Zone](https://dzone.com/java-jdk-development-tutorials-tools-news) - Articles and discussions from experienced Java developers
-
-### Advanced Topics
-#### Specialized Libraries
-- 🔬 [Eclipse Collections](https://www.eclipse.org/collections/) - Rich, performant collection APIs with primitive specializations
-- 🔬 [Guava Collections](https://github.com/google/guava/wiki/CollectionUtilitiesExplained) - Google's core libraries for Java with extended collection utilities
-- 🔬 [FastUtil](https://fastutil.di.unimi.it/) - Fast & compact specialized collections that extend the Java Collections Framework
-- 🔬 [Apache Commons Collections](https://commons.apache.org/proper/commons-collections/) - Extends the Java Collections Framework with valuable utilities
-- 🔬 [Koloboke](https://koloboke.com/) - Java Collections till Java 8 with zero overhead and advanced features
-
-#### Collection Internals & Implementation
-- 🔬 [Custom Collection Implementations](https://www.baeldung.com/java-custom-collection) - Tutorial on building your own collections
-- 🔬 [Collection Internals Series](https://www.baeldung.com/java-collections-complexity) - Deep dive into implementation details
-- 🔬 [Java Collections Source Code](https://github.com/openjdk/jdk/tree/master/src/java.base/share/classes/java/util) - Study the original implementations
-
-#### Performance Tools
-- 🔬 [JMH (Java Microbenchmark Harness)](https://github.com/openjdk/jmh) - Framework for benchmarking Java code including collections
-- 🔬 [VisualVM](https://visualvm.github.io/) - Visual tool for monitoring Java application memory usage
-- 🔬 [JITWatch](https://github.com/AdoptOpenJDK/jitwatch) - Analyze the JIT compiler optimizations on collection operations
-
-#### Interactive Learning
-- 🔬 [Java Collections Visualizer](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html) - Visual representation of collection operations
-- 🔬 [Big-O Cheat Sheet](https://www.bigocheatsheet.com/) - Compare algorithm complexities across collections
-- 🔬 [Collection Streams Playground](https://stackblitz.com/@code-with-random/java-stream-api-examples) - Interactive environment for streams
-
----
-
-## ⏭️ What's Next
-
-- 📦 Dive into `java.util.stream` and functional patterns with collections
-- 🧠 Learn how to design custom collections using generics and type-safety
-- 💥 Explore memory optimization techniques and serialization with collections
-- 🔄 Master concurrent collection patterns for high-performance applications
-- 📱 Investigate Android-specific collection adaptations and performance considerations
-
----
-
-## 🙌 Contributions & Feedback
-
-Have ideas to improve this guide? You’re welcome to:
-
-1. Fork this repo
-2. Create a feature branch
-3. Submit a pull request with context
-
-Or open an [Issue](https://github.com/sams52s/Coding-Interview-Preparation-Plan/issues) to start a discussion.
-
----
-
-<p align="center">
-  <i>Happy learning & confident coding!</i><br>
-  ⭐ Star this repository to support the project ⭐
-</p>
-
----
+## Interview focus areas
+- Choose the right collection for a use case.
+- Explain `HashMap` internals, hashing, collisions, resizing, and equality contracts.
+- Compare `ArrayList`, `LinkedList`, `HashSet`, `TreeSet`, `HashMap`, `TreeMap`, and `ConcurrentHashMap`.
+- Discuss fail-fast iterators, immutable collections, synchronized wrappers, and concurrent collections.
+- Analyze time and space complexity of common operations.
