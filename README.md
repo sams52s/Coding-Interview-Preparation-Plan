@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.png" alt="Java software engineering interview preparation banner" width="100%" />
+  <img src="finalBanner.png" alt="Java software engineering interview preparation banner" width="100%" />
 </p>
 
 # Java Software Engineering Interview Preparation Documentation
